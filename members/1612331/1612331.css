@@ -17,68 +17,30 @@ body{
     font-family: sans-serif;
 }
 
-div.member {
-  border: 1px solid black;
-  padding: 10px;
-  width: 350px;
-  height: 100px;
-  text-align: justify;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 150px;
-  margin-left: 450px;
-}
-
 h1{
-	text-align: center;
-	color: red;
+	text-align: left;
+	color: blue;
 	font-size: 36px;
 	text-transform: uppercase;	
 }
 
 h2{
 	text-transform: capitalize;
-	text-align: center;
+	text-align: left;
 	color: black;
 	font-size: 20px;
 	text-transform: uppercase;
 }
 
+pre{
+}
+
 img{
-  display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 500px;
+  width: 200px;
 }
 
 img.member{
 	border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
