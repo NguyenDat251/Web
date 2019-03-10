@@ -1,4 +1,9 @@
-
-  <area shape="circle" coords="210, 65, 50" alt="Dat" href="members/1612092/1612092.html">
-  <area shape="circle" coords="264, 135, 20" alt="Tan" href="members/1612593/1612593.html">
-  <area shape="circle" coords="312, 108, 40" alt="Dat" href="members/1612092/1612092.html">
+h1
+{
+	font-weight: bold;
+	font-size: 16pt;
+	color: red;
+	font-style: italic;
+	font-family: Arial;
+	font-color: red;
+}
