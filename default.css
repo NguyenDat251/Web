@@ -17,10 +17,7 @@ body{
     font-family: sans-serif;
 }
 
-.sapce-big{
-	line-height: 2.3;
-}
-div{
+div.member {
   border: 1px solid black;
   padding: 10px;
   width: 350px;
@@ -54,6 +51,9 @@ img{
   margin-left: 400px;
 }
 
+img.member{
+	border-radius: 50%;
+}
 
 
 
