@@ -29,11 +29,17 @@ div.member {
   margin-left: 450px;
 }
 
+
 h1{
 	text-align: center;
 	color: red;
 	font-size: 36px;
 	text-transform: uppercase;	
+}
+
+h1.name{
+	text-align: left;
+	color: blue;
 }
 
 h2{
@@ -44,11 +50,19 @@ h2{
 	text-transform: uppercase;
 }
 
+h2.info{
+	text-align: left;
+}
+
 img{
   display: block;
   margin-right: auto;
   margin-left: auto;
   width: 500px;
+}
+
+img.ava{
+  width: 200px;
 }
 
 img.member{
