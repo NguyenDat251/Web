@@ -1,0 +1,50 @@
+extends layoutlogin
+block page
+    - var menu = 'index'
+block content
+    .container
+        header
+            h1 E-SHOP
+        section
+            #container_demo
+                // hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4
+                a#toregister.hiddenanchor
+                a#tologin.hiddenanchor
+                #wrapper
+                    #login.animate.form
+                        form(action='mysuperscript.php' autocomplete='on')
+                            h1 ĐĂNG NHẬP
+                            p
+                                label.uname(for='username')  Mail/ Tên đăng nhập
+                                input#username(name='username' required='required' type='text' placeholder='Nhập địa chỉ gmail hoặc tên đăng nhập')
+                            p
+                                label.youpasswd(for='password')  Mật khẩu
+                                input#password(name='password' required='required' type='password' placeholder='Nhập mật khẩu của bạn')
+                            p.keeplogin
+                                input#loginkeeping(type='checkbox' name='loginkeeping' value='loginkeeping')
+                                label(for='loginkeeping') Nhớ tài khoản
+                            p.login.button
+                                a(href='http://cookingfoodsworld.blogspot.in/' target='_blank')
+                            p.change_link
+                                | Chưa có tài khoản ?
+                                a.to_register(href='#toregister') Đăng ký
+                    #register.animate.form
+                        form(action='mysuperscript.php' autocomplete='on')
+                            h1  ĐĂNG KÝ
+                            p
+                                label.uname(for='usernamesignup') Tên đăng nhập
+                                input#usernamesignup(name='usernamesignup' required='required' type='text' placeholder='tranthilang28')
+                            p
+                                label.youmail(for='emailsignup')  Địa chỉ mail
+                                input#emailsignup(name='emailsignup' required='required' type='email' placeholder='mail@gmail.com')
+                            p
+                                label.youpasswd(for='passwordsignup') Mật khẩu
+                                input#passwordsignup(name='passwordsignup' required='required' type='password' placeholder='lang221454025*')
+                            p
+                                label.youpasswd(for='passwordsignup_confirm') Xác nhận lại mật khẩu
+                                input#passwordsignup_confirm(name='passwordsignup_confirm' required='required' type='password' placeholder='lang221454025*')
+                            p.signin.button
+                                input(type='submit' value='Sign up')
+                            p.change_link
+                                | Bạn đã có tài khoản ?
+                                a.to_register(href='#tologin')  Đăng nhập
