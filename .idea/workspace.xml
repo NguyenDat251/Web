@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myapp/Admin/homeAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/homeAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +21,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/Admin/homeAdmin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="296" column="8" selection-start-line="296" selection-start-column="8" selection-end-line="339" selection-end-column="14" />
+            <state relative-caret-position="279">
+              <caret line="314" column="82" lean-forward="true" selection-start-line="314" selection-start-column="82" selection-end-line="314" selection-end-column="82" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -33,31 +32,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="340" column="18" selection-start-line="340" selection-start-column="18" selection-end-line="340" selection-end-column="18" />
+            <state relative-caret-position="149">
+              <caret line="302" column="29" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="29" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="73" column="14" lean-forward="true" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+            <state relative-caret-position="-381">
+              <caret line="653" column="112" selection-start-line="653" selection-start-column="112" selection-end-line="653" selection-end-column="112" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#110320#110326#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +99,9 @@
         <option value="$PROJECT_DIR$/myapp/views/layout.pug" />
         <option value="$PROJECT_DIR$/myapp/FileHTML/NguoiBan/trangchu.html" />
         <option value="$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html" />
-        <option value="$PROJECT_DIR$/myapp/Admin/homeAdmin.html" />
         <option value="$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html" />
+        <option value="$PROJECT_DIR$/myapp/Admin/homeAdmin.html" />
+        <option value="$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html" />
       </list>
     </option>
   </component>
@@ -190,18 +192,18 @@
       <workItem from="1555121804755" duration="949000" />
       <workItem from="1555689248393" duration="9068000" />
       <workItem from="1555727140431" duration="14822000" />
-      <workItem from="1555840140480" duration="3181000" />
+      <workItem from="1555840140480" duration="6548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28020000" />
+    <option name="totallyTimeSpent" value="31387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.03348214" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19494048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -339,24 +341,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="73" column="14" lean-forward="true" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+        <state relative-caret-position="526">
+          <caret line="1115" column="7" selection-start-line="1115" selection-start-column="7" selection-end-line="1115" selection-end-column="7" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#90747#90753#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/Admin/homeAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="296" column="8" selection-start-line="296" selection-start-column="8" selection-end-line="339" selection-end-column="14" />
+        <state relative-caret-position="279">
+          <caret line="314" column="82" lean-forward="true" selection-start-line="314" selection-start-column="82" selection-end-line="314" selection-end-column="82" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
@@ -365,14 +363,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="340" column="18" selection-start-line="340" selection-start-column="18" selection-end-line="340" selection-end-column="18" />
+        <state relative-caret-position="149">
+          <caret line="302" column="29" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="29" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-381">
+          <caret line="653" column="112" selection-start-line="653" selection-start-column="112" selection-end-line="653" selection-end-column="112" />
+          <folding>
+            <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#110320#110326#0" expanded="true" />
           </folding>
         </state>
       </provider>
