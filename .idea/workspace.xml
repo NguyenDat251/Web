@@ -2,148 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e551b9-6652-4749-854c-1ec4e53cfcb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/AUTHORS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/dist/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/dist/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/dist/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/external/sizzle/dist/sizzle.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/jsonp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/parseXML.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/var/location.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/var/nonce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/var/rquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/ajax/xhr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/attributes/attr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/attributes/classes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/attributes/prop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/attributes/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/attributes/val.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/callbacks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/DOMEval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/access.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/camelCase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/isAttached.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/nodeName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/parseHTML.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/ready-no-deferred.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/ready.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/readyException.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/stripAndCollapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/toType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/core/var/rsingleTag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/addGetHookIf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/adjustCSS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/curCSS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/finalPropName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/showHide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/var/cssExpand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/var/getStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/var/rboxStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/css/var/swap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/data/Data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/data/var/acceptData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/data/var/dataPriv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/data/var/dataUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/deferred.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/deferred/exceptionHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/deprecated.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/dimensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/effects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/effects/Tween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/effects/animatedSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/event/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/event/alias.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/event/focusin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/event/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/event/trigger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/exports/amd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/exports/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/buildFragment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/getAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/manipulation/wrapMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/offset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/queue/delay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/selector-native.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/selector-sizzle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/selector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/serialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/traversing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/traversing/findFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/traversing/var/dir.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/traversing/var/siblings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/arr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/class2type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/concat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/documentElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/fnToString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/getProto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/hasOwn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/indexOf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/isFunction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/isWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/pnum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/push.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/rcheckableType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/rcssNum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/var/toString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/jquery/src/wrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/public/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/views/layoutlogin.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/views/lognin.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/public/stylesheets/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/views/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/Admin/homeAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/homeAdmin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -157,64 +19,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/views/index.pug">
+        <entry file="file://$PROJECT_DIR$/myapp/Admin/homeAdmin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+            <state relative-caret-position="279">
+              <caret line="314" column="82" lean-forward="true" selection-start-line="314" selection-start-column="82" selection-end-line="314" selection-end-column="82" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="302" column="29" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="29" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myapp/views/layout.pug">
+        <entry file="file://$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/views/lognin.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="18" column="46" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/views/layoutlogin.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/public/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="556" column="23" selection-start-line="556" selection-start-column="23" selection-end-line="556" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="-381">
+              <caret line="653" column="112" selection-start-line="653" selection-start-column="112" selection-end-line="653" selection-end-column="112" />
+              <folding>
+                <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#110320#110326#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -228,6 +73,7 @@
       <find>chang</find>
       <find>register</find>
       <find>toregister</find>
+      <find>product-edit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -251,21 +97,16 @@
         <option value="$PROJECT_DIR$/myapp/views/index.pug" />
         <option value="$PROJECT_DIR$/myapp/routes/index.js" />
         <option value="$PROJECT_DIR$/myapp/views/layout.pug" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Web.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/myapp/FileHTML/NguoiBan/trangchu.html" />
+        <option value="$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html" />
+        <option value="$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html" />
+        <option value="$PROJECT_DIR$/myapp/Admin/homeAdmin.html" />
+        <option value="$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
+    <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -294,26 +135,7 @@
               <item name="Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web" type="462c0819:PsiDirectoryNode" />
               <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="ImageEshop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="myapp" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,9 +144,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/myapp/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -335,11 +158,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Web\myapp\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Web\myapp\views\partials" />
+      <recent name="D:\Web\myapp\public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Web\myapp\FileHTML\NguoiBan" />
       <recent name="D:\Web\myapp\public" />
     </key>
   </component>
@@ -367,18 +191,19 @@
       <updated>1555121802407</updated>
       <workItem from="1555121804755" duration="949000" />
       <workItem from="1555689248393" duration="9068000" />
-      <workItem from="1555727140431" duration="11810000" />
+      <workItem from="1555727140431" duration="14822000" />
+      <workItem from="1555840140480" duration="6548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21827000" />
+    <option name="totallyTimeSpent" value="31387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.02232143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19494048" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -466,20 +291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/views/layoutlogin.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="556" column="23" selection-start-line="556" selection-start-column="23" selection-end-line="556" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myapp/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -487,17 +298,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="23" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myapp/views/layout.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="346" column="36" lean-forward="true" selection-start-line="346" selection-start-column="36" selection-end-line="346" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/views/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/views/layoutlogin.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/FileHTML/NguoiBan/public/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/FileHTML/NguoiBan/trangchu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="1124" column="7" selection-start-line="1124" selection-start-column="7" selection-end-line="1124" selection-end-column="7" />
+          <folding>
+            <element signature="e#90795#90801#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/Admin/danh-sach-cho-duyet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="1115" column="7" selection-start-line="1115" selection-start-column="7" selection-end-line="1115" selection-end-column="7" />
+          <folding>
+            <element signature="e#90747#90753#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/Admin/homeAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="314" column="82" lean-forward="true" selection-start-line="314" selection-start-column="82" selection-end-line="314" selection-end-column="82" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/Admin/danh-sach-tai-khoan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="302" column="29" selection-start-line="302" selection-start-column="29" selection-end-line="302" selection-end-column="29" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/Admin/thay-doi-thong-tin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-381">
+          <caret line="653" column="112" selection-start-line="653" selection-start-column="112" selection-end-line="653" selection-end-column="112" />
+          <folding>
+            <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#110320#110326#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
