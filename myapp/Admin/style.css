@@ -1107,7 +1107,7 @@ ul.two-part-sp li{
     background: #eb4b4b;
     border-radius: 3px;
 }
-.sales-report-stn-his button.product-btn-history, button.pd-setting-ed {
+.sales-report-stn-his button.product-btn-history, button.fa fa-pencil-square-o {
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 3px;
