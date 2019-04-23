@@ -2,575 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c67f8e71-d36b-4c94-b5ab-8d4b3085ad3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/css/summernote/summernote.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/AUTHORS.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/dist/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/dist/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/dist/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/dist/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/dist/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/dist/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/external/sizzle/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/external/sizzle/dist/sizzle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/external/sizzle/dist/sizzle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/external/sizzle/dist/sizzle.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/jsonp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/load.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/parseXML.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/var/location.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/var/nonce.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/var/rquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/ajax/xhr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/attributes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/attributes/attr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/attributes/classes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/attributes/prop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/attributes/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/attributes/val.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/callbacks.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/DOMEval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/access.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/camelCase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/init.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/isAttached.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/nodeName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/parseHTML.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/ready-no-deferred.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/ready.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/readyException.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/stripAndCollapse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/toType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/core/var/rsingleTag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/addGetHookIf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/adjustCSS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/curCSS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/finalPropName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/showHide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/var/cssExpand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/var/getStyles.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/var/isHiddenWithinTree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/var/rboxStyle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/css/var/swap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/data/Data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/data/var/acceptData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/data/var/dataPriv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/data/var/dataUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/deferred.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/deferred/exceptionHook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/deprecated.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/dimensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/effects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/effects/Tween.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/effects/animatedSelector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/event/ajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/event/alias.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/event/focusin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/event/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/event/trigger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/exports/amd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/exports/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/buildFragment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/getAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/manipulation/wrapMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/offset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/queue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/queue/delay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/selector-native.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/selector-sizzle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/selector.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/serialize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/traversing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/traversing/findFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/traversing/var/dir.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/traversing/var/siblings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/ObjectFunctionString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/arr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/class2type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/concat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/documentElement.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/fnToString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/getProto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/hasOwn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/indexOf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/isFunction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/isWindow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/pnum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/push.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/rcheckableType.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/rcssNum.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/rnothtmlwhite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/slice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/support.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/var/toString.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/jquery/src/wrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/js/calendar/fullcalendar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/js/counterup/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-map/datamaps.all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/js/jquery-price-slider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/js/password-meter/pwstrength-bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/js/select2/select2.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/public/js/tree-line/jstree.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-tai-khoan.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/footer.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/head.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/header.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/menu.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/mobile.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/script.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/accordions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/alerts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/buttons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/c3/c3.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/calendar/fullcalendar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/calendar/fullcalendar.print.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/chosen/bootstrap-chosen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/chosen/chosen-sprite.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/code-editor/ambiance.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/code-editor/codemirror.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/colorpicker/colorpicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/cropper/cropper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/data-table/bootstrap-editable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/data-table/bootstrap-table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/datapicker/colorpicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/datapicker/datepicker3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/dropzone/dropzone.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/duallistbox/bootstrap-duallistbox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/editor/bootstrap-editable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/editor/datetimepicker.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/editor/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/editor/x-editor-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/form/all-type-forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/form/themesaller-forms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/ionRangeSlider/ion.rangeSlider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/ionRangeSlider/ion.rangeSlider.skinFlat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/ionRangeSlider/sprite-skin-flat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/meanmenu.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/metisMenu/metisMenu-vertical.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/metisMenu/metisMenu.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/modals.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/morrisjs/morris.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/notifications/Lobibox.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/notifications/notifications.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/owl.theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/owl.transitions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/preloader/preloader-style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/scrollbar/jquery.mCustomScrollbar.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/select2/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/summernote/fonts/summernote.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/summernote/fonts/summernote.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/summernote/fonts/summernote.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/touchspin/jquery.bootstrap-touchspin.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/tree-viewer/32px.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/tree-viewer/throbber.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/css/tree-viewer/tree-viewer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/blog-details/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/contact/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/contact/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/contact/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/contact/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/cropper/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/green1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/logo/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/logo/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/logo/logoEshop.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/new-product/5-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/new-product/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/new-product/6-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/new-product/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/new-product/7-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/new-product/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/notification/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/notification/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/notification/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/notification/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/notification/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/notification/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/product/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/product/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/product/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/product/bg-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/product/bg-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/img/product/bg-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/c3-charts/c3-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/c3-charts/c3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/c3-charts/d3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/calendar/fullcalendar-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/calendar/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/chart/jquery.peity.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/chart/peity-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/charts/Chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/charts/area-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/charts/bar-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/charts/line-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/charts/rounded-chart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/chosen/chosen-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/chosen/chosen.jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/code-editor/code-editor-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/code-editor/code-editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/code-editor/codemirror.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/colorpicker/color-picker-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/colorpicker/jquery.spectrum.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/counterup/counterup-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/counterup/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/cropper/cropper-actice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/cropper/cropper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-map/d3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-map/data-maps-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-map/topojson.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/bootstrap-editable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/bootstrap-table-editable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/bootstrap-table-export.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/bootstrap-table-resizable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/bootstrap-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/colResizable-1.5.source.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/data-table-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/data-table/tableExport.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/datapicker/bootstrap-datepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/datapicker/datepicker-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/dropzone/dropzone.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/duallistbox/duallistbox.active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/duallistbox/jquery.bootstrap-duallistbox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/e-payment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/editable/bootstrap-datetimepicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/editable/bootstrap-editable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/editable/jquery.mockjax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/editable/mock-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/editable/moment.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/editable/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/editable/xediable-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/google.maps/google.maps-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/icheck/icheck-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/icheck/icheck.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/input-mask/jasny-bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/ionRangeSlider/ion.rangeSlider.active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/ionRangeSlider/ion.rangeSlider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/jquery.meanmenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/jquery.payform.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/jquery.scrollUp.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/jquery.sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/knob/jquery.knob.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/knob/knob-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/metisMenu/metisMenu-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/metisMenu/metisMenu.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/morrisjs/morris-active-pro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/morrisjs/morris-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/morrisjs/morris.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/morrisjs/raphael-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/notifications/Lobibox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/notifications/notification-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/password-meter/password-meter-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/password-meter/zxcvbn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/pdf/jquery.media.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/pdf/pdf-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/peity/jquery.peity.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/peity/peity-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/plugins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/rangle-slider/jquery-ui-1.10.4.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/rangle-slider/jquery-ui-touch-punch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/rangle-slider/rangle-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/scrollbar/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/scrollbar/mCustomScrollbar-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/select2/select2-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/sparkline/jquery.charts-sparkline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/sparkline/jquery.sparkline.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/sparkline/sparkline-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/summernote/summernote-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/summernote/summernote.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/touchspin/jquery.bootstrap-touchspin.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/touchspin/touchspin-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/tree-line/jstree.active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/vendor/jquery-1.11.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/vendor/modernizr-2.8.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/wizard/jquery.steps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/wizard/steps-active.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../public/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-cho-duyet.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-cua-hang.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-san-pham.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/don-hang.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/thay-doi-thong-tin.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../layoutHome.pug" beforeDir="false" afterPath="$PROJECT_DIR$/../../layoutHome.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QuanTri/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-tai-khoan.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-tai-khoan.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QuanTri/views/partial/menu.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/menu.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../QuanTri/views/partial/mobile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/mobile.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/accordions.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/accordions.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/alerts.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/alerts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/buttons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/c3/c3.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/c3/c3.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/calendar/fullcalendar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/calendar/fullcalendar.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/calendar/fullcalendar.print.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/calendar/fullcalendar.print.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/chosen/bootstrap-chosen.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/chosen/bootstrap-chosen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/chosen/chosen-sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/chosen/chosen-sprite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/code-editor/ambiance.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/code-editor/ambiance.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/code-editor/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/code-editor/codemirror.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/colorpicker/colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/colorpicker/colorpicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/cropper/cropper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/cropper/cropper.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/data-table/bootstrap-editable.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/data-table/bootstrap-editable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/data-table/bootstrap-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/data-table/bootstrap-table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/datapicker/colorpicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/datapicker/colorpicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/datapicker/datepicker3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/datapicker/datepicker3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/dropzone/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/dropzone/dropzone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/duallistbox/bootstrap-duallistbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/duallistbox/bootstrap-duallistbox.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/editor/bootstrap-editable.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/editor/bootstrap-editable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/editor/datetimepicker.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/editor/datetimepicker.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/editor/select2.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/editor/select2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/editor/x-editor-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/editor/x-editor-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../public/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/form/all-type-forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/form/all-type-forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/form/themesaller-forms.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/form/themesaller-forms.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ionRangeSlider/ion.rangeSlider.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/ionRangeSlider/ion.rangeSlider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ionRangeSlider/ion.rangeSlider.skinFlat.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/ionRangeSlider/ion.rangeSlider.skinFlat.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/ionRangeSlider/sprite-skin-flat.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/ionRangeSlider/sprite-skin-flat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/meanmenu.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/meanmenu.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/metisMenu/metisMenu-vertical.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/metisMenu/metisMenu-vertical.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/metisMenu/metisMenu.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/metisMenu/metisMenu.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/modals.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/modals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/morrisjs/morris.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/morrisjs/morris.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/notifications/Lobibox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/notifications/Lobibox.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/notifications/notifications.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/notifications/notifications.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/owl.theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/owl.transitions.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/owl.transitions.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/preloader/preloader-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/preloader/preloader-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/scrollbar/jquery.mCustomScrollbar.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/scrollbar/jquery.mCustomScrollbar.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/select2/select2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/select2/select2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/summernote/fonts/summernote.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/summernote/fonts/summernote.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/summernote/fonts/summernote.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/summernote/fonts/summernote.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/summernote/fonts/summernote.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/summernote/fonts/summernote.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/summernote/summernote.css" beforeDir="false" afterPath="$PROJECT_DIR$/../public/css/summernote/summernote.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/touchspin/jquery.bootstrap-touchspin.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/touchspin/jquery.bootstrap-touchspin.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tree-viewer/32px.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/tree-viewer/32px.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tree-viewer/throbber.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/tree-viewer/throbber.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tree-viewer/tree-viewer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/css/tree-viewer/tree-viewer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/danh-sach-cho-duyet.html" beforeDir="false" afterPath="$PROJECT_DIR$/danh-sach-cho-duyet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/danh-sach-cua-hang.html" beforeDir="false" afterPath="$PROJECT_DIR$/danh-sach-cua-hang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/danh-sach-san-pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/danh-sach-san-pham.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/danh-sach-tai-khoan.html" beforeDir="false" afterPath="$PROJECT_DIR$/danh-sach-tai-khoan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/don-hang.html" beforeDir="false" afterPath="$PROJECT_DIR$/don-hang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homeAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/homeAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/blog-details/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/blog-details/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/contact/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/contact/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/contact/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/contact/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/contact/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/contact/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/contact/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/contact/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cropper/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/cropper/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/green1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/green1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/logo/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/logo/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo/logoEshop.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/logo/logoEshop.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/new-product/5-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/new-product/5-small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/new-product/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/new-product/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/new-product/6-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/new-product/6-small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/new-product/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/new-product/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/new-product/7-small.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/new-product/7-small.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/new-product/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/new-product/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/notification/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/notification/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/notification/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/notification/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/notification/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/notification/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/notification/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/notification/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/notification/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/notification/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/notification/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/notification/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/product/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/product/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/product/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/product/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/product/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/product/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/product/bg-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/product/bg-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/product/bg-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/product/bg-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/product/bg-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/img/product/bg-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/c3-charts/c3-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/c3-charts/c3-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/c3-charts/c3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/c3-charts/c3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/c3-charts/d3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/c3-charts/d3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calendar/fullcalendar-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/calendar/fullcalendar-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calendar/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/calendar/fullcalendar.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/calendar/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/calendar/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chart/jquery.peity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/chart/jquery.peity.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chart/peity-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/chart/peity-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/charts/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/charts/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/charts/area-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/charts/area-chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/charts/bar-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/charts/bar-chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/charts/line-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/charts/line-chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/charts/rounded-chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/charts/rounded-chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chosen/chosen-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/chosen/chosen-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chosen/chosen.jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/chosen/chosen.jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/code-editor/code-editor-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/code-editor/code-editor-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/code-editor/code-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/code-editor/code-editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/code-editor/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/code-editor/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/colorpicker/color-picker-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/colorpicker/color-picker-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/colorpicker/jquery.spectrum.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/colorpicker/jquery.spectrum.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/counterup/counterup-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/counterup/counterup-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/counterup/jquery.counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/counterup/jquery.counterup.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/counterup/waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/counterup/waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cropper/cropper-actice.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/cropper/cropper-actice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/cropper/cropper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/cropper/cropper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-map/d3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-map/d3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-map/data-maps-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-map/data-maps-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-map/datamaps.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/data-map/datamaps.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-map/topojson.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-map/topojson.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/bootstrap-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/bootstrap-editable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/bootstrap-table-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/bootstrap-table-editable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/bootstrap-table-export.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/bootstrap-table-export.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/bootstrap-table-resizable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/bootstrap-table-resizable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/bootstrap-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/bootstrap-table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/colResizable-1.5.source.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/colResizable-1.5.source.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/data-table-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/data-table-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/data-table/tableExport.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/data-table/tableExport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/datapicker/bootstrap-datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/datapicker/bootstrap-datepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/datapicker/datepicker-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/datapicker/datepicker-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/dropzone/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/dropzone/dropzone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/duallistbox/duallistbox.active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/duallistbox/duallistbox.active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/duallistbox/jquery.bootstrap-duallistbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/duallistbox/jquery.bootstrap-duallistbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/e-payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/e-payment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editable/bootstrap-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/editable/bootstrap-datetimepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editable/bootstrap-editable.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/editable/bootstrap-editable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editable/jquery.mockjax.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/editable/jquery.mockjax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editable/mock-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/editable/mock-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editable/moment.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/editable/moment.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editable/select2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/editable/select2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editable/xediable-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/editable/xediable-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/google.maps/google.maps-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/google.maps/google.maps-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/icheck/icheck-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/icheck/icheck-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/icheck/icheck.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/icheck/icheck.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/input-mask/jasny-bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/input-mask/jasny-bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ionRangeSlider/ion.rangeSlider.active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/ionRangeSlider/ion.rangeSlider.active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ionRangeSlider/ion.rangeSlider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/ionRangeSlider/ion.rangeSlider.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-price-slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/jquery-price-slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.meanmenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/jquery.meanmenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.payform.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/jquery.payform.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.scrollUp.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/jquery.scrollUp.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.sticky.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/jquery.sticky.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/knob/jquery.knob.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/knob/jquery.knob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/knob/knob-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/knob/knob-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/metisMenu/metisMenu-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/metisMenu/metisMenu-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/metisMenu/metisMenu.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/metisMenu/metisMenu.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/morrisjs/morris-active-pro.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/morrisjs/morris-active-pro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/morrisjs/morris-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/morrisjs/morris-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/morrisjs/morris.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/morrisjs/morris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/morrisjs/raphael-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/morrisjs/raphael-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/notifications/Lobibox.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/notifications/Lobibox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/notifications/notification-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/notifications/notification-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/password-meter/password-meter-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/password-meter/password-meter-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/password-meter/pwstrength-bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/password-meter/pwstrength-bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/password-meter/zxcvbn.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/password-meter/zxcvbn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pdf/jquery.media.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/pdf/jquery.media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/pdf/pdf-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/pdf/pdf-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/peity/jquery.peity.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/peity/jquery.peity.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/peity/peity-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/peity/peity-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/rangle-slider/jquery-ui-1.10.4.custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/rangle-slider/jquery-ui-1.10.4.custom.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/rangle-slider/jquery-ui-touch-punch.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/rangle-slider/jquery-ui-touch-punch.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/rangle-slider/rangle-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/rangle-slider/rangle-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scrollbar/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/scrollbar/jquery.mCustomScrollbar.concat.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scrollbar/mCustomScrollbar-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/scrollbar/mCustomScrollbar-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/select2/select2-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/select2/select2-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/select2/select2.full.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/select2/select2.full.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sparkline/jquery.charts-sparkline.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/sparkline/jquery.charts-sparkline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sparkline/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/sparkline/jquery.sparkline.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/sparkline/sparkline-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/sparkline/sparkline-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/summernote/summernote-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/summernote/summernote-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/summernote/summernote.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/summernote/summernote.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/touchspin/jquery.bootstrap-touchspin.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/touchspin/jquery.bootstrap-touchspin.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/touchspin/touchspin-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/touchspin/touchspin-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tree-line/jstree.active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/tree-line/jstree.active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tree-line/jstree.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/tree-line/jstree.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vendor/jquery-1.11.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/vendor/jquery-1.11.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/vendor/modernizr-2.8.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/vendor/modernizr-2.8.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/wizard/jquery.steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/wizard/jquery.steps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/wizard/steps-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/wizard/steps-active.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/wow.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/public/js/wow.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thay-doi-thong-tin.html" beforeDir="false" afterPath="$PROJECT_DIR$/thay-doi-thong-tin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thong-ke-doanh-so.html" beforeDir="false" afterPath="$PROJECT_DIR$/thong-ke-doanh-so.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top-10-cua-hang.html" beforeDir="false" afterPath="$PROJECT_DIR$/top-10-cua-hang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top-10-san-pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/top-10-san-pham.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../public/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/jquery/dist/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/jquery/dist/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/jquery/dist/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/jquery/dist/jquery.slim.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/jquery/src/ajax/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/jquery/src/ajax/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../public/js/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../public/js/bootstrap.min.js.map" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -583,17 +25,94 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/danh-sach-tai-khoan.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="120" column="30" lean-forward="true" selection-end-line="554" selection-end-column="7" />
+              <caret line="120" column="30" selection-end-line="554" selection-end-column="7" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/danh-sach-cua-hang.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="479" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/danh-sach-san-pham.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="464" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/don-hang.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="372" column="8" lean-forward="true" selection-start-line="372" selection-start-column="8" selection-end-line="725" selection-end-column="14" />
+              <folding>
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/danh-sach-cho-duyet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-249">
+              <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="475" selection-end-column="10" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thay-doi-thong-tin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="372" column="4" selection-start-line="372" selection-start-column="4" selection-end-line="674" selection-end-column="10" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -686,12 +205,12 @@
       <workItem from="1555814213010" duration="562000" />
       <workItem from="1555815508718" duration="14964000" />
       <workItem from="1555836905879" duration="3203000" />
-      <workItem from="1556009421502" duration="2569000" />
+      <workItem from="1556009421502" duration="4406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21298000" />
+    <option name="totallyTimeSpent" value="23135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -782,13 +301,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index-2.html" />
     <entry file="file://$PROJECT_DIR$/list-user.html" />
-    <entry file="file://$PROJECT_DIR$/don-hang.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -817,12 +329,79 @@
     <entry file="file://$PROJECT_DIR$/danh-sach-tai-khoan.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="120" column="30" lean-forward="true" selection-end-line="554" selection-end-column="7" />
+          <caret line="120" column="30" selection-end-line="554" selection-end-column="7" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/danh-sach-cho-duyet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="475" selection-end-column="10" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thay-doi-thong-tin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="372" column="4" selection-start-line="372" selection-start-column="4" selection-end-line="674" selection-end-column="10" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/danh-sach-cua-hang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="479" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/danh-sach-san-pham.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="464" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/don-hang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="372" column="8" lean-forward="true" selection-start-line="372" selection-start-column="8" selection-end-line="725" selection-end-column="14" />
+          <folding>
             <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
