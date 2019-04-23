@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c67f8e71-d36b-4c94-b5ab-8d4b3085ad3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-cho-duyet.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-cua-hang.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-san-pham.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/don-hang.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/thay-doi-thong-tin.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/thong-ke-doanh-so.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/top-10-cua-hang.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../QuanTri/views/top-10-san-pham.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../QuanTri/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-tai-khoan.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/views/danh-sach-tai-khoan.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../QuanTri/views/partial/menu.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/menu.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../QuanTri/views/partial/mobile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../../QuanTri/views/partial/mobile.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -71,11 +67,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/don-hang.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
               <caret line="372" column="8" lean-forward="true" selection-start-line="372" selection-start-column="8" selection-end-line="725" selection-end-column="14" />
+              <folding>
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/thong-ke-doanh-so.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="404" selection-end-column="10" />
+              <folding>
+                <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/top-10-cua-hang.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="527" selection-end-column="10" />
               <folding>
                 <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -205,12 +225,12 @@
       <workItem from="1555814213010" duration="562000" />
       <workItem from="1555815508718" duration="14964000" />
       <workItem from="1555836905879" duration="3203000" />
-      <workItem from="1556009421502" duration="4406000" />
+      <workItem from="1556009421502" duration="5241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23135000" />
+    <option name="totallyTimeSpent" value="23970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -401,6 +421,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="372" column="8" lean-forward="true" selection-start-line="372" selection-start-column="8" selection-end-line="725" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/thong-ke-doanh-so.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="404" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top-10-cua-hang.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="371" column="4" selection-start-line="371" selection-start-column="4" selection-end-line="527" selection-end-column="10" />
           <folding>
             <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>

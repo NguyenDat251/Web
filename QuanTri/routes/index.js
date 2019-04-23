@@ -30,4 +30,16 @@ router.get('/don-hang', function(req, res, next) {
   res.render('don-hang', { title: 'Express' });
 });
 
+router.get('/thong-ke-doanh-so', function(req, res, next) {
+  res.render('thong-ke-doanh-so', { title: 'Express' });
+});
+
+router.get('/top-10-cua-hang', function(req, res, next) {
+  res.render('top-10-cua-hang', { title: 'Express' });
+});
+
+router.get('/top-10-san-pham', function(req, res, next) {
+  res.render('top-10-san-pham', { title: 'Express' });
+});
+
 module.exports = router;

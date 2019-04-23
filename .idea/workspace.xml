@@ -26,8 +26,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuanTri/views/partial/menu.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state relative-caret-position="187">
+              <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuanTri/views/top-10-cua-hang.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="213" column="22" lean-forward="true" selection-end-line="226" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -54,16 +63,37 @@
         <entry file="file://$PROJECT_DIR$/QuanTri/views/thay-doi-thong-tin.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <caret line="4" column="29" selection-end-line="372" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuanTri/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/QuanTri/routes/index.js">
+        <entry file="file://$PROJECT_DIR$/QuanTri/views/top-10-san-pham.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/QuanTri/views/thong-ke-doanh-so.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="93" column="10" selection-end-line="103" selection-end-column="7" />
+              <folding>
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/QuanTri/views/don-hang.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="382" column="66" selection-start-line="382" selection-start-column="66" selection-end-line="382" selection-end-column="66" />
+            <state relative-caret-position="-629">
+              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -147,12 +177,15 @@
         <option value="$PROJECT_DIR$/QuanTri/views/index.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/views/danh-sach-tai-khoan.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/views/danh-sach-cho-duyet.ejs" />
-        <option value="$PROJECT_DIR$/QuanTri/views/partial/menu.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/views/partial/mobile.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/views/danh-sach-san-pham.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/views/danh-sach-cua-hang.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/views/thay-doi-thong-tin.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/views/don-hang.ejs" />
+        <option value="$PROJECT_DIR$/QuanTri/views/thong-ke-doanh-so.ejs" />
+        <option value="$PROJECT_DIR$/QuanTri/views/partial/menu.ejs" />
+        <option value="$PROJECT_DIR$/QuanTri/views/top-10-cua-hang.ejs" />
+        <option value="$PROJECT_DIR$/QuanTri/views/top-10-san-pham.ejs" />
         <option value="$PROJECT_DIR$/QuanTri/routes/index.js" />
       </list>
     </option>
@@ -273,12 +306,12 @@
       <workItem from="1555932589439" duration="8662000" />
       <workItem from="1555942067194" duration="3942000" />
       <workItem from="1555999698223" duration="5394000" />
-      <workItem from="1556006955150" duration="9324000" />
+      <workItem from="1556006955150" duration="10153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59308000" />
+    <option name="totallyTimeSpent" value="60137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -308,9 +341,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/myapp/views/partials/menu.ejs" />
-    <entry file="file://$PROJECT_DIR$/myapp/views/partials/head.ejs" />
-    <entry file="file://$PROJECT_DIR$/myapp/views/IndexTemp.ejs" />
     <entry file="file://$PROJECT_DIR$/myapp/public/jquery/src/css/var/swap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -629,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/QuanTri/views/partial/menu.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/QuanTri/views/danh-sach-tai-khoan.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18">
@@ -670,21 +693,52 @@
     <entry file="file://$PROJECT_DIR$/QuanTri/views/thay-doi-thong-tin.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <caret line="4" column="29" selection-end-line="372" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QuanTri/views/don-hang.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="382" column="66" selection-start-line="382" selection-start-column="66" selection-end-line="382" selection-end-column="66" />
+        <state relative-caret-position="-629">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuanTri/views/partial/menu.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuanTri/views/thong-ke-doanh-so.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="93" column="10" selection-end-line="103" selection-end-column="7" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuanTri/views/top-10-cua-hang.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="213" column="22" lean-forward="true" selection-end-line="226" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/QuanTri/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="356">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/QuanTri/views/top-10-san-pham.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
