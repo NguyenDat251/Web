@@ -1,1 +1,0 @@
-<php header('location: /default.html')>

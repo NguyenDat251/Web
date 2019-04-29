@@ -13,6 +13,11 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+app.listen(3000);
+
+app.get("/", function(request, response){
+	response.render("homeAdmin");
+})
 
 app.use(logger('dev'));
 app.use(express.json());
