@@ -1,4 +1,4 @@
-var goods = require('../models/danh-sach-cho-duyet');
+var goods = require('../models/danh_sach_cho_duyet');
 
 
 exports.show_list = function(req, res) {
