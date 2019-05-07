@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title Page-->
+    <title>Quên mật khẩu</title>
+    <%include partials/Colorlib/header.ejs%>
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Đăng ký</h2>
+                    <form method="POST">                          
+						<div class="input-group">
+							<label class="label">Tên tài khoản</label>
+							<input class="input--style-4" type="text" name="first_name">
+						</div>                     
+						<div class="input-group">
+							<label class="label">Email</label>
+							<input class="input--style-4" type="email" name="email">
+						</div>							
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit"><a href="/login">Đồng ý</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%include partials/Colorlib/js.ejs%>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
