@@ -1,0 +1,13 @@
+{
+  "_id": {
+    "$oid": "5ccaf25e677f2cc0f6a73500"
+  },
+  "ho": "Nguyen Quoc",
+  "ten": "Dat",
+  "mail": "quocdat2511998@gmail.com",
+  "matkhau": "datocchos",
+  "sdt": "0327421137",
+  "idkh": "KH0001",
+  "idcuahang": "CH0001"
+}
+
