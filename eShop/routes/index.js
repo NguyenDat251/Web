@@ -3,35 +3,35 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('Cua-hang', { title: 'Home' });
+  res.render('Cua_hang', { title: 'Home' });
 });
 
 router.get('/signup', function(req, res, next) {
-  res.render('Dang-ky', { title: 'Đăng ký' });
+  res.render('Dang_ky', { title: 'Đăng ký' });
 });
 
 router.get('/forgot', function(req, res, next) {
-  res.render('Quen-mat-khau', { title: 'Quên mật khẩu' });
+  res.render('Quen_mat_khau', { title: 'Quên mật khẩu' });
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('Dang-nhap', { title: 'Cửa hàng' });
+  res.render('Dang_nhap', { title: 'Cửa hàng' });
 });
 
 router.get('/productInfo', function(req, res, next) {
-  res.render('San-pham', { title: 'Sản phẩm' });
+  res.render('San_pham', { title: 'Sản phẩm' });
 });
 
 router.get('/bucket', function(req, res, next) {
-  res.render('Gio-hang', { title: 'Giỏ hàng' });
+  res.render('Gio_hang', { title: 'Giỏ hàng' });
 });
 
 router.get('/logout', function(req, res, next) {
-  res.render('Dang-xuat', { title: 'Goodbye!!' });
+  res.render('Dang_xuat', { title: 'Goodbye!!' });
 });
 
 router.get('/editInfo', function(req, res, next) {
-  res.render('Sua-thong-tin', { title: 'Sửa thông tin' });
+  res.render('Sua_thong_tin', { title: 'Sửa thông tin' });
 });
 
 module.exports = router;
