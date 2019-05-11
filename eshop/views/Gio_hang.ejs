@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>eShop</title>
+    <%include partials/header.ejs%>
+</head>
+
+<body>
+
+    <%include partials/menu.ejs%>    
+    <%include partials/siteBranding.ejs%>
+
+   
+   
+    <div class="product-big-title-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="product-bit-title text-center">
+                        <h2>Giỏ hàng</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div class="single-product-area">
+        <div class="zigzag-bottom"></div>
+        <div class="container">
+            <div class="row">
+                
+                
+                <div class="col-md-12">
+                    <div class="product-content-right">
+                        <div class="woocommerce">
+                            <form method="post" action="#">
+                                <table cellspacing="0" class="shop_table cart">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-remove">Xóa</th>
+                                            <th class="product-thumbnail">Hình ảnh</th>
+                                            <th class="product-name">Sản phẩm</th>
+                                            <th class="product-price">Giá</th>
+                                            <th class="product-quantity">Số lượng</th>
+                                            <th class="product-subtotal">Tổng tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cart_item">
+                                            <td class="product-remove">
+                                                <a title="Remove this item" class="remove" href="#">×</a> 
+                                            </td>
+
+                                            <td class="product-thumbnail">
+                                                <a href="/productInfo"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/product-2.jpg"></a>
+                                            </td>
+
+                                            <td class="product-name">
+                                                <a href="/productInfo">Iphone</a> 
+                                            </td>
+
+                                            <td class="product-price">
+                                                <span class="amount">£15.00</span> 
+                                            </td>
+
+                                            <td class="product-quantity">
+                                                <div class="quantity buttons_added">
+                                                    <input type="button" class="minus" value="-">
+                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
+                                                    <input type="button" class="plus" value="+">
+                                                </div>
+                                            </td>
+
+                                            <td class="product-subtotal">
+                                                <span class="amount">£15.00</span> 
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </form>
+
+                            <div class="cart-collaterals">
+
+
+                            <div class="cross-sells">
+                               <div class="col col-sm-12">
+                                    <h2>Thông tin người nhận</h2>
+                                   <div class="col col-sm-12">
+                                        <label class="col-sm-12 row justify-content-start">HỌ TÊN</label>
+                                        </label>
+                                        <input class="col-sm-12"type="text" value="" placeholder="" id="billing_last_name" name="billing_last_name" class="input-text ">
+                                    </div>
+                                    <div class="col col-sm-12">
+                                            <label class="col-sm-12 row justify-content-start">SỐ ĐIỆN THOẠI</label>
+                                            </label>
+                                            <input class="col-sm-12"type="text" value="" placeholder="" id="billing_last_name" name="billing_last_name" class="input-text ">
+                                        </div>
+                                        <div class="col col-sm-12">
+                                                <label class="col-sm-12 row justify-content-start">ĐỊA CHỈ</label>
+                                                </label>
+                                                <input class="col-sm-12" type="text" value="" placeholder="" id="billing_last_name" name="billing_last_name" class="input-text ">
+                                            </div>
+                                            <div class="col col-sm-12" >
+                                                    <label class="col-sm-12 row justify-content-start">PHƯƠNG THỨC THANH TOÁN</label>
+                                                    </label>
+                                                    <select class="col-sm-12" id="billing_country" name="billing_country">
+                                                            <option value="">Chọn một phương thức…</option>
+                                                            <option value="AX">Giao hàng tiết kiệm</option>
+                                                            <option value="AF">Giao hàng nhanh</option>
+                                                            <option value="AL">Giao hàng trong ngày</option>
+                                                            </select>
+                                                </div>
+                                </div>
+                            </div>
+
+
+                            <div class="cart_totals ">
+                                <h2>Hóa đơn</h2>
+
+                                <table cellspacing="0">
+                                    <tbody>
+                                        <tr class="cart-subtotal">
+                                            <th>Tiền đồ</th>
+                                            <td><span class="amount">£15.00</span></td>
+                                        </tr>
+
+                                        <tr class="shipping">
+                                            <th>Tiền vận chuyển</th>
+                                            <td>Free Shipping</td>
+                                        </tr>
+
+                                        <tr class="order-total">
+                                            <th>Tổng tiền</th>
+                                            <td><strong><span class="amount">£15.00</span></strong> </td>
+                                        </tr>
+                                        
+                                    </tbody>
+
+
+                                </table>
+                            </div>
+
+                            <div class="col-sm-12">
+                            <div style="height: 50px"></div>
+
+                           <div class="col-sm-12 row justify-content-center">
+                            <input class="col-sm-6" type="submit" value="Thanh toán" name="proceed" class="checkout-button button alt wc-forward">
+                           </div>
+                        </div>
+
+                            </div>
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <%include partials/footer.ejs%>
+  </body>
+</html>
