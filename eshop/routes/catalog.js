@@ -24,8 +24,9 @@ router.get('/Gio_hang', Gio_hang_controller.show_list);
 
 router.get('/Quen_mat_khau', Quen_mat_khau_controller.show_list);
 
-router.get('/San_pham', San_pham_controller.show_list);
+router.get('/San_pham', San_pham_controller.info);
 
 router.get('/Sua_thong_tin', Sua_thong_tin_controller.show_list);
+
 
 module.exports = router;
