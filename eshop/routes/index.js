@@ -112,32 +112,32 @@ router.get('/type/:type', San_pham_controller.type);
 // });
 
 
-var url = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';
-//var url = 'mongodb://localhost:27017';
-router.get('/productInfo', async function(req, res, next) {
-    // var name = [];
-    // const data = null;
-    await mongo.connect(url,  function(err, db) {
-        assert.equal(null, err);
-        console.log("Connected successfully to server");
-        var dbo = db.db();
-
-        console.log("Connected successfully to database");
-
-        var data1 = dbo.collection("SanPham").find({});//.toArray();
-        console.log("Connected successfully to colecction");
-        var data = {};
-        //res.render('San_pham',{title: 'products.name', data});
-        console.log(data1);
-        data1.forEach(row => {
-            //console.log(row);
-            data=row;
-            console.log(data);
-            res.render('San_pham',{title: 'products.name', data});
-        });
-
-    })
-});
+// var url = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';
+// //var url = 'mongodb://localhost:27017';
+// router.get('/productInfo', async function(req, res, next) {
+//     // var name = [];
+//     // const data = null;
+//     await mongo.connect(url,  function(err, db) {
+//         assert.equal(null, err);
+//         console.log("Connected successfully to server");
+//         var dbo = db.db();
+//
+//         console.log("Connected successfully to database");
+//
+//         var data1 = dbo.collection("SanPham").find({});//.toArray();
+//         console.log("Connected successfully to colecction");
+//         var data = {};
+//         //res.render('San_pham',{title: 'products.name', data});
+//         console.log(data1);
+//         data1.forEach(row => {
+//             //console.log(row);
+//             data=row;
+//             console.log(data);
+//             res.render('San_pham',{title: 'products.name', data});
+//         });
+//
+//     })
+// });
 router.get('/bucket', function(req, res, next) {
   res.render('Gio_hang', { title: 'Giỏ hàng' });
 });

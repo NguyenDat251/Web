@@ -13,7 +13,7 @@ var Schema = mongoose.Schema;
 
 var SanphamShecma = new Schema(
     {
-        id_sp:{type: Schema.Types.ObjectId, required: true, max: 100},
+        _id:{type: Schema.Types.ObjectId, required: true, max: 100},
         id_store: {type: String, required: true, max: 100},
         name: {type: String, required: true, max: 100},
         price: {type: String, required: true, max: 100},

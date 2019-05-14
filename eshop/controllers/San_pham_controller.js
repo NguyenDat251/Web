@@ -2,29 +2,31 @@ var data = require('../models/San_pham');
 //const data =
 
 
-exports.list = function(req, res, next) {
+exports.list = function (req, res, next) {
     data.find()
         .exec(function (err, list_items) {
             if (err) {
                 console.log("falseeee");
-                return next(err); }
+                return next(err);
+            }
             //Successful, so render
             console.log("Successful, so render");
 
-            res.render('Cua_hang', { title: 'Áo Khoác',  list_items: list_items });
+            res.render('Cua_hang', {title: 'Áo Khoác', list_items: list_items});
         });
 };
 
-exports.type = function(req, res, next) {
-    data.find({type:req.params.type})
+exports.type = function (req, res, next) {
+    data.find({type: req.params.type})
         .exec(function (err, list_items) {
             if (err) {
                 console.log("falseeee");
-                return next(err); }
+                return next(err);
+            }
             //Successful, so render
             console.log("Successful, so render");
             console.log(list_items);
-            res.render('Loai_SP', { title: 'Áo Khoác',  list_items: list_items });
+            res.render('Loai_SP', {title: 'Áo Khoác', list_items: list_items});
         });
 };
 
@@ -53,14 +55,27 @@ exports.info = async (req, res, next) => {
 
     // res.render('San_pham', {title: 'Sản phẩm', data});
     //const data = await product.detail('5cd7df888d899652d46769c0');
-    data.find()
-        .exec(function (err, list_items) {
+
+
+    data.find({_id:req.params.id})
+        .exec(function (err, item) {
             if (err) {
                 console.log("falseeee");
-                return next(err); }
+                return next(err);
+            }
             //Successful, so render
-            console.log("Successful, so render");
-           
-            res.render('San_pham', { title: 'Áo Khoác',  list_items: list_items });
+            else {
+                if (item==null) { // No results.
+                    var err = new Error('Item not found');
+                    err.status = 404;
+                    return next(err);
+                }
+                console.log("Successful, so render");
+                console.log(item);
+                res.render('San_pham', {title: 'Áo Khoác', item: item[0]})
+            }
+            ;
+
+
         });
 };
