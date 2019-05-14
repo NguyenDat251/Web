@@ -16,7 +16,7 @@ exports.list = function(req, res, next) {
 };
 
 exports.type = function(req, res, next) {
-    data.find()
+    data.find({type:req.params.type})
         .exec(function (err, list_items) {
             if (err) {
                 console.log("falseeee");
