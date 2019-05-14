@@ -9,8 +9,12 @@ var Dang_xuat_controller = require('../controllers/Dang_xuat_controller');
 var error_controller = require('../controllers/error_controller');
 var Gio_hang_controller = require('../controllers/Gio_hang_controller');
 var Quen_mat_khau_controller = require('../controllers/Quen_mat_khau_controller');
-var San_pham_controller = require('../controllers/San_pham_controller');
+//var San_pham_controller = require('../controllers/San_pham_controller');
 var Sua_thong_tin_controller = require('../controllers/Sua_thong_tin_controller');
+
+////////////load db
+const San_pham_controller = require('../controllers/San_pham_controller');
+
 
 router.get('/Cua_hang', Cua_hang_controller.show_list);
 
