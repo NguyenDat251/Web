@@ -3,7 +3,7 @@ var router = express.Router();
 
 var mongo = require('mongodb').MongoClient;
 
-const mongo = require('mongodb').MongoClient;
+//const mongo = require('mongodb').MongoClient;
 
 var objectId = require('mongodb').ObjectID;
 var assert = require('assert');
@@ -14,9 +14,11 @@ var San_pham_controller = require('../controllers/San_pham_controller');
 
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('Cua_hang', { title: 'Home' });
-});
+// router.get('/', function(req, res, next) {
+// //   res.render('Cua_hang', { title: 'Home' });
+// // });
+
+router.get('/', San_pham_controller.list);
 
 router.get('/signup', function(req, res, next) {
   res.render('Dang_ky', { title: 'Đăng ký' });
@@ -59,55 +61,55 @@ router.get('/login', function(req, res, next) {
 //
 // });
 
-//router.get('/productInfo', San_pham_controller.info);
+router.get('/productInfo/:id', San_pham_controller.info);
 
-var url = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';
+//var url = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';
 //var url = 'mongodb://localhost:27017';
-router.get('/productInfo', async function(req, res, next) {
- // var name = [];
- // const data = null;
-  await mongo.connect(url,  function(err, db) {
-    assert.equal(null, err);
-    console.log("Connected successfully to server");
-    var dbo = db.db();
-
-    console.log("Connected successfully to database");
-    // var cursor = db2.collection('San_pham').find({_id: ObjectId("5cd7df888d899652d46769c0")}).toArray();
-    // var data = cursor;
-    // console.log(data);
-    // res.render('San_pham',{title: 'products.name', data});
-    // });
-
-    // db2.createCollection("customers", function (err, res) {
-    //   if (err) throw err;
-    //   console.log("Collection created!");
-    // });
-
-    // dbo.collection("San_pham").find({_id: ObjectId('5cd7df888d899652d46769c0')}).toArray(function(err, result) {
-    //   if (err) throw err;
-    //   data = result[0];
-    //   //res.render('San_pham',{title: 'products.name', result});
-    //   //console.log(result[0].name);
-    // })
-
-    //res.render('San_pham',{title: 'products.name', data});
-    //db2.collection('San_pham').find({}).toArray()
-   //console.log(data.name)
-
-    var data1 = dbo.collection("SanPham").find({});//.toArray();
-    console.log("Connected successfully to colecction");
-   var data = {};
- //res.render('San_pham',{title: 'products.name', data});
-  console.log(data1);
-  data1.forEach(row => {
-      //console.log(row);
-    data=row;
-    console.log(data);
-    res.render('San_pham',{title: 'products.name', data});
-  });
-
-  })
-});
+// router.get('/productInfo', async function(req, res, next) {
+//  // var name = [];
+//  // const data = null;
+//   await mongo.connect(url,  function(err, db) {
+//     assert.equal(null, err);
+//     console.log("Connected successfully to server");
+//     var dbo = db.db();
+//
+//     console.log("Connected successfully to database");
+//     // var cursor = db2.collection('San_pham').find({_id: ObjectId("5cd7df888d899652d46769c0")}).toArray();
+//     // var data = cursor;
+//     // console.log(data);
+//     // res.render('San_pham',{title: 'products.name', data});
+//     // });
+//
+//     // db2.createCollection("customers", function (err, res) {
+//     //   if (err) throw err;
+//     //   console.log("Collection created!");
+//     // });
+//
+//     // dbo.collection("San_pham").find({_id: ObjectId('5cd7df888d899652d46769c0')}).toArray(function(err, result) {
+//     //   if (err) throw err;
+//     //   data = result[0];
+//     //   //res.render('San_pham',{title: 'products.name', result});
+//     //   //console.log(result[0].name);
+//     // })
+//
+//     //res.render('San_pham',{title: 'products.name', data});
+//     //db2.collection('San_pham').find({}).toArray()
+//    //console.log(data.name)
+//
+//     var data1 = dbo.collection("SanPham").find({});//.toArray();
+//     console.log("Connected successfully to colecction");
+//    var data = {};
+//  //res.render('San_pham',{title: 'products.name', data});
+//   console.log(data1);
+//   data1.forEach(row => {
+//       //console.log(row);
+//     data=row;
+//     console.log(data);
+//     res.render('San_pham',{title: 'products.name', data});
+//   });
+//
+//   })
+// });
 
 
 var url = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';

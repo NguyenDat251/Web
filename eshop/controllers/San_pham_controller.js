@@ -1,5 +1,21 @@
-const data = require('../models/San_pham');
+var data = require('../models/San_pham');
 //const data =
+
+
+exports.list = function(req, res, next) {
+    data.find()
+        .exec(function (err, list_items) {
+            if (err) {
+                console.log("falseeee");
+                return next(err); }
+            //Successful, so render
+            console.log("Successful, so render");
+            console.log(list_items);
+            res.render('Cua_hang', { title: 'Áo Khoác',  list_items: list_items });
+        });
+};
+
+
 exports.info = async (req, res, next) => {
     // const data = {
 
@@ -25,13 +41,14 @@ exports.info = async (req, res, next) => {
 
     // res.render('San_pham', {title: 'Sản phẩm', data});
     //const data = await product.detail('5cd7df888d899652d46769c0');
-    console.log('San_pham_controller');
-    console.log(data);
-
-    const data = await product.detail('5ccaf18c677f2cc0f6a734ff');
-    console.log(products);
-
-    res.render('San_pham', {title: 'products.name', data})
+    data.find()
+        .exec(function (err, list_items) {
+            if (err) {
+                console.log("falseeee");
+                return next(err); }
+            //Successful, so render
+            console.log("Successful, so render");
+            console.log(list_items);
+            res.render('San_pham', { title: 'Áo Khoác',  list_items: list_items });
+        });
 };
-
-

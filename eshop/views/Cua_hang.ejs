@@ -109,14 +109,32 @@
         <div class="zigzag-bottom"></div>
         <div class="container">
             <div class="row">
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo"><%= list_items[0].name %></a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
+
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+                <% for(var i = 0; i < 12; i++) { %>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
+                            <a href="<%= list_items[i].url %>"><img src="<%= list_items[i].img %>" alt=""></a>
                         </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
+                        <h2><a href="<%= list_items[i].url %>"><%= list_items[i].name %></a></h2>
                         <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
+                            <ins><%= list_items[i].price_sale %></ins> <del><%= list_items[i].price %></del>
                         </div>
 
                         <div class="product-option-shop">
@@ -125,182 +143,167 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+                <% }; %>
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col-md-3 col-sm-6">-->
+<!--                    <div class="single-shop-product">-->
+<!--                        <div class="product-upper">-->
+<!--                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>-->
+<!--                        </div>-->
+<!--                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>-->
+<!--                        <div class="product-carousel-price">-->
+<!--                            <ins>$899.00</ins> <del>$999.00</del>-->
+<!--                        </div>-->
 
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-shop-product">
-                        <div class="product-upper">
-                            <a href="/productInfo"><img src="images/product-2.jpg" alt=""></a>
-                        </div>
-                        <h2><a href="/productInfo">Apple new mac book 2015 March :P</a></h2>
-                        <div class="product-carousel-price">
-                            <ins>$899.00</ins> <del>$999.00</del>
-                        </div>
-
-                        <div class="product-option-shop">
-                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"
-                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>
-                        </div>
-                    </div>
-                </div>
+<!--                        <div class="product-option-shop">-->
+<!--                            <a class="add_to_cart_button" data-quantity="1" data-product_sku="" data-product_id="70"-->
+<!--                                rel="nofollow" href="/productInfo">Thêm vào giỏ hàng</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
 
             <div class="row">
