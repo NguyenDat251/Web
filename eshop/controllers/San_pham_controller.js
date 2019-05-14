@@ -24,7 +24,7 @@ exports.type = function(req, res, next) {
             //Successful, so render
             console.log("Successful, so render");
             console.log(list_items);
-            res.render('Cua_hang', { title: 'Áo Khoác',  list_items: list_items });
+            res.render('Loai_SP', { title: 'Áo Khoác',  list_items: list_items });
         });
 };
 
