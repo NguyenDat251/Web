@@ -10,11 +10,23 @@ exports.list = function(req, res, next) {
                 return next(err); }
             //Successful, so render
             console.log("Successful, so render");
-            console.log(list_items);
+
             res.render('Cua_hang', { title: 'Áo Khoác',  list_items: list_items });
         });
 };
 
+exports.type = function(req, res, next) {
+    data.find()
+        .exec(function (err, list_items) {
+            if (err) {
+                console.log("falseeee");
+                return next(err); }
+            //Successful, so render
+            console.log("Successful, so render");
+            console.log(list_items);
+            res.render('Cua_hang', { title: 'Áo Khoác',  list_items: list_items });
+        });
+};
 
 exports.info = async (req, res, next) => {
     // const data = {
@@ -48,7 +60,7 @@ exports.info = async (req, res, next) => {
                 return next(err); }
             //Successful, so render
             console.log("Successful, so render");
-            console.log(list_items);
+           
             res.render('San_pham', { title: 'Áo Khoác',  list_items: list_items });
         });
 };

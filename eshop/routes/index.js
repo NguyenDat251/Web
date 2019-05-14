@@ -62,7 +62,7 @@ router.get('/login', function(req, res, next) {
 // });
 
 router.get('/productInfo/:id', San_pham_controller.info);
-
+router.get('/:type', San_pham_controller.type);
 //var url = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';
 //var url = 'mongodb://localhost:27017';
 // router.get('/productInfo', async function(req, res, next) {

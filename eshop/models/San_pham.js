@@ -20,8 +20,8 @@ var SanphamShecma = new Schema(
         price_sale: {type: String, required: true, max: 100},
         number: {type: Number, required: true, max: 100},
         type: {type: String, required: true, max: 100},
-        imgs: {type: String, required: true, max: 100},
-        i: {type: String, required: true, max: 1000},
+        img: {type: String, required: true},
+        info: {type: String, required: true, max: 1000},
         sale: {type: Number, required: true, max: 100},
     }
 );

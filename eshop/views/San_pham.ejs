@@ -116,23 +116,23 @@
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
-                                        <img src="images/product-2.jpg" alt="">
+                                        <img src="../<%= list_items[0].img %>" alt="">
                                     </div>
                                     
                                     <div class="product-gallery">
-                                        <img src="images/product-2.jpg" alt="">
-                                        <img src="images/product-2.jpg" alt="">
-                                        <img src="images/product-2.jpg" alt="">
-                                        <img src="images/product-2.jpg" alt="">
+                                        <img src="../<%= list_items[0].img %>" alt="">
+                                        <img src="../<%= list_items[0].img %>" alt="">
+                                        <img src="../<%= list_items[0].img %>" alt="">
+                                        <img src="../<%= list_items[0].img %>" alt="">
                                     </div>
                                 </div>
                             </div>
                             
                             <div class="col-sm-6">
                                 <div class="product-inner">
-                                    <h2 class="product-name">Sony Smart TV - 2015</h2>
+                                    <h2 class="product-name"><%=list_items[0].name%></h2>
                                     <div class="product-inner-price">
-                                        <ins>$700.00</ins> <del>$800.00</del>
+                                        <ins><%= list_items[0].price_sale %></ins> <del><%= list_items[0].price %></del>
                                     </div>    
                                     
                                     <form action="" class="cart">
@@ -155,10 +155,10 @@
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
                                                 <h2>Mô tả sản phẩm</h2>
                                                 <p>
-                                                    <%=list_items[0].name%>
+                                                    <%=list_items[0].info%>
                                                 </p>
                                                 <p>
-                                                    <%=list_items[0].name%>
+                                                    <%=list_items[0].info%>
                                                 </p>
                                                 <!-- <p>Laptop Lenovo Ideapad 530S (81EU00P5VN) mang trong mình một thiết kế mỏng nhẹ rất thuận tiện khi di chuyển, cùng với đó là một cấu hình khá mạnh, giúp chạy mượt mà các ứng dụng văn phòng cũng như đáp ứng tốt nhu cầu đồ họa cơ bản. Chiếc laptop Lenovo này sẽ là một sự lựa chọn đáng để cân nhắc dành cho nhân viên văn phòng hoặc học sinh, sinh viên trong phân khúc.</p>
                                                  <p>Laptop Lenovo Ideapad 530S (81EU00P5VN) mang trong mình một thiết kế mỏng nhẹ rất thuận tiện khi di chuyển, cùng với đó là một cấu hình khá mạnh, giúp chạy mượt mà các ứng dụng văn phòng cũng như đáp ứng tốt nhu cầu đồ họa cơ bản. Chiếc laptop Lenovo này sẽ là một sự lựa chọn đáng để cân nhắc dành cho nhân viên văn phòng hoặc học sinh, sinh viên trong phân khúc.</p>-->
