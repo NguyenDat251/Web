@@ -68,88 +68,92 @@
                             <a href="thay_doi_thong_tin">Thay đổi thông tin</a>
                         </div>
                         <table>
+                            <% for(var i = 0; i < 6; i++) { %>
                             <tr>
                                 <th>Hình ảnh</th>
-                                <th>Tên cửa hàng</th>
+                                <th><%= list_items[i].name %></th>
                                 <th>Mã số</th>
                                 <th>Email</th>
                                 <th>Tổng giao dịch</th>
-                                <th>Tổng tiền giao dịch</th>
-                                <th>Hoạt động <i>/tháng</i></th>
-                                <th>Sản phẩm</th>
+                                <th>
+                                    <a href="<%= list_items[i].url %>">Thay đổi thông tin</a>
+
+                                </th>
+                                <th><a href="xoa_cua_hang">Xoa</a></th>
                             </tr>
-                            <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Tiêm vàng ABC</td>
-                                <td>CH0001</td>
-                                <td>tiemvangabc@gmail.com</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>11</td>
-                                <td>
-                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Tiêm vàng ABC</td>
-                                <td>CH0001</td>
-                                <td>tiemvangabc@gmail.com</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>11</td>
-                                <td>
-                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Tiêm vàng ABC</td>
-                                <td>CH0001</td>
-                                <td>tiemvangabc@gmail.com</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>11</td>
-                                <td>
-                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Tiêm vàng ABC</td>
-                                <td>CH0001</td>
-                                <td>tiemvangabc@gmail.com</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>11</td>
-                                <td>
-                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Tiêm vàng ABC</td>
-                                <td>CH0001</td>
-                                <td>tiemvangabc@gmail.com</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>11</td>
-                                <td>
-                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Tiêm vàng ABC</td>
-                                <td>CH0001</td>
-                                <td>tiemvangabc@gmail.com</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>11</td>
-                                <td>
-                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
+                                <% }; %>
+<!--                            <tr>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Tiêm vàng ABC</td>-->
+<!--                                <td>CH0001</td>-->
+<!--                                <td>tiemvangabc@gmail.com</td>-->
+<!--                                <td>50</td>-->
+<!--                                <td>$750</td>-->
+<!--                                <td>11</td>-->
+<!--                                <td>-->
+<!--                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Tiêm vàng ABC</td>-->
+<!--                                <td>CH0001</td>-->
+<!--                                <td>tiemvangabc@gmail.com</td>-->
+<!--                                <td>50</td>-->
+<!--                                <td>$750</td>-->
+<!--                                <td>11</td>-->
+<!--                                <td>-->
+<!--                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Tiêm vàng ABC</td>-->
+<!--                                <td>CH0001</td>-->
+<!--                                <td>tiemvangabc@gmail.com</td>-->
+<!--                                <td>50</td>-->
+<!--                                <td>$750</td>-->
+<!--                                <td>11</td>-->
+<!--                                <td>-->
+<!--                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Tiêm vàng ABC</td>-->
+<!--                                <td>CH0001</td>-->
+<!--                                <td>tiemvangabc@gmail.com</td>-->
+<!--                                <td>50</td>-->
+<!--                                <td>$750</td>-->
+<!--                                <td>11</td>-->
+<!--                                <td>-->
+<!--                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Tiêm vàng ABC</td>-->
+<!--                                <td>CH0001</td>-->
+<!--                                <td>tiemvangabc@gmail.com</td>-->
+<!--                                <td>50</td>-->
+<!--                                <td>$750</td>-->
+<!--                                <td>11</td>-->
+<!--                                <td>-->
+<!--                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Tiêm vàng ABC</td>-->
+<!--                                <td>CH0001</td>-->
+<!--                                <td>tiemvangabc@gmail.com</td>-->
+<!--                                <td>50</td>-->
+<!--                                <td>$750</td>-->
+<!--                                <td>11</td>-->
+<!--                                <td>-->
+<!--                                    <a href="danh_sach_san_pham"><button data-toggle="tooltip" title="sản phẩm" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
                         </table>
                         <div class="custom-pagination">
                             <nav aria-label="Page navigation example">
