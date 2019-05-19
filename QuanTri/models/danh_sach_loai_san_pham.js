@@ -2,10 +2,9 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var ShopShecma = new Schema(
+var TypeShecma = new Schema(
     {
         _id:{type: Schema.Types.ObjectId, required: true, max: 100},
-
         name: {type: String, required: true, max: 100},
 
     }
@@ -26,17 +25,17 @@ var ShopShecma = new Schema(
 //     });
 //
 // Virtual for author's URL
-ShopShecma
+TypeShecma
     .virtual('url')
     .get(function () {
-        return '/thay_doi_thong_tin_cua_hang/' + this._id;
+        return '/thay_doi_thong_tin_loai_san_pham/' + this._id;
     });
 
-ShopShecma
+TypeShecma
     .virtual('delete_url')
     .get(function () {
-        return '/xoa_cua_hang/' + this._id;
+        return '/xoa_loai_san_pham/' + this._id;
     });
 
 //Export model
-module.exports = mongoose.model('cua_hangs', ShopShecma);
+module.exports = mongoose.model('loai_sps', TypeShecma);

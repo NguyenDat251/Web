@@ -69,99 +69,21 @@
                         </div>
                         <table>
                             <tr>
-                                <th>Hình ảnh</th>
+
                                 <th>Tên</th>
-                                <th>Mã số</th>
-                                <th>Trạng thái</th>
-                                <th>Tổng giao dịch</th>
-                                <th>Tổng tiền giao dịch</th>
-                                <th>Hoạt động <i>/tháng</i></th>
-                                <th>Cập nhật</th>
+                                <th>Mật khẩu</th>
+
+                                <th></th>
+                                <th></th>
                             </tr>
+                            <% for(var i = 0; i < list_items.length; i++) { %>
                             <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 01</td>
-                                <td>ND01</td>
-                                <td>
-                                    <button class="pd-setting">Active</button>
-                                </td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>11</td>
-                                <td>
-                                    <a href="thay_doi_thong_tin"><button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
+                                <td><%= list_items[i].name %></td>
+                                <td><%= list_items[i].password %></td>
+                                <td><a href="<%= list_items[i].url %>">Thay đổi thông tin</a></td>
+                                <td><a href= <%= list_items[i].delete_url%>>Xóa</a></td>
                             </tr>
-                            <tr>
-                                <td><img src="/img/new-product/6-small.jpg" alt="" /></td>
-                                <td>Người dùng 02</td>
-                                <td>ND02</td>
-                                <td>
-                                    <button class="ps-setting">Paused</button>
-                                </td>
-                                <td>60</td>
-                                <td>$1020</td>
-                                <td>21</td>
-                                <td>
-                                    <a href="thay_doi_thong_tin"><button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/7-small.jpg" alt="" /></td>
-                                <td>Người dùng 03</td>
-                                <td>ND03</td>
-                                <td>
-                                    <button class="ds-setting">Disabled</button>
-                                </td>
-                                <td>70</td>
-                                <td>$1050</td>
-                                <td>22</td>
-                                <td>
-                                    <a href="thay_doi_thong_tin"><button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 04</td>
-                                <td>ND04</td>
-                                <td>
-                                    <button class="pd-setting">Active</button>
-                                </td>
-                                <td>120</td>
-                                <td>$1440</td>
-                                <td>1</td>
-                                <td>
-                                    <a href="thay_doi_thong_tin"><button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/6-small.jpg" alt="" /></td>
-                                <td>Người dùng 05</td>
-                                <td>ND05</td>
-                                <td>
-                                    <button class="pd-setting">Active</button>
-                                </td>
-                                <td>30</td>
-                                <td>$540</td>
-                                <td>5</td>
-                                <td>
-                                    <a href="thay_doi_thong_tin"><button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><img src="/img/new-product/7-small.jpg" alt="" /></td>
-                                <td>Người dùng 06</td>
-                                <td>ND06</td>
-                                <td>
-                                    <button class="ps-setting">Paused</button>
-                                </td>
-                                <td>400</td>
-                                <td>$4000</td>
-                                <td>18</td>
-                                <td>
-                                    <a href="thay_doi_thong_tin"><button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></a>
-                                </td>
-                            </tr>
+                            <% }; %>
                         </table>
                         <div class="custom-pagination">
                             <nav aria-label="Page navigation example">

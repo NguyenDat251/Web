@@ -2,48 +2,322 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41424028-3b3d-4a95-ac10-9363581f77a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/QuanTri.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_san_pham_controller .js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/thay_doi_thong_tin_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/thay_doi_thong_tin_controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/danh_sach_cua_hang.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_cua_hang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/thay_doi_thong_tin.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/thay_doi_thong_tin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/HISTORY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/aggregation_cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/aggregation_cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/async/async_iterator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/async/async_iterator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/ordered.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/ordered.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/unordered.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/unordered.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/command_cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/command_cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/cursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/download.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/download.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/grid_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/grid_store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/mongo_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/mongo_client.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/collection_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/collection_ops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/db_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/db_ops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/mongo_client_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/mongo_client_ops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/mongos.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/mongos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/native_topology.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/native_topology.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/replset.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/replset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/url_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/url_parser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/danh_sach_san_pham.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_san_pham.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/danh_sach_tai_khoan.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_tai_khoan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/kareem/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongo/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongo/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongo/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/scram.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/lib/auth/scram.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/command_result.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/command_result.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/connect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/lib/connection/connect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sessions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/lib/sessions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/lib/topologies/shared.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/lib/uri_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/lib/uri_parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/aggregation_cursor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/apm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/async/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/async/async_iterator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/ordered.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/bulk/unordered.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/change_stream.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/collection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/command_cursor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/cursor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/download.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs-stream/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/gridfs/grid_store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/mongo_client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/admin_ops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/aggregate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/collection_ops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/cursor_ops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/db_ops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/operations/mongo_client_ops.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/mongos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/native_topology.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/replset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/topologies/topology_base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/url_parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/HISTORY.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/auth_provider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/defaultAuthProviders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/gssapi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/mongo_credentials.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/mongocr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/plain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/scram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/sspi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/auth/x509.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/apm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/command_result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/commands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/connection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/msg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/pool.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/connection/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/cursor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/sdam/monitoring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/sdam/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/sdam/server_description.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/sdam/server_selectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/sdam/topology.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/sdam/topology_description.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/sessions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/tools/smoke_plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/mongos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/read_preference.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/replset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/replset_state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/topologies/shared.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/transactions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/uri_parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/command.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/compression.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/get_more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/kill_cursors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/query.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/shared.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/lib/wireprotocol/write_command.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/mongodb-core/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/cast.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/cast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/model/castBulkWrite.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/model/castBulkWrite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/model/discriminator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/model/discriminator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/populate/assignVals.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/populate/assignVals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/populate/getSchemaTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/populate/getSchemaTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/query/castUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/query/castUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/symbols.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/symbols.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/update/castArrayFilters.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/helpers/update/castArrayFilters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/options/removeOptions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/options/removeOptions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/query.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/documentarray.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/documentarray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/embedded.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/embedded.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/string.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schema/string.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/schematype.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/schematype.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/types/array.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/types/core_array.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/core_array.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/types/documentarray.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/documentarray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/types/embedded.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/embedded.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/types/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/types/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/allLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/allSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/any.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/anyLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/anySeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/apply.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/applyEach.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/applyEachSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/asyncify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/auto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/autoInject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/cargo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/compose.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/concat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/concatLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/concatSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/constant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/detect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/detectLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/detectSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/dir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/dist/async.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/dist/async.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/dist/async.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/doDuring.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/doUntil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/doWhilst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/during.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/each.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachOfLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachOfSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/eachSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/ensureAsync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/every.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/everyLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/everySeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/filterLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/filterSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/find.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/findLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/findSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/foldl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/foldr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forEach.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forEachLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forEachOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forEachOfLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forEachOfSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forEachSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/forever.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/groupBy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/groupByLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/groupBySeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/inject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/DoublyLinkedList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/applyEach.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/breakLoop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/consoleFunc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/createTester.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/doLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/doParallel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/doParallelLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/eachOfLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/findGetResult.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/getIterator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/initialParams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/iterator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/notId.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/onlyOnce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/parallel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/reject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/setImmediate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/slice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/withoutIndex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/internal/wrapAsync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/log.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapValues.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapValuesLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/mapValuesSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/memoize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/nextTick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/parallel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/parallelLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/priorityQueue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/race.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reduce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reduceRight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reflect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reflectAll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/reject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/rejectLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/rejectSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/retry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/retryable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/selectLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/selectSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/seq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/series.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/setImmediate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/some.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/someLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/someSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/sortBy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/timeout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/times.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/timesLimit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/timesSeries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/tryEach.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/unmemoize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/until.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/waterfall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/whilst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/async/wrapSync.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/aggregation_cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/aggregation_cursor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/async/async_iterator.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/async/async_iterator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/bulk/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/bulk/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/bulk/ordered.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/bulk/ordered.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/bulk/unordered.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/bulk/unordered.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/collection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/command_cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/command_cursor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/cursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/cursor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/gridfs-stream/download.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/gridfs-stream/download.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/gridfs/grid_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/gridfs/grid_store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/mongo_client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/operations/collection_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/operations/collection_ops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/operations/db_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/operations/db_ops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/operations/mongo_client_ops.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/operations/mongo_client_ops.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/mongos.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/mongos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/native_topology.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/native_topology.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/replset.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/replset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/topologies/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/url_parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/url_parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mpath/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mpath/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mpath/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mpath/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/test/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexp-clone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexp-clone/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sift/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sift/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sliced/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sliced/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/catalog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/danh_sach_cua_hang.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/danh_sach_cua_hang.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/danh_sach_san_pham.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/danh_sach_san_pham.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/danh_sach_tai_khoan.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/danh_sach_tai_khoan.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/partial/menu.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partial/menu.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/models/Cua_hang.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/models/Cua_hang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partial/mobile.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partial/mobile.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/thay_doi_thong_tin_cua_hang.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/thay_doi_thong_tin_cua_hang.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,51 +331,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/danh_sach_cua_hang.js">
+        <entry file="file://$PROJECT_DIR$/models/danh_sach_loai_san_pham.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="471">
+              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/thay_doi_thong_tin.js">
+        <entry file="file://$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="780">
+              <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/thay_doi_thong_tin_controller.js">
+        <entry file="file://$PROJECT_DIR$/views/danh_sach_tai_khoan.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+            <state relative-caret-position="274">
+              <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
+        <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="214">
+              <caret line="123" column="22" lean-forward="true" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/users.js">
+        <entry file="file://$PROJECT_DIR$/views/danh_sach_san_pham.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="341">
+              <caret line="88" column="40" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -109,32 +378,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/catalog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="236">
+              <caret line="24" column="83" lean-forward="true" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/danh_sach_cua_hang.ejs">
+        <entry file="file://$PROJECT_DIR$/views/danh_sach_loai_san_pham.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-313">
-              <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+            <state relative-caret-position="374">
+              <caret line="82" column="92" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="82" selection-end-column="92" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/thay_doi_thong_tin_cua_hang.ejs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714">
-              <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+            <state relative-caret-position="425">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/thay_doi_thong_tin.ejs">
+        <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/don_hang_controller.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -149,6 +427,14 @@
       <find>thay</find>
       <find>cua_hangs</find>
       <find>router.get</find>
+      <find>validationResult</find>
+      <find>findAndModify</find>
+      <find>_findAndModify</find>
+      <find>cua_hang</find>
+      <find>../controllers/danh_sach_san_pham_controller</find>
+      <find>Quản lý cửa hàng</find>
+      <find>danh_sach_tai_khoan</find>
+      <find>/danh_sach_tai_khoan</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,19 +444,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/partial/menu.ejs" />
         <option value="$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js" />
-        <option value="$PROJECT_DIR$/views/thay_doi_thong_tin_cua_hang.ejs" />
-        <option value="$PROJECT_DIR$/models/danh_sach_cua_hang.js" />
         <option value="$PROJECT_DIR$/models/thay_doi_thong_tin.js" />
+        <option value="$PROJECT_DIR$/views/thay_doi_thong_tin_cua_hang.ejs" />
         <option value="$PROJECT_DIR$/views/danh_sach_cua_hang.ejs" />
+        <option value="$PROJECT_DIR$/controllers/thay_doi_thong_tin_controller.js" />
+        <option value="$PROJECT_DIR$/controllers/danh_sach_san_pham_controller .js" />
+        <option value="$PROJECT_DIR$/views/danh_sach_san_pham.ejs" />
+        <option value="$PROJECT_DIR$/models/danh_sach_san_pham.js" />
+        <option value="$PROJECT_DIR$/views/partial/mobile.ejs" />
+        <option value="$PROJECT_DIR$/views/partial/menu.ejs" />
+        <option value="$PROJECT_DIR$/models/danh_sach_cua_hang.js" />
+        <option value="$PROJECT_DIR$/controllers/danh_sach_loai_san_pham_controller.js" />
+        <option value="$PROJECT_DIR$/views/danh_sach_loai_san_pham.ejs" />
+        <option value="$PROJECT_DIR$/models/danh_sach_loai_san_pham.js" />
+        <option value="$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js" />
+        <option value="$PROJECT_DIR$/views/danh_sach_tai_khoan.ejs" />
+        <option value="$PROJECT_DIR$/models/danh_sach_tai_khoan.js" />
         <option value="$PROJECT_DIR$/routes/catalog.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/controllers/thay_doi_thong_tin_controller.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
@@ -181,7 +477,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -224,6 +519,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,17 +553,18 @@
       <updated>1558164685751</updated>
       <workItem from="1558164688438" duration="8136000" />
       <workItem from="1558173696553" duration="1695000" />
+      <workItem from="1558245541983" duration="18653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9831000" />
+    <option name="totallyTimeSpent" value="28484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17559524" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -284,56 +581,18 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1816" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partial/head.ejs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/views/partial/header.ejs">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partial/menu.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/danh_sach_san_pham_controller .js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/thay_doi_thong_tin.ejs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/danh_sach_cua_hang.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -342,17 +601,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/catalog.js">
+    <entry file="file://$PROJECT_DIR$/views/thay_doi_thong_tin.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="-136">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state>
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-58196" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/thay_doi_thong_tin_cua_hang.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_cho_duyet.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/danh_sach_cua_hang.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="81" column="83" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="15" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/thay_doi_thong_tin_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="104" column="2" lean-forward="true" selection-start-line="4" selection-end-line="104" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -363,24 +661,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/danh_sach_cua_hang.ejs">
+    <entry file="file://$PROJECT_DIR$/controllers/danh_sach_san_pham_controller .js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
-          <caret line="80" column="37" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+        <state relative-caret-position="476">
+          <caret line="28" column="58" lean-forward="true" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/thay_doi_thong_tin_cua_hang.ejs">
+    <entry file="file://$PROJECT_DIR$/models/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partial/mobile.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+        <state relative-caret-position="255">
+          <caret line="18" column="91" lean-forward="true" selection-start-line="18" selection-start-column="91" selection-end-line="18" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/thay_doi_thong_tin_controller.js">
+    <entry file="file://$PROJECT_DIR$/views/partial/menu.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        <state relative-caret-position="266">
+          <caret line="25" column="199" selection-start-line="25" selection-start-column="199" selection-end-line="25" selection-end-column="199" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/thay_doi_thong_tin_san_pham.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="882">
+          <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/danh_sach_loai_san_pham_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="114" column="37" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_cua_hang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_san_pham.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="31" column="2" lean-forward="true" selection-end-line="46" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/danh_sach_san_pham_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" lean-forward="true" selection-end-line="118" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_loai_san_pham.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/danh_sach_san_pham.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="88" column="40" lean-forward="true" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/danh_sach_loai_san_pham.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="82" column="92" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="82" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="123" column="22" lean-forward="true" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/don_hang_controller.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/danh_sach_tai_khoan.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/catalog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="24" column="83" lean-forward="true" selection-start-line="24" selection-start-column="83" selection-end-line="24" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="113" column="38" lean-forward="true" selection-start-line="113" selection-start-column="38" selection-end-line="113" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

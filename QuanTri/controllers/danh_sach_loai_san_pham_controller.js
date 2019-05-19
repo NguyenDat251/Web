@@ -1,6 +1,20 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
-var data = require('../models/danh_sach_cua_hang');
+var data = require('../models/danh_sach_loai_san_pham');
+
+exports.show_list = function(req, res, next) {
+    data.find()
+        .exec(function (err, list_items) {
+            if (err) {
+                console.log("falseeee");
+                return next(err);
+            }
+            //Successful, so render
+            console.log("Successful, so render");
+            console.log(list_items);
+            res.render('danh_sach_loai_san_pham', {title: '', list_items: list_items});
+        });
+};
 
 exports.show_info = async (req, res, next) => {
     data.find({_id:req.params.id})
@@ -18,7 +32,7 @@ exports.show_info = async (req, res, next) => {
                 }
                 console.log("Successful, so render");
                 console.log(item);
-                res.render('thay_doi_thong_tin_cua_hang', {title: 'Áo Khoác', item: item[0]})
+                res.render('thay_doi_thong_tin_loai_san_pham', {title: 'Áo Khoác', item: item[0]})
             }
             ;
 
@@ -54,20 +68,20 @@ exports.update_post = [
             // There are errors. Render form again with sanitized values/error messages.
 
             // Get all authors and genres for form.
-           async.parallel({
+            async.parallel({
 
-             },
-             function(err, results) {
-                if (err) { return next(err); }
+                },
+                function(err, results) {
+                    if (err) { return next(err); }
 
 
-                for (let i = 0; i < results.name.length; i++) {
-                    if (shop.name.indexOf(results.genres[i]._id) > -1) {
-                        results.name[i].checked='true';
+                    for (let i = 0; i < results.name.length; i++) {
+                        if (shop.name.indexOf(results.genres[i]._id) > -1) {
+                            results.name[i].checked='true';
+                        }
                     }
-                }
-                res.render('/thay_doi_thong_tin_cua_hang', { title: 'Update Book', item : results.name, errors: errors.array() });
-            });
+                    res.render('/thay_doi_thong_tin_loai_san_pham', { title: 'Update Book', item : results.name, errors: errors.array() });
+                });
             return;
         }
         else {
@@ -75,7 +89,7 @@ exports.update_post = [
             data.findByIdAndUpdate(req.params.id, shop, {}, function (err,item) {
                 if (err) { return next(err); }
                 // Successful - redirect to book detail page.
-                res.redirect('/danh_sach_cua_hang');
+                res.redirect('/danh_sach_loai_san_pham');
             });
         }
     }
@@ -93,13 +107,13 @@ exports.delete_post = function(req, res, next) {
     //
     //     else {
     //         // Author has no books. Delete object and redirect to the list of authors.
-            data.findByIdAndRemove(req.params.id, function deleteAuthor(err) {
-                if (err) {
-                    console.log("Delete false");
-                    return next(err); }
-                // Success - go to author list
-                res.redirect('/danh_sach_cua_hang')
-            });
+    data.findByIdAndRemove(req.params.id, function deleteAuthor(err) {
+        if (err) {
+            console.log("Delete false");
+            return next(err); }
+        // Success - go to author list
+        res.redirect('/danh_sach_loai_san_pham')
+    });
 
 
 };
