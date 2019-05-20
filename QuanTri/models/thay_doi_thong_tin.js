@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var ChangeInfoShecma = new Schema(
     {
-        _id:{type: Schema.Types.ObjectId, required: true, max: 100},
+
 
         name: {type: String, required: true, max: 100},
 

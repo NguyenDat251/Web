@@ -4,7 +4,6 @@ var Schema = mongoose.Schema;
 
 var ShopShecma = new Schema(
     {
-        _id:{type: Schema.Types.ObjectId, required: true, max: 100},
 
         name: {type: String, required: true, max: 100},
 
@@ -36,6 +35,11 @@ ShopShecma
     .virtual('delete_url')
     .get(function () {
         return '/xoa_cua_hang/' + this._id;
+    });
+ShopShecma
+    .virtual('add_url')
+    .get(function () {
+        return '/them_cua_hang/';
     });
 
 //Export model

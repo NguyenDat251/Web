@@ -30,6 +30,10 @@ router.get('/thay_doi_thong_tin', function(req, res, next) {
 router.get('/thay_doi_thong_tin_cua_hang/:id', thay_doi_thong_tin_controller.show_info);
 router.get('/xoa_cua_hang/:id', thay_doi_thong_tin_controller.delete_post);
 router.post('/thay_doi_thong_tin_cua_hang/:id', thay_doi_thong_tin_controller.update_post);
+router.post('/them_cua_hang', thay_doi_thong_tin_controller.add);
+router.get('/them_cua_hang', function(req, res, next) {
+  res.render('them_cua_hang', { title: 'Express' });
+});
 
 router.get('/thay_doi_thong_tin_san_pham/:id', danh_sach_san_pham_controller.show_info);
 router.get('/xoa_san_pham/:id', danh_sach_san_pham_controller.delete_post);

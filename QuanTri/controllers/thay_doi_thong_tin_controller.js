@@ -103,3 +103,60 @@ exports.delete_post = function(req, res, next) {
 
 
 };
+
+exports.add =  [
+
+    // Validate that the name field is not empty.
+    body('name', 'name required').isLength({ min: 1 }).trim(),
+    //console.log("check"),
+    // Sanitize (escape) the name field.
+    sanitizeBody('name').escape(),
+        //console.log("escape"),
+    // Process request after validation and sanitization.
+    (req, res, next) => {
+
+        // Extract the validation errors from a request.
+        const errors = validationResult(req);
+
+        // Create a genre object with escaped and trimmed data.
+        var shop = new data(
+            { name: req.body.name }
+        );
+
+
+        if (!errors.isEmpty()) {
+            // There are errors. Render the form again with sanitized values/error messages.
+            console.log("error");
+            res.render('/them_cua_hang', { title: 'Create Genre', genre: shop, errors: errors.array()});
+            return;
+        }
+        else {
+            // Data from form is valid.
+            // Check if Genre with same name already exists.
+            data.findOne({ 'name': req.body.name })
+                .exec( function(err, found_genre) {
+                    if (err) {
+                        console.log("error exec");
+                        return next(err); }
+
+                    if (found_genre) {
+                        // Genre exists, redirect to its detail page.
+                        res.redirect(found_genre.url);
+                    }
+                    else {
+
+                        shop.save(function (err) {
+                            if (err) {
+                                console.log("error save");
+                                return next(err); }
+                            // Genre saved. Redirect to genre detail page.
+                            console.log("success");
+                            res.redirect('/danh_sach_cua_hang');
+                        });
+
+                    }
+
+                });
+        }
+    }
+];

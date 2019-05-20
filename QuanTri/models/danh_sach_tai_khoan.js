@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 
 var AccountShecma = new Schema(
     {
-        _id:{type: Schema.Types.ObjectId, required: true, max: 100},
+
         name: {type: String, required: true, max: 100},
         password: {type: String, required: true, max: 100},
 
