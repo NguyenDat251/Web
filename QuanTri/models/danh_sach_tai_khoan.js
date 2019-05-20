@@ -2,12 +2,11 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var AccountShecma = new Schema(
+var AccountSchema = new Schema(
     {
 
-        name: {type: String, required: true, max: 100},
-        password: {type: String, required: true, max: 100},
-
+        name: {type: String, required: 'Vui lòng không để trống', max: 100},
+        password: {type: String, max: 100},
     }
 );
 
@@ -26,17 +25,23 @@ var AccountShecma = new Schema(
 //     });
 //
 // Virtual for author's URL
-AccountShecma
+AccountSchema
     .virtual('url')
     .get(function () {
         return '/thay_doi_thong_tin_tai_khoan/' + this._id;
     });
 
-AccountShecma
+AccountSchema
     .virtual('delete_url')
     .get(function () {
         return '/xoa_tai_khoan/' + this._id;
     });
 
+AccountSchema
+    .virtual('add_url')
+    .get(function () {
+        return '/them_tai_khoan/';
+    });
+
 //Export model
-module.exports = mongoose.model('tai_khoans', AccountShecma);
+module.exports = mongoose.model('tai_khoans', AccountSchema);

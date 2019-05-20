@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var ShopShecma = new Schema(
+var ShopSchema = new Schema(
     {
 
         name: {type: String, required: true, max: 100},
@@ -25,22 +25,22 @@ var ShopShecma = new Schema(
 //     });
 //
 // Virtual for author's URL
-ShopShecma
+ShopSchema
     .virtual('url')
     .get(function () {
         return '/thay_doi_thong_tin_cua_hang/' + this._id;
     });
 
-ShopShecma
+ShopSchema
     .virtual('delete_url')
     .get(function () {
         return '/xoa_cua_hang/' + this._id;
     });
-ShopShecma
+ShopSchema
     .virtual('add_url')
     .get(function () {
         return '/them_cua_hang/';
     });
 
 //Export model
-module.exports = mongoose.model('cua_hangs', ShopShecma);
+module.exports = mongoose.model('cua_hangs', ShopSchema);

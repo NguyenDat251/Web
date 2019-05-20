@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var TypeShecma = new Schema(
+var TypeSchema = new Schema(
     {
 
         name: {type: String, required: true, max: 100},
@@ -25,17 +25,23 @@ var TypeShecma = new Schema(
 //     });
 //
 // Virtual for author's URL
-TypeShecma
+TypeSchema
     .virtual('url')
     .get(function () {
         return '/thay_doi_thong_tin_loai_san_pham/' + this._id;
     });
 
-TypeShecma
+TypeSchema
     .virtual('delete_url')
     .get(function () {
         return '/xoa_loai_san_pham/' + this._id;
     });
 
+TypeSchema
+    .virtual('add_url')
+    .get(function () {
+        return '/them_loai_san_pham/';
+    });
+
 //Export model
-module.exports = mongoose.model('loai_sps', TypeShecma);
+module.exports = mongoose.model('loai_sps', TypeSchema);
