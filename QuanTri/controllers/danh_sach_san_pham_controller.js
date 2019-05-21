@@ -58,7 +58,7 @@ exports.update_post = [
         const errors = validationResult(req);
 
         // Create a Book object with escaped/trimmed data and old id.
-        var shop = new data(
+        var goods = new data(
             { name: req.body.name,
 
                 _id:req.params.id //This is required, or a new ID will be assigned!
@@ -76,7 +76,7 @@ exports.update_post = [
 
 
                     for (let i = 0; i < results.name.length; i++) {
-                        if (shop.name.indexOf(results.genres[i]._id) > -1) {
+                        if (goods.name.indexOf(results.genres[i]._id) > -1) {
                             results.name[i].checked='true';
                         }
                     }
@@ -86,7 +86,7 @@ exports.update_post = [
         }
         else {
             // Data from form is valid. Update the record.
-            data.findByIdAndUpdate(req.params.id, shop, {}, function (err,item) {
+            data.findByIdAndUpdate(req.params.id, goods, {}, function (err,item) {
                 if (err) { return next(err); }
                 // Successful - redirect to book detail page.
                 res.redirect('/danh_sach_san_pham');
@@ -132,7 +132,7 @@ exports.add =  [
         const errors = validationResult(req);
 
         // Create a genre object with escaped and trimmed data.
-        var shop = new data(
+        var goods = new data(
             { name: req.body.name }
         );
 
@@ -140,7 +140,7 @@ exports.add =  [
         if (!errors.isEmpty()) {
             // There are errors. Render the form again with sanitized values/error messages.
             console.log("error");
-            res.render('/them_san_pham', { title: 'Create Genre', genre: shop, errors: errors.array()});
+            res.render('them_san_pham');
             return;
         }
         else {
@@ -158,7 +158,7 @@ exports.add =  [
                     }
                     else {
 
-                        shop.save(function (err) {
+                        goods.save(function (err) {
                             if (err) {
                                 console.log("error save");
                                 return next(err); }

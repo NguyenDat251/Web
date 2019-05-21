@@ -58,9 +58,9 @@ exports.update_post = [
         const errors = validationResult(req);
 
         // Create a Book object with escaped/trimmed data and old id.
-        var shop = new data(
+        var account = new data(
             { name: req.body.name,
-
+                password : req.body.password,
                 _id:req.params.id //This is required, or a new ID will be assigned!
             });
 
@@ -76,7 +76,7 @@ exports.update_post = [
 
 
                     for (let i = 0; i < results.name.length; i++) {
-                        if (shop.name.indexOf(results.genres[i]._id) > -1) {
+                        if (account.name.indexOf(results.genres[i]._id) > -1) {
                             results.name[i].checked='true';
                         }
                     }
@@ -86,7 +86,7 @@ exports.update_post = [
         }
         else {
             // Data from form is valid. Update the record.
-            data.findByIdAndUpdate(req.params.id, shop, {}, function (err,item) {
+            data.findByIdAndUpdate(req.params.id, account, {}, function (err,item) {
                 if (err) { return next(err); }
                 // Successful - redirect to book detail page.
                 res.redirect('/danh_sach_tai_khoan');
@@ -133,33 +133,34 @@ exports.add =  [
         const errors = validationResult(req);
 
         // Create a genre object with escaped and trimmed data.
-        var shop = new data(
-            { name: req.body.name }
+        var account = new data(
+            { name: req.body.name,
+            password: req.body.password,}
         );
 
 
         if (!errors.isEmpty()) {
             // There are errors. Render the form again with sanitized values/error messages.
             console.log("error");
-            res.render('/them_tai_khoan', { title: 'Create Genre', genre: shop, errors: errors.array()});
+            res.render('/them_tai_khoan', { title: 'Create Genre', genre: account, errors: errors.array()});
             return;
         }
         else {
             // Data from form is valid.
             // Check if Genre with same name already exists.
             data.findOne({ 'name': req.body.name })
-                .exec( function(err, found_genre) {
+                .exec( function(err, found_account) {
                     if (err) {
                         console.log("error exec");
                         return next(err); }
 
-                    if (found_genre) {
+                    if (found_account) {
                         // Genre exists, redirect to its detail page.
-                        res.redirect(found_genre.url);
+                        res.redirect(found_account.url);
                     }
                     else {
 
-                        shop.save(function (err) {
+                        account.save(function (err) {
                             if (err) {
                                 console.log("error save");
                                 return next(err); }
