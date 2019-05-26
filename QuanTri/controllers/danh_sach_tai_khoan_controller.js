@@ -2,6 +2,29 @@ const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan');
 
+const bcrypt = require('bcrypt');
+let saltRounds = 10
+function doTheHash(pass) {
+    bcrypt.hash(pass, saltRounds, (err, hash)=>{
+        if(!err){
+            return hash;
+        }else{
+            console.log('Error', err);
+        }
+    })
+}
+
+function doTheCompare(pass) {
+    bcrypt.compare(pass, saltRounds, (err, res)=>{
+        if(!err){
+            return res;
+        }else{
+            console.log('Error', err);
+        }
+    })
+}
+
+
 exports.show_list = function(req, res, next) {
     data.find()
         .exec(function (err, list_items) {
@@ -96,17 +119,6 @@ exports.update_post = [
 ];
 
 exports.delete_post = function(req, res, next) {
-
-    // async.parallel({
-    //
-    // }, function(err, results) {
-    //     if (err) {
-    //         console.log("connect false");
-    //         return next(err); }
-    //     // Success
-    //
-    //     else {
-    //         // Author has no books. Delete object and redirect to the list of authors.
     data.findByIdAndRemove(req.params.id, function deleteAuthor(err) {
         if (err) {
             console.log("Delete false");
@@ -114,8 +126,37 @@ exports.delete_post = function(req, res, next) {
         // Success - go to author list
         res.redirect('/danh_sach_tai_khoan')
     });
+};
+
+exports.check_log_in = function(req, res, next) {
+    data.find({"name":req.body.name})
+        .exec(function (err, item) {
+            if (err) {
+                err.status = 404;
+                return next(err);
+            }
+            //Successful, so render
+            else {
+                if(item.length == 0)
+                {
+                    console.log("false 2");
+                    res.render('dang_nhap', { title: 'Sai thông tin đăng nhập' });
+                }
+                else {
+                    console.log("Successful");
+                    if (item[0].password != req.body.password) {
+                        res.render('dang_nhap', {title: 'Sai thông tin đăng nhập'});
+                    } else {
+                        console.log("Successful, so render");
+                        console.log(item);
+                        res.render('main', {title: 'Áo Khoác'})
+                    }
+                }
+            }
+            ;
 
 
+        });
 };
 
 exports.add =  [

@@ -6,7 +6,14 @@ var danh_sach_loai_san_pham_controller = require('../controllers/danh_sach_loai_
 var danh_sach_tai_khoan_controller = require('../controllers/danh_sach_tai_khoan_controller');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('dang_nhap', { title: '' });
+});
+
+router.post('/', danh_sach_tai_khoan_controller.check_log_in
+);
+
+router.get('/main', function(req, res, next) {
+    res.render('main', { title: 'Express' });
 });
 
 // router.get('/', function(req, res) {
