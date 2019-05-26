@@ -1,6 +1,7 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan');
+var user = "temp";
 
 const bcrypt = require('bcrypt');
 let saltRounds = 10
@@ -14,8 +15,8 @@ function doTheHash(pass) {
     })
 }
 
-function doTheCompare(pass) {
-    bcrypt.compare(pass, saltRounds, (err, res)=>{
+function doTheCompare(passInput, passReal) {
+    bcrypt.compare(passInput, passReal, (err, res)=>{
         if(!err){
             return res;
         }else{
@@ -144,12 +145,13 @@ exports.check_log_in = function(req, res, next) {
                 }
                 else {
                     console.log("Successful");
-                    if (item[0].password != req.body.password) {
+                    if (doTheCompare(req.body.password, item[0].password)){
                         res.render('dang_nhap', {title: 'Sai thông tin đăng nhập'});
                     } else {
                         console.log("Successful, so render");
                         console.log(item);
-                        res.render('main', {title: 'Áo Khoác'})
+                        user = item[0].name;
+                        res.render('main', {title: 'Áo Khoác', user: item[0]})
                     }
                 }
             }
@@ -158,6 +160,69 @@ exports.check_log_in = function(req, res, next) {
 
         });
 };
+
+exports.sign_in = [
+
+    // Validate that the name field is not empty.
+    body('name', 'name required').isLength({ min: 1 }).trim(),
+    body('password', 'name required').isLength({ min: 1 }).trim(),
+    //console.log("check"),
+    // Sanitize (escape) the name field.
+    sanitizeBody('name').escape(),
+    sanitizeBody('password').escape(),
+    //console.log("escape"),
+    // Process request after validation and sanitization.
+    (req, res, next) => {
+
+        // Extract the validation errors from a request.
+        const errors = validationResult(req);
+
+        // Create a genre object with escaped and trimmed data.
+        var account = new data(
+            {
+                name: req.body.name,
+                password: doTheHash(req.body.password),
+                email: req.body.email,
+            }
+        );
+
+
+        if (!errors.isEmpty()) {
+            // There are errors. Render the form again with sanitized values/error messages.
+            console.log("error");
+            res.render('dang_ky', { title: 'Không được bỏ trống'});
+            return;
+        }
+        else {
+            // Data from form is valid.
+            // Check if Genre with same name already exists.
+            data.findOne({ 'name': req.body.name })
+                .exec( function(err, found_account) {
+                    if (err) {
+                        console.log("error exec");
+                        return next(err); }
+
+                    if (found_account) {
+                        // Genre exists, redirect to its detail page.
+                        res.render('dang_ky', { title: 'Tên đã tồn tại'});
+                    }
+                    else {
+
+                        account.save(function (err) {
+                            if (err) {
+                                console.log("error save");
+                                return next(err); }
+                            // Genre saved. Redirect to genre detail page.
+                            console.log("success");
+                            res.render('main', {user: account})
+                        });
+
+                    }
+
+                });
+        }
+    }
+];
 
 exports.add =  [
 

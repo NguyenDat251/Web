@@ -1,3 +1,15 @@
+<SCRIPT>
+
+
+    var user = require('../../controllers/danh_sach_tai_khoan_controller');
+    function loadValue() {
+        document.getElementById("user_name").value = user.user;
+
+    }
+
+</script>
+
+
 <div class="header-top-area">
     <div class="container-fluid">
         <div class="row">
@@ -145,15 +157,17 @@
                                     <li class="nav-item">
                                         <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
                                             <i class="fa fa-user adminpro-user-rounded header-riht-inf" aria-hidden="true"></i>
-                                            <span class="admin-name">Trần Thị Lạng</span>
+                                            <span id="user_name" class="admin-name"><%=user.name%></span>
                                             <i class="fa fa-angle-down adminpro-icon adminpro-down-arrow"></i>
+                                            <a href="/dang_ky"><span class="admin-name">Tao tài khoản</span></a>
                                         </a>
                                         <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                            <li><a href="#"><span class="fa fa-user author-log-ic"></span>Thông tin tài khoản</a>
-                                            </li>
                                             <li><a href="#"><span class="fa fa-lock author-log-ic"></span>Đăng xuất</a>
                                             </li>
+                                            <li><a href="/dang_ky"><span class="fa fa-lock author-log-ic"></span>Tạo tài khoản admin</a>
+                                            </li>
                                         </ul>
+
                                     </li>
                                 </ul>
                             </div>
