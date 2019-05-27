@@ -20,7 +20,7 @@ router.get('/main', function(req, res, next) {
 router.post('/main_sign_in', danh_sach_tai_khoan_admin_controller.sign_in);
 
 router.get('/dang_ky', function(req, res, next) {
-    res.render('dang_ky', { title: 'Express' });
+    res.render('dang_ky', { title: '' });
 });
 
 

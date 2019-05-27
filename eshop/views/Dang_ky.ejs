@@ -13,32 +13,30 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Đăng ký</h2>
-                    <form method="POST">
+                    <form method="POST" action="/main_sign_in">
+                        <div class="row row-space">
+                            <p style="color: red"><%=title%></p>
+                        </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Họ</label>
-                                    <input class="input--style-4" type="text" name="first_name">
+                                    <label class="label">Tên đăng nhập</label>
+                                    <input class="input--style-4" type="text" id="name" name="name">
                                 </div>
                             </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Tên</label>
-                                    <input class="input--style-4" type="text" name="last_name">
-                                </div>
-                            </div>
+
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Mật khẩu</label>
-                                    <input class="input--style-4" type="password" name="pass_word1">
+                                    <input class="input--style-4" type="password" id="password" name="password">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Nhập lại mật khẩu</label>
-                                    <input class="input--style-4" type="password" name="pass_word2">
+                                    <input class="input--style-4" type="password" id="passwordReEnter" name="passwordReEnter">
                                 </div>
                             </div>
                         </div>
@@ -47,7 +45,7 @@
                                 <div class="input-group">
                                     <label class="label">Ngày sinh</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <input class="input--style-4 js-datepicker" type="text" id="date" name="date">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                     </div>
                                 </div>
@@ -72,18 +70,18 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
+                                    <input class="input--style-4" type="email" id="email" name="email">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Số điện thoại</label>
-                                    <input class="input--style-4" type="text" name="phone">
+                                    <input class="input--style-4" type="text" id="phone" name="phone">
                                 </div>
                             </div>
                         </div>
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit"><a href="/login"> Đồng ý</a></button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Đồng ý</button>
                         </div>
                     </form>
                 </div>
