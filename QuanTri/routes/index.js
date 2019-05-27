@@ -4,19 +4,20 @@ var danh_sach_cua_hang_controller = require('../controllers/danh_sach_cua_hang_c
 var danh_sach_san_pham_controller = require('../controllers/danh_sach_san_pham_controller');
 var danh_sach_loai_san_pham_controller = require('../controllers/danh_sach_loai_san_pham_controller');
 var danh_sach_tai_khoan_controller = require('../controllers/danh_sach_tai_khoan_controller');
+var danh_sach_tai_khoan_admin_controller = require('../controllers/danh_sach_tai_khoan_admin_controller');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('dang_nhap', { title: '' });
 });
 
-router.post('/', danh_sach_tai_khoan_controller.check_log_in
+router.post('/', danh_sach_tai_khoan_admin_controller.check_log_in
 );
 
 router.get('/main', function(req, res, next) {
     res.render('main', { title: 'Express' });
 });
 
-router.post('/main_sign_in', danh_sach_tai_khoan_controller.sign_in);
+router.post('/main_sign_in', danh_sach_tai_khoan_admin_controller.sign_in);
 
 router.get('/dang_ky', function(req, res, next) {
     res.render('dang_ky', { title: 'Express' });

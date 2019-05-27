@@ -1,14 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-var mongo = require('mongodb').MongoClient;
 
 //const mongo = require('mongodb').MongoClient;
 
-var objectId = require('mongodb').ObjectID;
-var assert = require('assert');
-const ObjectId = require('mongodb').ObjectId;
 var San_pham_controller = require('../controllers/San_pham_controller');
+var Dang_nhap_controller = require('../controllers/Dang_nhap_controller');
 
 //const MongoClient = require('mongodb').MongoClient;
 
@@ -20,6 +17,9 @@ var San_pham_controller = require('../controllers/San_pham_controller');
 
 router.get('/', San_pham_controller.list);
 
+router.post('/', Dang_nhap_controller.check_log_in
+);
+
 router.get('/signup', function(req, res, next) {
   res.render('Dang_ky', { title: 'Đăng ký' });
 });
@@ -29,7 +29,11 @@ router.get('/forgot', function(req, res, next) {
 });
 
 router.get('/login', function(req, res, next) {
-  res.render('Dang_nhap', { title: 'Cửa hàng' });
+  res.render('Dang_nhap', { title: '' });
+});
+
+router.get('/dang_ky', function(req, res, next) {
+  res.render('dang_ky', { title: 'Cửa hàng' });
 });
 
 

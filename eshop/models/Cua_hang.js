@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var TypeShecma = new Schema(
+var SanphamShecma = new Schema(
     {
         _id:{type: Schema.Types.ObjectId, required: true, max: 100},
 
@@ -33,4 +33,4 @@ SanphamShecma
     });
 
 //Export model
-module.exports = mongoose.model('cua_hangs', TypeShecma);
+module.exports = mongoose.model('cua_hangs', SanphamShecma);

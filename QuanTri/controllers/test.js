@@ -1,6 +1,6 @@
 const bcrypt = require('bcrypt')
 let saltRounds = 10
-let myString = 'Qwerty123'
+let myString = '251'
 bcrypt.hash(myString, saltRounds, (err, hash)=>{
 	if(!err){
 		console.log(hash)
