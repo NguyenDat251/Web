@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41424028-3b3d-4a95-ac10-9363581f77a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/danh_sach_tai_khoan.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_tai_khoan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partial/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partial/header.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/controllers/Dang_ky_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/controllers/Dang_ky_controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/routes/catalog.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/routes/catalog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/views/Dang_ky.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/views/Dang_ky.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/views/Dang_nhap.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/views/Dang_nhap.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/views/San_pham.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/views/San_pham.ejs" afterDir="false" />
-    </list>
+    <list default="true" id="41424028-3b3d-4a95-ac10-9363581f77a1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -34,7 +16,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
+            <state relative-caret-position="-976">
               <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
             </state>
           </provider>
@@ -43,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan_admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="46" column="57" lean-forward="true" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+            <state relative-caret-position="782">
+              <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -62,7 +44,7 @@
         <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -71,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/controllers/test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -84,13 +66,6 @@
               <folding>
                 <element signature="n#!!block;n#doTheHash#0" />
                 <element signature="n#!!block;n#doTheCompare#0" />
-                <element signature="e#713#1106#0" />
-                <element signature="e#1155#1825#0" />
-                <element signature="e#1882#3633#0" />
-                <element signature="e#3683#3941#0" />
-                <element signature="e#3992#5001#0" />
-                <element signature="e#5022#7162#0" />
-                <element signature="e#7180#9156#0" />
               </folding>
             </state>
           </provider>
@@ -99,11 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dang_ky.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="272">
               <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="18" selection-end-column="30" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -111,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/dang_nhap.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="42" column="22" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="714">
+              <caret line="42" column="22" selection-start-line="40" selection-start-column="16" selection-end-line="42" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -120,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partial/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="148" column="98" lean-forward="true" selection-start-line="148" selection-start-column="98" selection-end-line="148" selection-end-column="98" />
+            <state relative-caret-position="2516">
+              <caret line="148" column="98" selection-start-line="148" selection-start-column="98" selection-end-line="148" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -233,7 +205,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,6 +247,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,16 +288,17 @@
       <workItem from="1558845684610" duration="15569000" />
       <workItem from="1558881450938" duration="842000" />
       <workItem from="1558928437616" duration="9864000" />
+      <workItem from="1559369783971" duration="1195000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77420000" />
+    <option name="totallyTimeSpent" value="78615000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22098215" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22098215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -339,7 +312,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32917964" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32850242" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27697262" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.27697262" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
@@ -600,10 +573,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6902">
-          <caret line="406" column="8" selection-start-line="406" selection-start-column="8" selection-end-line="406" selection-end-column="8" />
+        <state relative-caret-position="-976">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan_admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -614,38 +594,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan_admin.js">
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="46" column="57" lean-forward="true" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partial/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="148" column="98" lean-forward="true" selection-start-line="148" selection-start-column="98" selection-end-line="148" selection-end-column="98" />
+        <state relative-caret-position="272">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/danh_sach_tai_khoan.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/dang_nhap.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="22" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="42" selection-end-column="22" />
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -656,31 +615,35 @@
           <folding>
             <element signature="n#!!block;n#doTheHash#0" />
             <element signature="n#!!block;n#doTheCompare#0" />
-            <element signature="e#713#1106#0" />
-            <element signature="e#1155#1825#0" />
-            <element signature="e#1882#3633#0" />
-            <element signature="e#3683#3941#0" />
-            <element signature="e#3992#5001#0" />
-            <element signature="e#5022#7162#0" />
-            <element signature="e#7180#9156#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/dang_ky.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="272">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="18" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/views/dang_nhap.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="714">
+          <caret line="42" column="22" selection-start-line="40" selection-start-column="16" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partial/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2516">
+          <caret line="148" column="98" selection-start-line="148" selection-start-column="98" selection-end-line="148" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6902">
+          <caret line="406" column="8" selection-start-line="406" selection-start-column="8" selection-end-line="406" selection-end-column="8" />
         </state>
       </provider>
     </entry>
