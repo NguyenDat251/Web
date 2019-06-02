@@ -6,14 +6,35 @@ var danh_sach_loai_san_pham_controller = require('../controllers/danh_sach_loai_
 var danh_sach_tai_khoan_controller = require('../controllers/danh_sach_tai_khoan_controller');
 var danh_sach_tai_khoan_admin_controller = require('../controllers/danh_sach_tai_khoan_admin_controller');
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('dang_nhap', { title: '' });
+
+// router.get('/', function(req, res, next) {
+//   res.render('dang_nhap', { title: '' });
+// });
+
+// router.post('/', danh_sach_tai_khoan_admin_controller.check_log_in
+// );
+
+router.get('/', function (req, res, next) {
+
+    if (req.user) {
+        console.log(req.user);
+        res.redirect('/main');
+    } else {
+        console.log(req.user);
+        console.log(req.isAuthenticated());
+        res.render('dang_nhap', {
+            errorText: ''
+        });
+    }
+
 });
 
-router.post('/', danh_sach_tai_khoan_admin_controller.check_log_in
-);
+
 
 router.get('/main', function(req, res, next) {
+    console.log("main session: " + req.session);
+    console.log("main: " + req.user);
+    console.log("main: isAuthen " + req.isAuthenticated());
     res.render('main', { title: 'Express' });
 });
 
