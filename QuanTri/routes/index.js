@@ -29,15 +29,6 @@ router.get('/', function (req, res, next) {
 
 });
 
-
-
-router.get('/main', function(req, res, next) {
-    console.log("main session: " + req.session);
-    console.log("main: " + req.user);
-    console.log("main: isAuthen " + req.isAuthenticated());
-    res.render('main', { title: 'Express' });
-});
-
 router.post('/main_sign_in', danh_sach_tai_khoan_admin_controller.sign_in);
 
 router.get('/dang_ky', function(req, res, next) {
@@ -49,13 +40,13 @@ router.get('/dang_ky', function(req, res, next) {
 //   res.redirect('/catalog');
 // });
 
-router.get('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.show_info);
-router.get('/xoa_tai_khoan/:id', danh_sach_tai_khoan_controller.delete_post);
-router.post('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.update_post);
-router.post('/them_tai_khoan', danh_sach_tai_khoan_controller.add);
-router.get('/them_tai_khoan', function(req, res, next) {
-    res.render('them_tai_khoan', { title: 'Express' });
-});
+// router.get('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.show_info);
+// router.get('/xoa_tai_khoan/:id', danh_sach_tai_khoan_controller.delete_post);
+// router.post('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.update_post);
+// router.post('/them_tai_khoan', danh_sach_tai_khoan_controller.add);
+// router.get('/them_tai_khoan', function(req, res, next) {
+//     res.render('them_tai_khoan', { title: 'Express' });
+// });
 
 router.get('/danh_sach_cho_duyet', function(req, res, next) {
   res.render('danh_sach_cho_duyet', { title: 'Express' });
@@ -90,13 +81,13 @@ router.get('/them_loai_san_pham', function(req, res, next) {
 });
 
 
-router.get('/danh_sach_tai_khoan', danh_sach_tai_khoan_controller.show_list);
+//router.get('/danh_sach_tai_khoan', danh_sach_tai_khoan_controller.show_list);
 
-router.get('/danh_sach_cua_hang', danh_sach_cua_hang_controller.show_list);
+//router.get('/danh_sach_cua_hang', danh_sach_cua_hang_controller.show_list);
 
-router.get('/danh_sach_san_pham', danh_sach_san_pham_controller.show_list);
+//router.get('/danh_sach_san_pham', danh_sach_san_pham_controller.show_list);
 
-router.get('/danh_sach_loai_san_pham', danh_sach_loai_san_pham_controller.show_list);
+//router.get('/danh_sach_loai_san_pham', danh_sach_loai_san_pham_controller.show_list);
 
 
 router.get('/don_hang', function(req, res, next) {

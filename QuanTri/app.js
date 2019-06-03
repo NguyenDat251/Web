@@ -15,6 +15,11 @@ var path = require('path');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');
+var mainRouter = require('./routes/main');
+var danh_sach_tai_khoan_Router = require('./routes/danh_sach_tai_khoan_Router');
+var danh_sach_cua_hang_Router = require('./routes/danh_sach_cua_hang_Router');
+var danh_sach_san_pham_Router = require('./routes/danh_sach_san_pham_Router');
+var danh_sach_loai_san_pham_Router = require('./routes/danh_sach_loai_san_pham_Router');
 
 var app = express();
 app.use(function (req, res, next) {
@@ -60,7 +65,12 @@ app.use(passport.session());
 
 // ROUTE SECTION ###########
 
-app.use('/', indexRouter);
+app.use('/', indexRouter)
+app.use('/main', mainRouter);
+app.use('/danh_sach_tai_khoan', danh_sach_tai_khoan_Router);
+app.use('/danh_sach_cua_hang', danh_sach_cua_hang_Router);
+app.use('/danh_sach_san_pham', danh_sach_san_pham_Router);
+app.use('/danh_sach_loai_san_pham', danh_sach_loai_san_pham_Router);
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
 

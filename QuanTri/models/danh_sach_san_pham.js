@@ -34,19 +34,19 @@ var ProductSchema = new Schema(
 ProductSchema
     .virtual('url')
     .get(function () {
-        return '/thay_doi_thong_tin_san_pham/' + this._id;
+        return 'danh_sach_san_pham/thay_doi_thong_tin_san_pham/' + this._id;
     });
 
 ProductSchema
     .virtual('delete_url')
     .get(function () {
-        return '/xoa_san_pham/' + this._id;
+        return 'danh_sach_san_pham/xoa_san_pham/' + this._id;
     });
 
 ProductSchema
     .virtual('add_url')
     .get(function () {
-        return '/them_san_pham/';
+        return 'danh_sach_san_pham/them_san_pham/';
     });
 
 //Export model

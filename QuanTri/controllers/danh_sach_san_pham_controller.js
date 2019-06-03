@@ -2,19 +2,46 @@ const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_san_pham');
 
-exports.show_list = function(req, res, next) {
-    data.find()
-        .exec(function (err, list_items) {
-            if (err) {
-                console.log("falseeee");
-                return next(err);
-            }
-            //Successful, so render
-            console.log("Successful, so render");
-            console.log(list_items);
-            res.render('danh_sach_san_pham', {title: '', list_items: list_items});
+// exports.show_list = function(req, res, next) {
+//     data.find()
+//         .exec(function (err, list_items) {
+//             if (err) {
+//                 console.log("falseeee");
+//                 return next(err);
+//             }
+//             //Successful, so render
+//             console.log("Successful, so render");
+//             console.log(list_items);
+//             res.render('danh_sach_san_pham', {title: '', list_items: list_items});
+//         });
+// };
+
+exports.index = function(req, res, next) {
+
+
+    if (req.isAuthenticated()) {
+        data.find()
+            .exec(function (err, list_items) {
+                if (err) {
+                    console.log("falseeee");
+                    return next(err);
+                }
+                //Successful, so render
+                console.log("Successful, so render");
+                console.log(list_items);
+
+                res.render('danh_sach_cua_hang', {title: '', list_items: list_items, user: req.user});
+            });
+
+    } else {
+        console.log(req.user);
+        console.log(req.isAuthenticated());
+        res.render('dang_nhap', {
+            errorText: ''
         });
+    }
 };
+
 
 exports.show_info = async (req, res, next) => {
     data.find({_id:req.params.id})
@@ -32,7 +59,7 @@ exports.show_info = async (req, res, next) => {
                 }
                 console.log("Successful, so render");
                 console.log(item);
-                res.render('thay_doi_thong_tin_san_pham', {title: 'Áo Khoác', item: item[0]})
+                res.render('thay_doi_thong_tin_san_pham', {title: 'Áo Khoác', item: item[0], user: req.user})
             }
             ;
 
@@ -80,7 +107,7 @@ exports.update_post = [
                             results.name[i].checked='true';
                         }
                     }
-                    res.render('/thay_doi_thong_tin_san_pham', { title: 'Update Book', item : results.name, errors: errors.array() });
+                    res.render('/thay_doi_thong_tin_san_pham', { title: 'Update Book', item : results.name, errors: errors.array(), user: req.user });
                 });
             return;
         }

@@ -28,18 +28,18 @@ var ShopSchema = new Schema(
 ShopSchema
     .virtual('url')
     .get(function () {
-        return '/thay_doi_thong_tin_cua_hang/' + this._id;
+        return '/danh_sach_cua_hang/thay_doi_thong_tin_cua_hang/' + this._id;
     });
 
 ShopSchema
     .virtual('delete_url')
     .get(function () {
-        return '/xoa_cua_hang/' + this._id;
+        return '/danh_sach_cua_hang/xoa_cua_hang/' + this._id;
     });
 ShopSchema
     .virtual('add_url')
     .get(function () {
-        return '/them_cua_hang/';
+        return '/danh_sach_cua_hang/them_cua_hang/';
     });
 
 //Export model

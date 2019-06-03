@@ -28,19 +28,19 @@ var TypeSchema = new Schema(
 TypeSchema
     .virtual('url')
     .get(function () {
-        return '/thay_doi_thong_tin_loai_san_pham/' + this._id;
+        return '/danh_sach_loai_san_pham/thay_doi_thong_tin_loai_san_pham/' + this._id;
     });
 
 TypeSchema
     .virtual('delete_url')
     .get(function () {
-        return '/xoa_loai_san_pham/' + this._id;
+        return '/danh_sach_loai_san_pham/xoa_loai_san_pham/' + this._id;
     });
 
 TypeSchema
     .virtual('add_url')
     .get(function () {
-        return '/them_loai_san_pham/';
+        return '/danh_sach_loai_san_pham/them_loai_san_pham/';
     });
 
 //Export model

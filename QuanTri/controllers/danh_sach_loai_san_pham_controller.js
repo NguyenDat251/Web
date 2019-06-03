@@ -2,7 +2,7 @@ const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_loai_san_pham');
 
-exports.show_list = function(req, res, next) {
+exports.index = function(req, res, next) {
     data.find()
         .exec(function (err, list_items) {
             if (err) {
@@ -12,7 +12,7 @@ exports.show_list = function(req, res, next) {
             //Successful, so render
             console.log("Successful, so render");
             console.log(list_items);
-            res.render('danh_sach_loai_san_pham', {title: '', list_items: list_items});
+            res.render('danh_sach_loai_san_pham', {title: '', list_items: list_items, user: req.user});
         });
 };
 
@@ -32,7 +32,7 @@ exports.show_info = async (req, res, next) => {
                 }
                 console.log("Successful, so render");
                 console.log(item);
-                res.render('thay_doi_thong_tin_loai_san_pham', {title: 'Áo Khoác', item: item[0]})
+                res.render('thay_doi_thong_tin_loai_san_pham', {title: 'Áo Khoác', item: item[0],  user: req.user})
             }
             ;
 
@@ -80,7 +80,7 @@ exports.update_post = [
                             results.name[i].checked='true';
                         }
                     }
-                    res.render('/thay_doi_thong_tin_loai_san_pham', { title: 'Update Book', item : results.name, errors: errors.array() });
+                    res.render('/thay_doi_thong_tin_loai_san_pham', { title: 'Update Book', item : results.name, errors: errors.array(),  user: req.user });
                 });
             return;
         }
