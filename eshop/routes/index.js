@@ -3,14 +3,14 @@ var router = express.Router();
 
 
 var San_pham_controller = require('../controllers/San_pham_controller');
-var Dang_nhap_controller = require('../controllers/Dang_nhap_controller');
+//var Dang_nhap_controller = require('../controllers/Dang_nhap_controller');
 var Dang_ky_controller = require('../controllers/Dang_ky_controller');
 
 
-router.get('/', San_pham_controller.list);
-
-router.post('/', Dang_nhap_controller.check_log_in
-);
+ //router.get('/', San_pham_controller.list);
+//
+// router.post('/', Dang_nhap_controller.check_log_in
+// );
 
 router.post('/main_sign_in', Dang_ky_controller.sign_in);
 
@@ -22,11 +22,24 @@ router.get('/forgot', function(req, res, next) {
   res.render('Quen_mat_khau', { title: 'Quên mật khẩu' });
 });
 
-router.get('/login', function(req, res, next) {
-  res.render('Dang_nhap', { title: '' });
+// router.get('/login', function(req, res, next) {
+//   res.render('Dang_nhap', { title: '' });
+// });
+
+router.get('/', function (req, res, next) {
+
+  if (req.user) {
+    console.log(req.user);
+    res.redirect('/Cua_hang');
+  } else {
+    console.log(req.user);
+    console.log(req.isAuthenticated());
+    res.render('Dang_nhap', {
+      errorText: ''
+    });
+  }
+
 });
-
-
 
 // router.get('/productInfo', function(req, res, next) {
 //   // const data = {
@@ -72,3 +85,4 @@ router.get('/editInfo', function(req, res, next) {
 });
 
 module.exports = router;
+

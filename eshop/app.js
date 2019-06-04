@@ -3,12 +3,28 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session');
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var bcrypt = require('bcrypt');
+var flash = require('connect-flash');
+var bodyParser = require('body-parser');
+var data = require('./models/tai_khoan');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');
+var Cua_hang_Router = require('./routes/Cua_hang');
 
 var app = express();
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
@@ -25,15 +41,126 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
+// BodyParser Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
+// Express Session
+app.use(session({
+  secret: 'anything',
+  saveUninitialized: false,
+  resave: false
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+// ROUTE SECTION ###########
 app.use('/', indexRouter);
+app.use('/Cua_hang', Cua_hang_Router);
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
 
+
+function doTheCompare(passInput, passReal) {
+  bcrypt.compare(passInput, passReal, (err, res)=>{
+    if(!err){
+      console.log(passInput);
+      console.log(passReal);
+      return res;
+    }else{
+      console.log('Error', err);
+    }
+  })
+}
+
+
+passport.use('local', new LocalStrategy({
+      passReqToCallback: true
+    },
+    async function (req, username, password, done) {
+      console.log("begin search!");
+      await data.find({"name":username})
+          .exec(function (err, item) {
+
+            if (err) {
+              console.log("find false!");
+              return done(null, false);
+            }
+            else {
+              if(item.length == 0)
+              {
+                console.log("name false!");
+                req.authError = "Sai tên đăng nhập";
+                return done(null, false);
+              }
+              else {
+                try {
+                  bcrypt.compare(req.body.password, item[0].password, (err, res) => {
+                    if (!err) {
+                      if (res) {
+                        const user = item[0];
+                        return done(null, user);
+
+                      } else {
+                        console.log("password false!");
+                        req.authError = "Sai mật khẩu";
+                        return done(null, false);
+                      }
+
+                    } else {
+                      console.log('Error: ' + err);
+                    }
+                  })
+                }
+                catch (e) {
+                  console.log('Error tryCatch: ' + e);
+                }
+
+
+              }
+            }
+            ;
+          });
+    }));
+passport.serializeUser((user, done) => {
+  done(null, user);
+})
+
+passport.deserializeUser(function (user, done) {
+  done(null, user);
+});
+
+// app.post('/login', function (req, res){
+//   console.log("false to post");
+// }
+//
+// );
+
+app.post('/login',
+    passport.authenticate('local', {
+      failWithError: true
+    }),
+    function (req, res) {
+      res.redirect('/main');
+    },
+    function (err, req, res, next) {
+
+      if (req.authError) {
+        console.log("login false!");
+        res.render('dang_nhap', {
+          errorText: req.authError
+        });
+      }
+    }
+);
+
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
+  console.log("lỗiiiiiiiiiiiiii");
   next(createError(404));
 });
 

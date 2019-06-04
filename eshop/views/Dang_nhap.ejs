@@ -17,12 +17,12 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form method="POST" action="/Dang_nhap">
+				<form action="/login" method="POST" >
 					<div class="input-group form-group">
 						<div class="input-group-prepend">
 							<span class="input-group-text"><i class="fas fa-user"></i></span>
 						</div>
-						<input type="text" id="name" name="name" class="form-control" placeholder="tên đăng nhập">
+						<input type="text" id="usename" name="usename" class="form-control" placeholder="tên đăng nhập">
 						
 					</div>
 					<div class="input-group form-group">
@@ -35,13 +35,13 @@
 						<input type="checkbox">Nhớ tài khoản
 					</div>
 					<div class="form-group">
-						<input type="submit" class="btn float-right login_btn" value="Đăng nhập" formaction="/">
+						<input type="submit" class="btn float-right login_btn" value="Đăng nhập">
 					</div>
 				</form>
 			</div>
 			<div class="card-footer">
 				<div class="d-flex justify-content-center">
-					<p style="color: red"><%=title%></p>
+					<p style="color: red"><%=errorText%></p>
 				</div>
 				<div class="d-flex justify-content-center links">
 					<br><br>  Chưa có tài khoản? <a href="/signin">  <br><br>Đăng ký ngay</a>

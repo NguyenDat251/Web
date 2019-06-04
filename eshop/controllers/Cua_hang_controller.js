@@ -1,7 +1,16 @@
 var goods = require('../models/Cua_hang');
 
 
-exports.show_list = function(req, res) {
-    res.send('NOT IMPLEMENTED: most favorite goods list');
+exports.index = function (req, res) {
+
+    if (req.isAuthenticated()) {
+        res.render('Cua_hang', {user: req.user});
+    } else {
+        console.log(req.user);
+        console.log(req.isAuthenticated());
+        res.render('Dang_nhap', {
+            errorText: ''
+        });
+    }
 };
 
