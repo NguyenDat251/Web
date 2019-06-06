@@ -12,6 +12,23 @@ var Dang_ky_controller = require('../controllers/Dang_ky_controller');
 // router.post('/', Dang_nhap_controller.check_log_in
 // );
 
+router.get('/', function (req, res, next) {
+
+  if (req.user) {
+    console.log("Da dang nhap !");
+    console.log(req.user);
+    res.redirect('/Cua_hang');
+  } else {
+    console.log("Chua dang nhap !");
+    console.log(req.user);
+    console.log(req.isAuthenticated());
+    res.render('Dang_nhap', {
+      errorText: ''
+    });
+  }
+
+});
+
 router.post('/main_sign_in', Dang_ky_controller.sign_in);
 
 router.get('/signin', function(req, res, next) {
@@ -26,20 +43,7 @@ router.get('/forgot', function(req, res, next) {
 //   res.render('Dang_nhap', { title: '' });
 // });
 
-router.get('/', function (req, res, next) {
 
-  if (req.user) {
-    console.log(req.user);
-    res.redirect('/Cua_hang');
-  } else {
-    console.log(req.user);
-    console.log(req.isAuthenticated());
-    res.render('Dang_nhap', {
-      errorText: ''
-    });
-  }
-
-});
 
 // router.get('/productInfo', function(req, res, next) {
 //   // const data = {

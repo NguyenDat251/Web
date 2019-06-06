@@ -5,11 +5,12 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
 var passport = require('passport');
+var data = require('./models/tai_khoan');
 var LocalStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcrypt');
 var flash = require('connect-flash');
 var bodyParser = require('body-parser');
-var data = require('./models/tai_khoan');
+var path = require('path');
 
 
 var indexRouter = require('./routes/index');
@@ -26,10 +27,18 @@ app.use(function (req, res, next) {
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cookieParser());
 
+// //Set up mongoose connection
+// var mongoose = require('mongoose');
+// var mongoDB = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';
+// mongoose.connect(mongoDB, { useNewUrlParser: true });
+// var db = mongoose.connection;
+// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 //Set up mongoose connection
 var mongoose = require('mongoose');
 var mongoDB = 'mongodb+srv://dat:dat251@cluster0-jslyd.mongodb.net/WebDB?retryWrites=true';
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+// mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(mongoDB);
+
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
@@ -144,13 +153,14 @@ app.post('/login',
       failWithError: true
     }),
     function (req, res) {
-      res.redirect('/main');
+  console.log("Da dang nhap")
+      res.redirect('/Cua_hang');
     },
     function (err, req, res, next) {
 
       if (req.authError) {
         console.log("login false!");
-        res.render('dang_nhap', {
+        res.render('Dang_nhap', {
           errorText: req.authError
         });
       }
