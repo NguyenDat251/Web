@@ -6,10 +6,15 @@
                 <div class="col-md-8">
                     <div class="header-right">
                         <ul class="list-unstyled list-inline">
-                            <p><%=user.name%></p>
-                            <li><a href="login"><i class="fa fa-user"></i> Đăng nhập</a></li>
+
+
+
+                            <%if (user){%>
+                            <li><a href="editInfo"><i class="fa fa-user"></i><%=user.name%></a></li>
                             <li><a href="logout"><i class="fa fa-user"></i> Đăng xuất</a></li>
-                            <li><a href="editInfo"><i class="fa fa-user"></i> Thay đổi thông tin</a></li>
+                            <%}else{%>
+                            <li><a href="login"><i class="fa fa-user"></i> Đăng nhập</a></li>
+                            <%}%>
                         </ul>
                     </div>
                 </div>

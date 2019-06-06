@@ -3,1074 +3,177 @@
   <component name="ChangeListManager">
     <list default="true" id="41424028-3b3d-4a95-ac10-9363581f77a1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/controllers/main_controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/atob" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/atob.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/is-ci" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/is-ci.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/nodemon" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/nodemon.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/nodetouch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/nodetouch.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/which" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/.bin/which.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/ansi-regex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/ansi-regex/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/ansi-regex/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/ansi-regex/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/is-fullwidth-code-point/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/is-fullwidth-code-point/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/is-fullwidth-code-point/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/string-width/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/string-width/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/string-width/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/string-width/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/strip-ansi/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/strip-ansi/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/strip-ansi/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/node_modules/strip-ansi/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-align/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-styles/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-styles/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-styles/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ansi-styles/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/node_modules/normalize-path/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/node_modules/normalize-path/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/node_modules/normalize-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/node_modules/normalize-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/anymatch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-diff/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-diff/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-diff/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-diff/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-flatten/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-flatten/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-flatten/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-flatten/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-union/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-union/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-union/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/arr-union/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/array-unique/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/array-unique/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/array-unique/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/array-unique/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/assign-symbols/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/assign-symbols/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/assign-symbols/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/assign-symbols/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/async-each/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/async-each/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/async-each/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/LICENSE.DOCS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/bin/atob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/browser-atob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/node-atob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/atob/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/base/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/binary-extensions/binary-extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/binary-extensions/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/binary-extensions/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/binary-extensions/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/ansi-regex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/ansi-regex/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/ansi-regex/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/ansi-regex/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/is-fullwidth-code-point/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/is-fullwidth-code-point/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/is-fullwidth-code-point/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/string-width/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/string-width/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/string-width/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/string-width/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/strip-ansi/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/strip-ansi/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/strip-ansi/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/node_modules/strip-ansi/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/boxen/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/lib/braces.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/lib/compilers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/lib/parsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/braces/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cache-base/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cache-base/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cache-base/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cache-base/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/camelcase/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/camelcase/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/camelcase/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/camelcase/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/capture-stack-trace/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/capture-stack-trace/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/capture-stack-trace/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/capture-stack-trace/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chalk/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chalk/index.js.flow" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chalk/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chalk/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chalk/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chalk/templates.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chalk/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chokidar/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chokidar/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chokidar/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chokidar/lib/fsevents-handler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chokidar/lib/nodefs-handler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chokidar/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/chokidar/types/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ci-info/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ci-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ci-info/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ci-info/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ci-info/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ci-info/vendors.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/class-utils/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cli-boxes/boxes.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cli-boxes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cli-boxes/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cli-boxes/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cli-boxes/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/collection-visit/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/collection-visit/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/collection-visit/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/collection-visit/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-convert/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-convert/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-convert/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-convert/conversions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-convert/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-convert/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-convert/route.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-name/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-name/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-name/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-name/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-name/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-name/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/color-name/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/component-emitter/History.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/component-emitter/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/component-emitter/Readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/component-emitter/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/component-emitter/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/configstore/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/configstore/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/configstore/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/configstore/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/copy-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/copy-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/copy-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/create-error-class/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/create-error-class/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/create-error-class/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/create-error-class/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/lib/enoent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/lib/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/lib/util/escapeArgument.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/lib/util/escapeCommand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/lib/util/hasEmptyArgumentBug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/lib/util/readShebang.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/lib/util/resolveCommand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/cross-spawn/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/crypto-random-string/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/crypto-random-string/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/crypto-random-string/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/crypto-random-string/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/decode-uri-component/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/decode-uri-component/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/decode-uri-component/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/decode-uri-component/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/dot-prop/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/dot-prop/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/dot-prop/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/dot-prop/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/duplexer3/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/duplexer3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/duplexer3/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/duplexer3/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/escape-string-regexp/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/escape-string-regexp/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/escape-string-regexp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/escape-string-regexp/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/execa/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/execa/lib/errname.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/execa/lib/stdio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/execa/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/execa/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/execa/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/lib/compilers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/lib/parsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/expand-brackets/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/node_modules/is-extendable/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/node_modules/is-extendable/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/node_modules/is-extendable/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/node_modules/is-extendable/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/node_modules/is-extendable/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/lib/compilers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/lib/extglob.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/lib/parsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/extglob/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fill-range/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/for-in/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/for-in/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/for-in/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/for-in/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fragment-cache/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fragment-cache/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fragment-cache/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/fragment-cache/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-stream/buffer-stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-stream/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-stream/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-stream/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-stream/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/get-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/node_modules/is-glob/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/node_modules/is-glob/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/node_modules/is-glob/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/node_modules/is-glob/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/glob-parent/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/global-dirs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/global-dirs/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/global-dirs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/global-dirs/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/got/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/got/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/got/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/got/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/graceful-fs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/graceful-fs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/graceful-fs/clone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/graceful-fs/graceful-fs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/graceful-fs/legacy-streams.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/graceful-fs/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/graceful-fs/polyfills.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-flag/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-flag/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-flag/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-flag/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-value/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/has-values/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ignore-by-default/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ignore-by-default/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ignore-by-default/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ignore-by-default/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/import-lazy/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/import-lazy/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/import-lazy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/import-lazy/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/imurmurhash/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/imurmurhash/imurmurhash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/imurmurhash/imurmurhash.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/imurmurhash/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-binary-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-binary-path/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-binary-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-binary-path/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-buffer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-buffer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-buffer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-buffer/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-buffer/test/basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-ci/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-ci/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-ci/bin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-ci/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-ci/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extendable/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extendable/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extendable/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extendable/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extglob/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extglob/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extglob/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-extglob/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-glob/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-glob/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-glob/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-glob/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-installed-globally/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-installed-globally/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-installed-globally/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-installed-globally/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-npm/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-npm/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-npm/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-number/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-obj/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-obj/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-obj/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-obj/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-path-inside/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-path-inside/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-path-inside/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-path-inside/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-plain-object/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-plain-object/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-plain-object/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-plain-object/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-plain-object/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-redirect/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-redirect/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-redirect/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-redirect/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-retry-allowed/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-retry-allowed/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-retry-allowed/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-retry-allowed/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-stream/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-stream/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-stream/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-stream/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-windows/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-windows/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-windows/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/is-windows/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/mode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/test/basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isexe/windows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isobject/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isobject/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isobject/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isobject/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/isobject/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/kind-of/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/latest-version/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/latest-version/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/latest-version/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/latest-version/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lowercase-keys/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lowercase-keys/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lowercase-keys/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lowercase-keys/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/node_modules/yallist/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/node_modules/yallist/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/node_modules/yallist/iterator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/node_modules/yallist/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/node_modules/yallist/yallist.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/lru-cache/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/make-dir/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/make-dir/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/make-dir/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/make-dir/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-cache/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-cache/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-cache/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-cache/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-visit/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-visit/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-visit/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/map-visit/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/lib/cache.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/lib/compilers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/lib/parsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/micromatch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/node_modules/is-extendable/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/node_modules/is-extendable/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/node_modules/is-extendable/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/node_modules/is-extendable/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/node_modules/is-extendable/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/mixin-deep/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/lib/cache.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/lib/compilers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/lib/parsers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nanomatch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/.jscsrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/bin/nodemon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/bin/postinstall.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/commitlint.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/authors.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/config.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/help.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/logo.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/topics.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/usage.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/doc/cli/whoami.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/cli/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/cli/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/config/command.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/config/defaults.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/config/exec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/config/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/config/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/help/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/monitor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/monitor/match.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/monitor/run.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/monitor/signals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/monitor/watch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/nodemon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/rules/add.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/rules/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/rules/parse.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/spawn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/utils/bus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/utils/clone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/utils/colour.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/utils/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/utils/log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/utils/merge.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/lib/version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/dist/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/src/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/src/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/debug/src/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/nodemon/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/normalize-path/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/normalize-path/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/normalize-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/normalize-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/npm-run-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/npm-run-path/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/npm-run-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/npm-run-path/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-copy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-visit/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-visit/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-visit/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object-visit/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object.pick/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object.pick/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object.pick/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/object.pick/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/p-finally/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/p-finally/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/p-finally/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/p-finally/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/package-json/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/package-json/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/package-json/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/package-json/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pascalcase/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pascalcase/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pascalcase/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pascalcase/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-dirname/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-dirname/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-dirname/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-dirname/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-is-inside/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-is-inside/lib/path-is-inside.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-is-inside/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-key/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-key/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-key/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/path-key/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pify/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pify/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pify/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pify/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/posix-character-classes/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/posix-character-classes/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/posix-character-classes/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/posix-character-classes/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/prepend-http/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/prepend-http/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/prepend-http/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/prepend-http/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pseudomap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pseudomap/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pseudomap/map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pseudomap/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pseudomap/pseudomap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pseudomap/test/basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/lib/tree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/tests/fixtures/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/tests/fixtures/out1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/tests/fixtures/out2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/pstree.remy/tests/index.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/GOVERNANCE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/duplex-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/duplex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/_stream_duplex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/_stream_passthrough.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/_stream_readable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/_stream_transform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/_stream_writable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/internal/streams/BufferList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/internal/streams/destroy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/internal/streams/stream-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/lib/internal/streams/stream.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/passthrough.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/readable-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/readable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/transform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/writable-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/readable-stream/writable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/string_decoder/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/string_decoder/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/string_decoder/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/string_decoder/lib/string_decoder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/node_modules/string_decoder/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/readdirp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/readdirp/stream-api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/regex-not/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/regex-not/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/regex-not/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/regex-not/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/base64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/registry-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/test/auth-token.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/test/registry-url.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-auth-token/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-url/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-url/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-url/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/registry-url/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/remove-trailing-separator/history.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/remove-trailing-separator/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/remove-trailing-separator/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/remove-trailing-separator/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/remove-trailing-separator/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-element/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-element/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-element/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-element/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-string/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-string/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-string/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/repeat-string/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/resolve-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/resolve-url/test/resolve-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/lib/positions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/lib/sets.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/lib/types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/lib/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/ret/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/safe-regex/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/safe-regex/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/safe-regex/example/safe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/safe-regex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/safe-regex/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/safe-regex/readme.markdown" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/safe-regex/test/regex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/semver-diff/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/semver-diff/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/semver-diff/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/semver-diff/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/set-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-command/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-command/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-command/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-command/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-regex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-regex/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-regex/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/shebang-regex/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-data-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-data-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-data-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-descriptor/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-descriptor/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-descriptor/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-node/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon-util/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/lib/compiler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/lib/parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/lib/position.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/lib/source-maps.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/lib/utils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/snapdragon/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/generate-source-map-resolve.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/lib/decode-uri-component.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/lib/resolve-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/lib/source-map-resolve-node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/source-map-resolve.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/source-map-resolve.js.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/test/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/test/read.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/test/source-map-resolve.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/test/windows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-resolve/x-package.json5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/component.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/source-map-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/test/source-map-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map-url/x-package.json5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/dist/source-map.debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/dist/source-map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/dist/source-map.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/dist/source-map.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/array-set.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/base64-vlq.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/base64.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/binary-search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/mapping-list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/quick-sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/source-map-consumer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/source-map-generator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/source-node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/lib/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/source-map/source-map.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/split-string/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/split-string/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/split-string/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/split-string/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/static-extend/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/static-extend/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/static-extend/node_modules/define-property/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/static-extend/node_modules/define-property/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/static-extend/node_modules/define-property/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/static-extend/node_modules/define-property/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/static-extend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/strip-eof/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/strip-eof/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/strip-eof/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/strip-eof/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/supports-color/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/supports-color/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/supports-color/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/supports-color/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/supports-color/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/term-size/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/term-size/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/term-size/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/term-size/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/term-size/vendor/macos/term-size" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/term-size/vendor/windows/term-size.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/timed-out/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/timed-out/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/timed-out/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/timed-out/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/node_modules/kind-of/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/node_modules/kind-of/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/node_modules/kind-of/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/node_modules/kind-of/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-object-path/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex-range/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex-range/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex-range/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex-range/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/to-regex/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/bin/nodetouch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/.bin/nopt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/.bin/nopt.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/nopt/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/nopt/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/nopt/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/nopt/bin/nopt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/nopt/examples/my-program.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/nopt/lib/nopt.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/node_modules/nopt/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/touch/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/.jscsrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/lib/undefsafe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/undefsafe/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/extend-shallow/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/extend-shallow/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/extend-shallow/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/extend-shallow/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/set-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/set-value/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/set-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/node_modules/set-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/union-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unique-string/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unique-string/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unique-string/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unique-string/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/node_modules/isobject/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/node_modules/isobject/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/node_modules/isobject/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-values/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-values/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-values/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/node_modules/has-values/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unset-value/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unzip-response/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unzip-response/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unzip-response/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/unzip-response/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/upath/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/upath/build/code/upath.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/upath/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/upath/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/upath/upath.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/update-notifier/check.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/update-notifier/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/update-notifier/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/update-notifier/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/update-notifier/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/urix/.jshintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/urix/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/urix/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/urix/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/urix/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/urix/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/url-parse-lax/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/url-parse-lax/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/url-parse-lax/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/url-parse-lax/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/use/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/use/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/use/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/use/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/which/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/which/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/which/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/which/bin/which" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/which/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/which/which.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/ansi-regex/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/ansi-regex/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/ansi-regex/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/ansi-regex/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/is-fullwidth-code-point/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/is-fullwidth-code-point/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/is-fullwidth-code-point/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/string-width/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/string-width/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/string-width/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/string-width/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/strip-ansi/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/strip-ansi/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/strip-ansi/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/node_modules/strip-ansi/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/widest-line/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/write-file-atomic/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/write-file-atomic/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/write-file-atomic/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/write-file-atomic/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/write-file-atomic/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/xdg-basedir/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/xdg-basedir/license" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/xdg-basedir/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eShop/node_modules/xdg-basedir/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../eshop/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../eshop/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_loai_san_pham_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/danh_sach_loai_san_pham_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_san_pham_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/danh_sach_san_pham_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/danh_sach_tai_khoan_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/top_10_san_pham_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/top_10_san_pham_controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/danh_sach_cua_hang.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_cua_hang.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/danh_sach_loai_san_pham.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_loai_san_pham.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/danh_sach_san_pham.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_san_pham.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/danh_sach_tai_khoan.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/danh_sach_tai_khoan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/abbrev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/abbrev/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/accepts/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/accepts/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ansi-regex/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ansi-regex/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/aproba/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/aproba/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/are-we-there-yet/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/are-we-there-yet/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/array-flatten/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/array-flatten/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/balanced-match/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/balanced-match/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/basic-auth/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/basic-auth/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/lib/binding/bcrypt_lib.node" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/lib/binding/bcrypt_lib.node" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bcrypt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bcrypt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/lib/types/urlencoded.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/lib/types/urlencoded.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/brace-expansion/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/brace-expansion/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bson/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bson/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bytes/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bytes/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bytes/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bytes/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bytes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bytes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/bytes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bytes/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/chownr/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/chownr/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/code-point-at/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/code-point-at/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/concat-map/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/concat-map/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/console-control-strings/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/console-control-strings/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/content-disposition/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/content-disposition/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/content-type/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/content-type/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cookie-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie-signature/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cookie-signature/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cookie/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cookie/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/core-util-is/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/core-util-is/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/deep-extend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/deep-extend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/delegates/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/delegates/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/depd/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/depd/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/destroy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/destroy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/detect-libc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/detect-libc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ee-first/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ee-first/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ejs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ejs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/encodeurl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/encodeurl/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/escape-html/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/escape-html/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/etag/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/etag/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express-validator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express-validator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/finalhandler/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/finalhandler/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/forwarded/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/forwarded/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fresh/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fresh/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs-minipass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fs-minipass/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/fs.realpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/fs.realpath/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/gauge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/gauge/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/glob/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/glob/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/has-unicode/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/has-unicode/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/http-errors/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/http-errors/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/iconv-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ignore-walk/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ignore-walk/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/inflight/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/inflight/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/inherits/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/inherits/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ini/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ini/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ipaddr.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ipaddr.js/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/is-fullwidth-code-point/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/is-fullwidth-code-point/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/isarray/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/isarray/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/jquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/jquery/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/kareem/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/media-typer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/media-typer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/memory-pager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/memory-pager/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/merge-descriptors/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/merge-descriptors/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/methods/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/methods/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-db/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-db/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime-types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mime/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minimatch/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimatch/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minimist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minimist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minipass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minipass/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/minizlib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/minizlib/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mkdirp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mkdirp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb-core/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongodb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongodb/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose-legacy-pluralize/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mongoose/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/morgan/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/morgan/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/mquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nan/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nan/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/needle/node_modules/debug/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/needle/node_modules/debug/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/needle/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/needle/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/needle/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/needle/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/negotiator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/negotiator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-pre-gyp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/node-pre-gyp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/nopt/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/nopt/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/npm-bundled/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/npm-bundled/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/npm-packlist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/npm-packlist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/npmlog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/npmlog/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/number-is-nan/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/number-is-nan/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/object-assign/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/object-assign/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/on-finished/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/on-finished/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/on-headers/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/on-headers/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/once/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/once/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/os-homedir/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/os-homedir/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/os-tmpdir/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/os-tmpdir/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/osenv/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/osenv/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/parseurl/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/parseurl/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/path-is-absolute/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-is-absolute/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/process-nextick-args/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/process-nextick-args/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/proxy-addr/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/proxy-addr/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/qs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/range-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/range-parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/raw-body/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/raw-body/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rc/node_modules/minimist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rc/node_modules/minimist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/readable-stream/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regexp-clone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexp-clone/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/require_optional/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/require_optional/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/resolve-from/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/resolve-from/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/rimraf/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/rimraf/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safe-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/safe-buffer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/safer-buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/safer-buffer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/saslprep/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/saslprep/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sax/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sax/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/semver/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/serve-static/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/serve-static/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/set-blocking/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/set-blocking/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/setprototypeof/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/setprototypeof/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sift/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sift/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/signal-exit/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/signal-exit/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sliced/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sliced/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/sparse-bitfield/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sparse-bitfield/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/statuses/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/statuses/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string-width/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/string-width/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/string_decoder/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/string_decoder/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-ansi/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/strip-ansi/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/strip-json-comments/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/strip-json-comments/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tar/lib/large-numbers.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tar/lib/large-numbers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tar/lib/mkdir.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tar/lib/mkdir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/tar/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tar/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/type-is/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/type-is/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/unpipe/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/unpipe/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/util-deprecate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/util-deprecate/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/utils-merge/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/utils-merge/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/validator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/validator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vary/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vary/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/wide-align/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/wide-align/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/wrappy/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/wrappy/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/yallist/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/yallist/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/dang_nhap.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/dang_nhap.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/danh_sach_cua_hang.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/danh_sach_cua_hang.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/danh_sach_loai_san_pham.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/danh_sach_loai_san_pham.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/danh_sach_san_pham.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/danh_sach_san_pham.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/danh_sach_tai_khoan.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/danh_sach_tai_khoan.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partial/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partial/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/thay_doi_thong_tin_tai_khoan.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/thay_doi_thong_tin_tai_khoan.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -1086,26 +189,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1222">
+            <state relative-caret-position="136">
               <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/dang_nhap.ejs">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="204">
+              <caret line="105" column="41" lean-forward="true" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -1123,11 +217,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/main_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="187">
+              <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -1144,8 +247,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/danh_sach_cho_duyet.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-918">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -1153,7 +256,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/danh_sach_cua_hang.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="1241">
               <caret line="73" column="50" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="50" />
             </state>
           </provider>
@@ -1162,7 +265,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/danh_sach_cua_hang.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="510">
               <caret line="30" column="35" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="35" />
             </state>
           </provider>
@@ -1172,7 +275,7 @@
         <entry file="file://$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+              <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -1221,7 +324,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -1269,14 +372,12 @@
         <option value="$PROJECT_DIR$/models/danh_sach_loai_san_pham.js" />
         <option value="$PROJECT_DIR$/controllers/danh_sach_loai_san_pham_controller.js" />
         <option value="$PROJECT_DIR$/views/danh_sach_loai_san_pham.ejs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
-
   <component name="ProjectFrameBounds" extendedState="6">
-
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -1331,7 +432,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../eshop" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -1385,26 +486,22 @@
       <workItem from="1559369783971" duration="2411000" />
       <workItem from="1559381090492" duration="19314000" />
       <workItem from="1559453786343" duration="15192000" />
-
       <workItem from="1559571834970" duration="9152000" />
       <workItem from="1559662065438" duration="3865000" />
       <workItem from="1559666716685" duration="790000" />
       <workItem from="1559667738091" duration="96000" />
       <workItem from="1559791265367" duration="4549000" />
-
+      <workItem from="1559828301106" duration="1102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-
-    <option name="totallyTimeSpent" value="123717000" />
-
+    <option name="totallyTimeSpent" value="124819000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="697" height="735" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24734446" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2470238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -1418,7 +515,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32917964" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5014881" side_tool="true" weight="0.38969404" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4985119" visible="true" weight="0.23920266" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4985119" visible="true" weight="0.23832528" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24962178" />
@@ -1705,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="40" lean-forward="true" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-867" />
@@ -1750,23 +840,9 @@
     <entry file="file://$PROJECT_DIR$/models/main.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1222">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/dang_nhap.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="323">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
         </state>
       </provider>
@@ -1774,7 +850,7 @@
     <entry file="file://$PROJECT_DIR$/routes/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1789,20 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/danh_sach_cho_duyet.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-918">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/danh_sach_cua_hang.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="30" column="35" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/main.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1810,24 +872,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/danh_sach_cho_duyet.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/danh_sach_cua_hang.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="1241">
           <caret line="73" column="50" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/danh_sach_cua_hang.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/danh_sach_cua_hang_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="48" lean-forward="true" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/main_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="187">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="105" column="41" lean-forward="true" selection-start-line="105" selection-start-column="41" selection-end-line="105" selection-end-column="41" />
         </state>
       </provider>
     </entry>

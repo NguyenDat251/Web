@@ -5,29 +5,28 @@ var router = express.Router();
 var San_pham_controller = require('../controllers/San_pham_controller');
 //var Dang_nhap_controller = require('../controllers/Dang_nhap_controller');
 var Dang_ky_controller = require('../controllers/Dang_ky_controller');
-
+var Cua_hang_controller = require('../controllers/Cua_hang_controller');
 
  //router.get('/', San_pham_controller.list);
 //
 // router.post('/', Dang_nhap_controller.check_log_in
 // );
 
-router.get('/', function (req, res, next) {
+router.get('/', Cua_hang_controller.index
+  // if (req.user) {
+  //   console.log("Da dang nhap !");
+  //   console.log(req.user);
+  //   res.redirect('/Cua_hang');
+  // } else {
+  //   console.log("Chua dang nhap !");
+  //   console.log(req.user);
+  //   console.log(req.isAuthenticated());
+  //   res.render('Dang_nhap', {
+  //     errorText: ''
+  //   });
+  // }
 
-  if (req.user) {
-    console.log("Da dang nhap !");
-    console.log(req.user);
-    res.redirect('/Cua_hang');
-  } else {
-    console.log("Chua dang nhap !");
-    console.log(req.user);
-    console.log(req.isAuthenticated());
-    res.render('Dang_nhap', {
-      errorText: ''
-    });
-  }
-
-});
+);
 
 router.post('/main_sign_in', Dang_ky_controller.sign_in);
 
@@ -39,9 +38,9 @@ router.get('/forgot', function(req, res, next) {
   res.render('Quen_mat_khau', { title: 'Quên mật khẩu' });
 });
 
-// router.get('/login', function(req, res, next) {
-//   res.render('Dang_nhap', { title: '' });
-// });
+router.get('/login', function(req, res, next) {
+  res.render('Dang_nhap', { errorText: '' });
+});
 
 
 
@@ -81,7 +80,8 @@ router.get('/bucket', function(req, res, next) {
 });
 
 router.get('/logout', function(req, res, next) {
-  res.render('Dang_xuat', { title: 'Goodbye!!' });
+  req.logout();
+  res.redirect('Cua_hang');
 });
 
 router.get('/editInfo', function(req, res, next) {

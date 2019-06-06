@@ -1,6 +1,5 @@
 var createError = require('http-errors');
 var express = require('express');
-var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
@@ -101,6 +100,7 @@ passport.use('local', new LocalStrategy({
             else {
               if(item.length == 0)
               {
+                  console.log(username);
                 console.log("name false!");
                 req.authError = "Sai tên đăng nhập";
                 return done(null, false);

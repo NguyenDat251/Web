@@ -18,6 +18,8 @@ var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');
 var Cua_hang_Router = require('./routes/Cua_hang');
 
+var Cua_hang_Controller = require('./controllers/Cua_hang_controller');
+
 var app = express();
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -66,11 +68,14 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+
+
 // ROUTE SECTION ###########
 app.use('/', indexRouter);
 app.use('/Cua_hang', Cua_hang_Router);
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
+
 
 
 function doTheCompare(passInput, passReal) {
@@ -167,6 +172,12 @@ app.post('/login',
     }
 );
 
+// app.get('/logout', function(req, res)
+// {
+//   req.logout();
+//   res.redirect('Cua_hang');
+// })
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -179,7 +190,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
+  res.locals.user = req.user || null;
   // render the error page
   res.status(err.status || 500);
   res.render('error');

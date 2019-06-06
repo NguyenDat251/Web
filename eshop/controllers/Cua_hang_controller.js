@@ -3,23 +3,6 @@ var data = require('../models/San_pham');
 
 exports.index = function (req, res) {
 
-    if (req.isAuthenticated()) {
-        console.log("Show Cua_hang page");
-        res.render('Cua_hang', {user: req.user});
-    } else {
-        console.log("Don't show Cua_hang page");
-        console.log(req.user);
-        console.log(req.isAuthenticated());
-        res.render('Dang_nhap', {
-            errorText: ''
-        });
-    }
-};
-
-//const data =
-
-
-exports.list = function (req, res, next) {
     data.find()
         .exec(function (err, list_items) {
             if (err) {
@@ -28,7 +11,40 @@ exports.list = function (req, res, next) {
             }
             //Successful, so render
             console.log("Successful, so render");
+            if (req.isAuthenticated()) {
+                console.log("Show Cua_hang page");
+                res.render('Cua_hang', {title: 'Áo Khoác', user: req.user, list_items: list_items});
+            }
+            else{
+                res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: list_items});
+            }
+        });
 
+        // res.render('Cua_hang', {user: req.user, list_items: showList});
+
+    // } else {
+    //     console.log("Don't show Cua_hang page");
+    //     console.log(req.user);
+    //     console.log(req.isAuthenticated());
+    //     res.render('Dang_nhap', {
+    //         errorText: ''
+    //     });
+    // }
+};
+
+//const data =
+
+
+exports.ShowList = function (req, res, next) {
+    data.find()
+        .exec(function (err, list_items) {
+            if (err) {
+                console.log("falseeee");
+                return next(err);
+            }
+            //Successful, so render
+            console.log("Successful, so render");
+            //return list_items;
             res.render('Cua_hang', {title: 'Áo Khoác', list_items: list_items});
         });
 };
