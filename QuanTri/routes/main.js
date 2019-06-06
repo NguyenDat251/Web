@@ -12,7 +12,7 @@ router.get('/dang_ky', function(req, res, next) {
     res.render('dang_ky', { title: '' });
 });
 
-
-
+//nghe anh k => k
+// thoi khoi noi hơ
 
 module.exports = router;

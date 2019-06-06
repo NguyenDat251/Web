@@ -56,9 +56,9 @@ app.use(bodyParser.urlencoded({
 app.use(session({
     secret: 'anything',
     saveUninitialized: false,
-    resave: false
+    resave: false,
 }));
-
+//mở cái của anh lên  k=ấ
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -75,7 +75,7 @@ app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
 
 function doTheCompare(passInput, passReal) {
-  bcrypt.compare(passInput, passReal, (err, res)=>{
+  bcrypt.compare(passInpunot, passReal, (err, res)=>{
     if(!err){
         console.log(passInput);
         console.log(passReal);
@@ -186,11 +186,4 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
-
-
-
-
-
-
 module.exports = app;
