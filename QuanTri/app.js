@@ -17,6 +17,7 @@ var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');
 var mainRouter = require('./routes/main');
 var danh_sach_tai_khoan_Router = require('./routes/danh_sach_tai_khoan_Router');
+var danh_sach_cho_duyet_Router = require('./routes/danh_sach_cho_duyet_Router');
 var danh_sach_cua_hang_Router = require('./routes/danh_sach_cua_hang_Router');
 var danh_sach_san_pham_Router = require('./routes/danh_sach_san_pham_Router');
 var danh_sach_loai_san_pham_Router = require('./routes/danh_sach_loai_san_pham_Router');
@@ -58,7 +59,6 @@ app.use(session({
     saveUninitialized: false,
     resave: false,
 }));
-//mở cái của anh lên  k=ấ
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -68,6 +68,7 @@ app.use(passport.session());
 app.use('/', indexRouter)
 app.use('/main', mainRouter);
 app.use('/danh_sach_tai_khoan', danh_sach_tai_khoan_Router);
+app.use('/danh_sach_cho_duyet', danh_sach_cho_duyet_Router);
 app.use('/danh_sach_cua_hang', danh_sach_cua_hang_Router);
 app.use('/danh_sach_san_pham', danh_sach_san_pham_Router);
 app.use('/danh_sach_loai_san_pham', danh_sach_loai_san_pham_Router);
