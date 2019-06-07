@@ -72,7 +72,17 @@ exports.sign_in = [
                                 return next(err); }
                             // Genre saved. Redirect to genre detail page.
                             console.log("success");
-                            res.redirect('../')
+                            // try {
+                                req.logIn(account, function (err) {
+                                    if (err) {
+                                        console.log("err sign up: " + err);
+                                        return next(err);
+                                    }
+                                    console.log("success sing up");
+                                    res.redirect('/Cua_hang');
+                                });
+
+                            // }catch(er) {console.log(er);}
                         });
 
                     }
