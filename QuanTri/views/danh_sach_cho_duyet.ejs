@@ -74,78 +74,87 @@
                                 <th>SĐT</th>
                                 <th>Xác nhận</th>
                             </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 10000001</td>
-                                <td>ND10000001</td>
-                                <td>ng1000001@gmail.com </td>
-                                <td>0126547890</td>
-                                <td>
-                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>
-                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 10000001</td>
-                                <td>ND10000001</td>
-                                <td>ng1000001@gmail.com </td>
-                                <td>0126547890</td>
-                                <td>
-                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>
-                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 10000001</td>
-                                <td>ND10000001</td>
-                                <td>ng1000001@gmail.com </td>
-                                <td>0126547890</td>
-                                <td>
-                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>
-                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 10000001</td>
-                                <td>ND10000001</td>
-                                <td>ng1000001@gmail.com </td>
-                                <td>0126547890</td>
-                                <td>
-                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>
-                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 10000001</td>
-                                <td>ND10000001</td>
-                                <td>ng1000001@gmail.com </td>
-                                <td>0126547890</td>
-                                <td>
-                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>
-                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Người dùng 10000001</td>
-                                <td>ND10000001</td>
-                                <td>ng1000001@gmail.com </td>
-                                <td>0126547890</td>
-                                <td>
-                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>
-                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>
-                                </td>
-                            </tr>
+
+                            <% for(var i = 0; i < list_items.length; i++) { %>
+                                <tr>
+                                    <td><%= list_items[i].name %></td>
+                                    <td><%= list_items[i].password %></td>
+                                   // <td><a href="<%= list_items[i].url %>">Thay đổi thông tin</a></td>
+                                   // <td><a href= <%= list_items[i].delete_url%>>Xóa</a></td>
+                                </tr>
+                            <% }; %>
+<!--                            <tr>-->
+<!--                                <td>1</td>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Người dùng 10000001</td>-->
+<!--                                <td>ND10000001</td>-->
+<!--                                <td>ng1000001@gmail.com </td>-->
+<!--                                <td>0126547890</td>-->
+<!--                                <td>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>1</td>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Người dùng 10000001</td>-->
+<!--                                <td>ND10000001</td>-->
+<!--                                <td>ng1000001@gmail.com </td>-->
+<!--                                <td>0126547890</td>-->
+<!--                                <td>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>1</td>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Người dùng 10000001</td>-->
+<!--                                <td>ND10000001</td>-->
+<!--                                <td>ng1000001@gmail.com </td>-->
+<!--                                <td>0126547890</td>-->
+<!--                                <td>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>1</td>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Người dùng 10000001</td>-->
+<!--                                <td>ND10000001</td>-->
+<!--                                <td>ng1000001@gmail.com </td>-->
+<!--                                <td>0126547890</td>-->
+<!--                                <td>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>1</td>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Người dùng 10000001</td>-->
+<!--                                <td>ND10000001</td>-->
+<!--                                <td>ng1000001@gmail.com </td>-->
+<!--                                <td>0126547890</td>-->
+<!--                                <td>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>1</td>-->
+<!--                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>-->
+<!--                                <td>Người dùng 10000001</td>-->
+<!--                                <td>ND10000001</td>-->
+<!--                                <td>ng1000001@gmail.com </td>-->
+<!--                                <td>0126547890</td>-->
+<!--                                <td>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Duyệt" class="pd-setting-ed">Duyệt</button></a>-->
+<!--                                    <a href="#"><button data-toggle="tooltip" title="Hủy" class="pd-setting-ed">Hủy</button></a>-->
+<!--                                </td>-->
+<!--                            </tr>-->
                         </table>
                         <div class="custom-pagination">
                             <nav aria-label="Page navigation example">
