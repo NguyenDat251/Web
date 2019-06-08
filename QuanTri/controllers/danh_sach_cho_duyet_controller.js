@@ -25,9 +25,9 @@ function doTheCompare(passInput, passReal) {
     })
 }
 
-console.log("Cotroller")
+//console.log("Cotroller")
 
-exports.index = function (req, res) {
+exports.index = function (req, res, next) {
 
     console.log("INDEX !!!");
 

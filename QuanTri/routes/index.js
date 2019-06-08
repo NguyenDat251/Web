@@ -48,9 +48,9 @@ router.get('/dang_ky', function(req, res, next) {
 //     res.render('them_tai_khoan', { title: 'Express' });
 // });
 
-router.get('/danh_sach_cho_duyet', function(req, res, next) {
-  res.render('danh_sach_cho_duyet', { title: 'Express' });
-});
+// router.get('/danh_sach_cho_duyet', function(req, res, next) {
+//   res.render('danh_sach_cho_duyet', { title: 'Express' });
+// });
 
 router.get('/thay_doi_thong_tin', function(req, res, next) {
   res.render('thay_doi_thong_tin', { title: 'Express' });
