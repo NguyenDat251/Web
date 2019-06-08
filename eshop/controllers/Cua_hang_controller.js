@@ -1,8 +1,9 @@
 var goods = require('../models/Cua_hang');
 var data = require('../models/San_pham');
+var async = require('async');
 
-exports.index = function (req, res) {
-
+function findListItem()
+{
     data.find()
         .exec(function (err, list_items) {
             if (err) {
@@ -11,27 +12,74 @@ exports.index = function (req, res) {
             }
             //Successful, so render
             console.log("Successful, so render");
-            if (req.isAuthenticated()) {
-                console.log("Show Cua_hang page");
-                res.render('Cua_hang', {title: 'Áo Khoác', user: req.user, list_items: list_items});
-            }
-            else{
-                res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: list_items});
-            }
+            return list_items;
         });
 
-        // res.render('Cua_hang', {user: req.user, list_items: showList});
-
-    // } else {
-    //     console.log("Don't show Cua_hang page");
-    //     console.log(req.user);
-    //     console.log(req.isAuthenticated());
-    //     res.render('Dang_nhap', {
-    //         errorText: ''
-    //     });
-    // }
 };
 
+function renderCuaHang(user, list_items)
+{
+    if (req.isAuthenticated()) {
+        console.log("Show Cua_hang page");
+
+        res.render('Cua_hang', {title: 'Áo Khoác', user: user, list_items: list_items});
+    }
+    else{
+
+        res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: list_items});
+    }
+};
+
+exports.index =  function (req, res) {
+
+//     data.find()
+//         .exec(function (err, list_items) {
+//             if (err) {
+//                 console.log("falseeee");
+//                 return next(err);
+//             }
+//             console.log("Successful, so render");
+//     if (req.isAuthenticated()) {
+//         console.log("Show Cua_hang page");
+//
+//         res.render('Cua_hang', {title: 'Áo Khoác', user: user, list_items: list_items});
+//     }
+//     else{
+//
+//         res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: list_items});
+//     }}
+//
+// )};
+
+    async.parallel({
+        list: function(callback) {
+            data.find()
+                .exec(callback);
+        },
+
+        list_type: function(callback) {
+            data.distinct("type")
+                .exec(callback);
+        },
+
+    }, function(err, results) {
+        if (err) { return next(err); }
+        if (results.list_type==null) { // No results.
+            var err = new Error('list not found');
+            err.status = 404;
+            return next(err);
+        }
+        // Successful, so render
+        if (req.isAuthenticated()) {
+            res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: results.list, list_type: results.list_type});
+        }
+        else {
+            res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: results.list, list_type: results.list_type});
+        }
+    });
+
+
+}
 //const data =
 
 

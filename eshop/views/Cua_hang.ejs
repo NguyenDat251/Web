@@ -18,7 +18,9 @@
                     <ul class="nav navbar-nav">
                         
                     </ul>
-                </div>  
+
+                </div>
+
             </div>
         </div>
     </div> <!-- End mainmenu area -->
@@ -42,14 +44,18 @@
             <div class="col col-md-3">
                 <label>Loại sản phẩm</label>
                 <select class="srchTxt">
-                    <option>Tất cả</option>
-                    <option>CASIO </option>
-                    <option>CITIZEN </option>
-                    <option>G-SHOCK</option>
-                    <option>CALVIN </option>
-                    <option>SEIKO </option>
-                    <option>FOUETTÉ </option>
-                    <option>DOXA </option>
+                    <option value="Tất cả">Tất cả</option>
+                    <% for(var i = 0; i < list_type.length; i++) { var name = "Type" + i;%>
+                        <option name=name value=<%=list_type[i]%>><%=list_type[i]%> </option>
+                    <%}%>
+<!--                    <option value="Tất cả">Tất cả</option>-->
+<!--                    <option>CASIO </option>-->
+<!--                    <option>CITIZEN </option>-->
+<!--                    <option>G-SHOCK</option>-->
+<!--                    <option>CALVIN </option>-->
+<!--                    <option>SEIKO </option>-->
+<!--                    <option>FOUETTÉ </option>-->
+<!--                    <option>DOXA </option>-->
                 </select>
             </div>
             <div class="col col-md-3">
@@ -82,7 +88,7 @@
 
         <div class="row justify-content-center">
 
-
+        <form type="POST" action="search">
             <div class="col-md-6">
                 <input class="col-md-12" type="text" placeholder="Search products...">
             </div>
@@ -96,7 +102,7 @@
             </select>
 
             <input type="submit" value="Tìm kiếm">
-
+        </form>
         </div>
 
 
