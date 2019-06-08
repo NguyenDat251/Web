@@ -85,26 +85,24 @@
     <div style="height: 20px"></div>
 
     <div class="container">
-
+        <form method="POST" action="search">
         <div class="row justify-content-center">
 
-        <form type="POST" action="search">
+
             <div class="col-md-6">
-                <input class="col-md-12" type="text" placeholder="Search products...">
+                <input class="col-md-12" type="text" name="searchBar" placeholder="Search products...">
             </div>
-            <select class="srchTxt">
-                <option>Tất cả</option>
-                <option>Điện thoại </option>
-                <option>Quần áo </option>
-                <option>Laptop </option>
-                <option>Giày </option>
-                <option>Sách </option>
+            <select id="selectType" name="selectedType" class="srchTxt">
+                <option value="Tất cả">Tất cả</option>
+                <% for(var i = 0; i < list_type.length; i++) { var name = "Type" + i;%>
+                <option name=name value=<%=list_type[i]%>><%=list_type[i]%> </option>
+                <%}%>
             </select>
 
             <input type="submit" value="Tìm kiếm">
-        </form>
-        </div>
 
+        </div>
+        </form>
 
     </div>
 
@@ -133,7 +131,7 @@
 <!--                    </div>-->
 <!--                </div>-->
 
-                <% for(var i = 0; i < 12; i++) { %>
+                <% for(var i = 0; i < list_items.length; i++) { %>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
                         <div class="product-upper">

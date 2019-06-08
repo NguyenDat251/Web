@@ -30,6 +30,8 @@ router.get('/', Cua_hang_controller.index
 
 router.post('/sign_up', Dang_ky_controller.sign_in);
 
+router.post('/search', Cua_hang_controller.search);
+
 router.get('/sign_up', function(req, res, next) {
   res.render('Dang_ky', { title: '' });
 });

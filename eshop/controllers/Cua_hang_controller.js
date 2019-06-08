@@ -1,6 +1,9 @@
 var goods = require('../models/Cua_hang');
 var data = require('../models/San_pham');
 var async = require('async');
+var list = null;
+var list_type = null;
+
 
 function findListItem()
 {
@@ -70,6 +73,7 @@ exports.index =  function (req, res) {
             return next(err);
         }
         // Successful, so render
+        list_type = results.list_type;
         if (req.isAuthenticated()) {
             res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: results.list, list_type: results.list_type});
         }
@@ -160,3 +164,71 @@ exports.info = async (req, res, next) => {
 
         });
 };
+
+exports.search= function (req, res, next) {
+    //var e = document.getElementById("selectType");
+
+    var strType = req.body.selectedType;
+    console.log("selectedType: " + req.body.selectedType);
+    console.log("searchBar: " + req.body.searchBar);
+    data.find({"name": {'$regex': req.body.searchBar}})
+        .exec(function (err, list_items) {
+            if (err) {
+                console.log("falseeee");
+                return next(err);
+            }
+            if (list_items==null) { // No results.
+                var err = new Error('list not found');
+                err.status = 404;
+                return next(err);
+            }
+            //Successful, so render
+            console.log("Successful, so render");
+            //console.log(list_items);
+            var listTrueItem = new Array();
+            for(var i = 0; i < list_items.length; i++)
+            {
+                console.log(list_items[i].type);
+                if(list_items[i].type == strType) {
+                    console.log("true");
+                    listTrueItem.push(list_items[i]);
+                }
+            }
+
+            if (req.isAuthenticated()) {
+                res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: listTrueItem, list_type: list_type});
+            }
+            else {
+                res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: listTrueItem, list_type: list_type});
+            }
+        });
+
+
+    // async.parallel({
+    //     list: function(callback) {
+    //         data.find()
+    //             .exec(callback);
+    //     },
+    //
+    //     list_type: function(callback) {
+    //         data.distinct("type")
+    //             .exec(callback);
+    //     },
+    //
+    // }, function(err, results) {
+    //     if (err) { return next(err); }
+    //     if (results.list_type==null) { // No results.
+    //         var err = new Error('list not found');
+    //         err.status = 404;
+    //         return next(err);
+    //     }
+    //     // Successful, so render
+    //     list_type = results.list_type;
+    //     if (req.isAuthenticated()) {
+    //         res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: results.list, list_type: results.list_type});
+    //     }
+    //     else {
+    //         res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: results.list, list_type: results.list_type});
+    //     }
+    // });
+}
