@@ -3,7 +3,7 @@ var data = require('../models/San_pham');
 var async = require('async');
 var list = null;
 var list_type = null;
-
+var list_brand = null;
 
 function findListItem()
 {
@@ -65,6 +65,11 @@ exports.index =  function (req, res) {
                 .exec(callback);
         },
 
+        list_brand: function(callback) {
+            data.distinct("brand")
+                .exec(callback);
+        },
+
     }, function(err, results) {
         if (err) { return next(err); }
         if (results.list_type==null) { // No results.
@@ -74,11 +79,12 @@ exports.index =  function (req, res) {
         }
         // Successful, so render
         list_type = results.list_type;
+        list_brand = results.list_brand;
         if (req.isAuthenticated()) {
-            res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: results.list, list_type: results.list_type});
+            res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: results.list, list_type: results.list_type, list_brand: results.list_brand});
         }
         else {
-            res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: results.list, list_type: results.list_type});
+            res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: results.list, list_type: results.list_type, list_brand: results.list_brand});
         }
     });
 
@@ -169,6 +175,9 @@ exports.search= function (req, res, next) {
     //var e = document.getElementById("selectType");
 
     var strType = req.body.selectedType;
+    var strBrand = req.body.selectedBrand;
+    var strGender = req.body.selectedGender;
+
     console.log("selectedType: " + req.body.selectedType);
     console.log("searchBar: " + req.body.searchBar);
     data.find({"name": {'$regex': req.body.searchBar}})
@@ -186,20 +195,23 @@ exports.search= function (req, res, next) {
             console.log("Successful, so render");
             //console.log(list_items);
             var listTrueItem = new Array();
+
+            //     listTrueItem = list_items;
+            // else{
             for(var i = 0; i < list_items.length; i++)
             {
-                console.log(list_items[i].type);
-                if(list_items[i].type == strType) {
+                //console.log(list_items[i].type);
+                if((list_items[i].type == strType || strType=="Tất cả") && (list_items[i].brand == strBrand || strBrand=="Tất cả") && (list_items[i].gender == strGender || strGender=="Tất cả")) {
                     console.log("true");
                     listTrueItem.push(list_items[i]);
                 }
             }
 
             if (req.isAuthenticated()) {
-                res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: listTrueItem, list_type: list_type});
+                res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: listTrueItem, list_type: list_type, list_brand: list_brand});
             }
             else {
-                res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: listTrueItem, list_type: list_type});
+                res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: listTrueItem, list_type: list_type, list_brand: list_brand});
             }
         });
 

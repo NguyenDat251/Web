@@ -39,60 +39,76 @@
 
     <div style="height: 20px"></div>
 
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-md-3">
-                <label>Loại sản phẩm</label>
-                <select class="srchTxt">
-                    <option value="Tất cả">Tất cả</option>
-                    <% for(var i = 0; i < list_type.length; i++) { var name = "Type" + i;%>
-                        <option name=name value=<%=list_type[i]%>><%=list_type[i]%> </option>
-                    <%}%>
+<!--    <div class="container">-->
+<!--        <div class="row justify-content-center">-->
+<!--            <div class="col col-md-3">-->
+<!--                <label>Loại sản phẩm</label>-->
+<!--                <select class="srchTxt" name="selectedType">-->
 <!--                    <option value="Tất cả">Tất cả</option>-->
-<!--                    <option>CASIO </option>-->
-<!--                    <option>CITIZEN </option>-->
-<!--                    <option>G-SHOCK</option>-->
-<!--                    <option>CALVIN </option>-->
-<!--                    <option>SEIKO </option>-->
-<!--                    <option>FOUETTÉ </option>-->
-<!--                    <option>DOXA </option>-->
-                </select>
-            </div>
-            <div class="col col-md-3">
-                <label>Nhà sản xuất</label>
-                <select class="srchTxt">
-                    <option>Tất cả</option>
-                    <option>CASIO </option>
-                    <option>CITIZEN </option>
-                    <option>G-SHOCK</option>
-                    <option>CALVIN </option>
-                    <option>SEIKO </option>
-                    <option>FOUETTÉ </option>
-                    <option>DOXA </option>
-                </select>
-            </div>
-            <div class="col col-md-3">
-                <label>Phân loại</label>
-                <select class="srchTxt">
-                    <option>Đồng hồ nam</option>
-                    <option>Đồng hồ nữ</option>
-
-                </select>
-            </div>
-        </div>
-    </div>
+<!--                    <% for(var i = 0; i < list_type.length; i++) {%>-->
+<!--                        <option ><%=list_type[i]%> </option>-->
+<!--                    <%}%>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="col col-md-3">-->
+<!--                <label>Nhà sản xuất</label>-->
+<!--                <select class="srchTxt" name="selectedBrand">-->
+<!--                    <option value="Tất cả">Tất cả</option>-->
+<!--                    <% for(var i = 0; i < list_brand.length; i++) {%>-->
+<!--                    <option ><%=list_brand[i]%> </option>-->
+<!--                    <%}%>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--            <div class="col col-md-3">-->
+<!--                <label>Phân loại</label>-->
+<!--                <select class="srchTxt" name="selectedGender">-->
+<!--                    <option>Tất cả</option>-->
+<!--                    <option>nam</option>-->
+<!--                    <option>nữ</option>-->
+<!--                </select>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
     <div style="height: 20px"></div>
 
     <div class="container">
         <form method="POST" action="search">
+            <div class="row justify-content-center">
+                <div class="col col-md-3">
+                    <label>Loại sản phẩm</label>
+                    <select class="srchTxt" name="selectedType">
+                        <option value="Tất cả">Tất cả</option>
+                        <% for(var i = 0; i < list_type.length; i++) {%>
+                        <option ><%=list_type[i]%> </option>
+                        <%}%>
+                    </select>
+                </div>
+                <div class="col col-md-3">
+                    <label>Nhà sản xuất</label>
+                    <select class="srchTxt" name="selectedBrand">
+                        <option value="Tất cả">Tất cả</option>
+                        <% for(var i = 0; i < list_brand.length; i++) {%>
+                        <option ><%=list_brand[i]%> </option>
+                        <%}%>
+                    </select>
+                </div>
+                <div class="col col-md-3">
+                    <label>Phân loại</label>
+                    <select class="srchTxt" name="selectedGender">
+                        <option>Tất cả</option>
+                        <option>nam</option>
+                        <option>nữ</option>
+                    </select>
+                </div>
+            </div>
         <div class="row justify-content-center">
 
 
             <div class="col-md-6">
                 <input class="col-md-12" type="text" name="searchBar" placeholder="Search products...">
             </div>
-            <select id="selectType" name="selectedType" class="srchTxt">
+            <select id="selectType"  class="srchTxt">
                 <option value="Tất cả">Tất cả</option>
                 <% for(var i = 0; i < list_type.length; i++) { var name = "Type" + i;%>
                 <option name=name value=<%=list_type[i]%>><%=list_type[i]%> </option>
