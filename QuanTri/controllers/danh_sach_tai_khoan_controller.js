@@ -1,7 +1,7 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan');
-var user = "temp";
+//var user = "temp";
 
 const bcrypt = require('bcrypt');
 let saltRounds = 10
@@ -27,8 +27,6 @@ function doTheCompare(passInput, passReal) {
 
 
 exports.index = function (req, res) {
-
-
     if (req.isAuthenticated()) {
         data.find()
             .exec(function (err, list_items) {
@@ -71,7 +69,7 @@ exports.show_info = async (req, res, next) => {
     data.find({_id:req.params.id})
         .exec(function (err, item) {
             if (err) {
-                console.log("falseeee");
+                console.log("failseeee");
                 return next(err);
             }
             //Successful, so render

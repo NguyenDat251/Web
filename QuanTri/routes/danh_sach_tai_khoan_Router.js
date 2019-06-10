@@ -7,10 +7,10 @@ router.get('/', danh_sach_tai_khoan_controller.index);
 
 
 //router.post('/main_sign_in', danh_sach_tai_khoan_admin_controller.sign_in);
-
+router.post('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.update_post);
 router.get('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.show_info);
 router.get('/xoa_tai_khoan/:id', danh_sach_tai_khoan_controller.delete_post);
-router.post('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.update_post);
+
 router.post('/them_tai_khoan', danh_sach_tai_khoan_controller.add);
 router.get('/them_tai_khoan', function(req, res, next) {
     if (req.isAuthenticated()) {
