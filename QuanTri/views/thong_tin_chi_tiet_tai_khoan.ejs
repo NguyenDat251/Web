@@ -3,7 +3,7 @@
 
 <head>
     <title>thay-doi-thong-tin</title>
-    <%include ./partial/head.ejs%>
+    <%include partial/head2.ejs%>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<%include ./partial/menu.ejs%>
+<%include partial/menu.ejs%>
 <!-- Start Welcome area -->
 <div class="all-content-wrapper">
     <div class="container-fluid">
@@ -24,9 +24,9 @@
         </div>
     </div>
     <div class="header-advance-area">
-        <%include ./partial/header.ejs%>
+        <%include partial/header.ejs%>
         <!-- Mobile Menu start -->
-        <%include ./partial/mobile.ejs%>
+        <%include partial/mobile.ejs%>
         <!-- Mobile Menu end -->
         <div class="breadcome-area">
             <div class="container-fluid">
@@ -76,48 +76,35 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <span class="input-group-addon">Tên</span>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder=<%= item.name %>/>
+                                            <p><strong>Tên: </strong><%= item.name %> </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <span class="input-group-addon">email</span>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder=<%= item.email %>/>
+                                            <p><strong>Email: </strong><%= item.email %> </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <span class="input-group-addon">email</span>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder=<%= item.email %>/>
+                                            <p><strong>Địa chỉ: </strong><%= item.address %> </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <span class="input-group-addon">Địa chỉ</span>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder=<%= item.address %>/>
+                                            <p><strong>Ngày tạo: </strong><%= item.date %> </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <span class="input-group-addon">Ngày tạo</span>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder=<%= item.date %>/>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="review-content-section">
-                                        <div class="input-group mg-b-pro-edt">
-                                            <span class="input-group-addon">Số điện thoại</span>
-                                            <input type="text" id="name" name="name" class="form-control" placeholder=<%= item.phone %>/>
+                                            <p><strong>Số điện thoại: </strong><%= item.phone %> </p>
                                         </div>
                                     </div>
                                 </div>
@@ -132,12 +119,12 @@
     </div>
 
 
-    <%include ./partial/footer.ejs%>
+    <%include partial/footer.ejs%>
 </div>
 
 <!-- jquery
     ============================================ -->
-<%include ./partial/script.ejs%>
+<%include partial/script.ejs%>
 </body>
 
 </html>
