@@ -139,11 +139,15 @@ exports.update_post = [
 
         // Create a Book object with escaped/trimmed data and old id.
         var account = new data(
-            { name: req.body.name,
+            {
                 password : req.body.password,
+                email: req.body.email,
+                phone: req.body.phone,
+                address: req.body.address,
+                date: req.body.date,
                 _id:req.params.id //This is required, or a new ID will be assigned!
             });
-
+console.log(account.name)
         if (!errors.isEmpty()) {
             // There are errors. Render form again with sanitized values/error messages.
 
