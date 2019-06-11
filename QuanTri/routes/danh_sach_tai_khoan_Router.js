@@ -4,7 +4,7 @@ var danh_sach_tai_khoan_controller = require('../controllers/danh_sach_tai_khoan
 /* GET home page. */
 
 router.get('/', danh_sach_tai_khoan_controller.index);
-
+router.get('/thong_tin_chi_tiet_tai_khoan/:id', danh_sach_tai_khoan_controller.infor);
 
 //router.post('/main_sign_in', danh_sach_tai_khoan_admin_controller.sign_in);
 router.post('/thay_doi_thong_tin_tai_khoan/:id', danh_sach_tai_khoan_controller.update_post);

@@ -1,7 +1,7 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan');
-//var user = "temp";
+var user = "temp";
 
 const bcrypt = require('bcrypt');
 let saltRounds = 10
@@ -31,7 +31,7 @@ exports.index = function (req, res) {
         data.find()
             .exec(function (err, list_items) {
                 if (err) {
-                    console.log("falseeee");
+                    console.log("don't find");
                     return next(err);
                 }
                 //Successful, so render
@@ -50,8 +50,41 @@ exports.index = function (req, res) {
     }
 };
 
-
+exports.infor = async (req, res, next) => {
+    // data.find({_id:req.params.id})
+    //     .exec(function (err, item) {
+    //         if (err) {
+    //             console.log("failseeee");
+    //             return next(err);
+    //         }
+    //         //Successful, so render
+    //         else {
+    //             if (item==null) { // No results.
+    //                 var err = new Error('Item not found');
+    //                 err.status = 404;
+    //                 return next(err);
+    //             }
+    //             console.log("Chi tiết tài khoản");
+    //             console.log(item);
+    //             res.render('thong_tin_chi_tiet_tai_khoan', {title: '', item: item[0], user: req.user})
+    //         };
+    //     });
+    console.log({_id:req.params.id})
+    data.find({_id:req.params.id})
+        .exec(function (err, item) {
+            if (err) {
+                console.log("don't find");
+                return next(err);
+            }
+            //Successful, so render
+            console.log("thong_tin_chi_tiet_tai_khoan");
+            console.log(item);
+            //res.render('danh_sach_tai_khoan', {title: '', list_items: list_items});
+            res.render('thong_tin_chi_tiet_tai_khoan', {title: '', item: item[0], user: req.user});
+        });
+};
 exports.show_list = function(req, res, next) {
+
     data.find()
         .exec(function (err, list_items) {
             if (err) {
@@ -66,6 +99,7 @@ exports.show_list = function(req, res, next) {
 };
 
 exports.show_info = async (req, res, next) => {
+    console.log({_id:req.params.id})
     data.find({_id:req.params.id})
         .exec(function (err, item) {
             if (err) {
@@ -79,13 +113,10 @@ exports.show_info = async (req, res, next) => {
                     err.status = 404;
                     return next(err);
                 }
-                console.log("Successful, so render");
+                console.log("Thay đổi thông tin tài khoản");
                 console.log(item);
                 res.render('thay_doi_thong_tin_tai_khoan', {title: 'Áo Khoác', item: item[0], user: req.user})
-            }
-            ;
-
-
+            };
         });
 };
 
@@ -179,10 +210,7 @@ exports.check_log_in = function(req, res, next) {
                         res.render('main', {title: 'Áo Khoác', user: item[0]})
                     }
                 }
-            }
-            ;
-
-
+            };
         });
 };
 

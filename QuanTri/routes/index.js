@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 //var danh_sach_cua_hang_controller = require('../controllers/danh_sach_cua_hang_controller');
-var danh_sach_san_pham_controller = require('../controllers/danh_sach_san_pham_controller');
+//var danh_sach_san_pham_controller = require('../controllers/danh_sach_san_pham_controller');
 var danh_sach_loai_san_pham_controller = require('../controllers/danh_sach_loai_san_pham_controller');
-var danh_sach_tai_khoan_controller = require('../controllers/danh_sach_tai_khoan_controller');
+//var danh_sach_tai_khoan_controller = require('../controllers/danh_sach_tai_khoan_controller');
 var danh_sach_tai_khoan_admin_controller = require('../controllers/danh_sach_tai_khoan_admin_controller');
 /* GET home page. */
 
@@ -47,13 +47,13 @@ router.get('/thay_doi_thong_tin', function(req, res, next) {
 //   res.render('them_cua_hang', { title: 'Express' });
 // });
 
-router.get('/thay_doi_thong_tin_san_pham/:id', danh_sach_san_pham_controller.show_info);
-router.get('/xoa_san_pham/:id', danh_sach_san_pham_controller.delete_post);
-router.post('/thay_doi_thong_tin_san_pham/:id', danh_sach_san_pham_controller.update_post);
-router.post('/them_san_pham', danh_sach_san_pham_controller.add);
-router.get('/them_san_pham', function(req, res, next) {
-    res.render('them_san_pham', { title: 'Express' });
-});
+// router.get('/thay_doi_thong_tin_san_pham/:id', danh_sach_san_pham_controller.show_info);
+// router.get('/xoa_san_pham/:id', danh_sach_san_pham_controller.delete_post);
+// router.post('/thay_doi_thong_tin_san_pham/:id', danh_sach_san_pham_controller.update_post);
+// router.post('/them_san_pham', danh_sach_san_pham_controller.add);
+// router.get('/them_san_pham', function(req, res, next) {
+//     res.render('them_san_pham', { title: 'Express' });
+// });
 
 router.get('/thay_doi_thong_tin_loai_san_pham/:id', danh_sach_loai_san_pham_controller.show_info);
 router.get('/xoa_loai_san_pham/:id', danh_sach_loai_san_pham_controller.delete_post);
