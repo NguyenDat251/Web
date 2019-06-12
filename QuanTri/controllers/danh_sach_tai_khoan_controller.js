@@ -147,7 +147,6 @@ exports.update_post = [
                 date: req.body.date,
                 _id:req.params.id //This is required, or a new ID will be assigned!
             });
-console.log(account.name)
         if (!errors.isEmpty()) {
             // There are errors. Render form again with sanitized values/error messages.
 

@@ -21,6 +21,7 @@ var danh_sach_cua_hang_Router = require('./routes/danh_sach_cua_hang_Router');
 var danh_sach_san_pham_Router = require('./routes/danh_sach_san_pham_Router');
 var danh_sach_loai_san_pham_Router = require('./routes/danh_sach_loai_san_pham_Router');
 
+
 var app = express();
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -143,15 +144,6 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser(function (user, done) {
   done(null, user);
 });
-
-// app.post('/login', function(req, res, next) {
-//     passport.authenticate('local', {
-//         successRedirect: '/main',
-//         failureRedirect: '/dang_nhap',
-//         failureFlash: true
-//     })
-// });
-
 
 app.post('/login',
     passport.authenticate('local', {

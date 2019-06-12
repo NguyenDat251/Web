@@ -41,6 +41,7 @@ exports.show_list = function(req, res, next) {
 };
 
 exports.show_info = async (req, res, next) => {
+    console.log("SHOW INFOR");
     data.find({_id:req.params.id})
         .exec(function (err, item) {
             if (err) {
@@ -56,7 +57,7 @@ exports.show_info = async (req, res, next) => {
                 }
                 console.log("Successful, so render");
                 console.log(item);
-                res.render('thay_doi_thong_tin_tai_khoan', {title: 'Áo Khoác', item: item[0]})
+                res.render('thay_doi_thong_tin', {title: 'Áo Khoác', item: item[0], user: req.user})
             }
             ;
 
@@ -77,7 +78,7 @@ exports.update_post = [
 
     // Process request after validation and sanitization.
     (req, res, next) => {
-
+        console.log("form thay_doi_thong_tin_admin = post");
         // Extract the validation errors from a request.
         const errors = validationResult(req);
 
@@ -104,7 +105,7 @@ exports.update_post = [
                             results.name[i].checked='true';
                         }
                     }
-                    res.render('/thay_doi_thong_tin_tai_khoan', { title: 'Update Book', item : results.name, errors: errors.array() });
+                    res.render('/thay_doi_thong_tin_admin', { title: 'Update Book', item : results.name, errors: errors.array() });
                 });
             return;
         }
@@ -164,7 +165,6 @@ exports.check_log_in = function(req, res, next) {
 };
 
 exports.sign_in = [
-
     // Validate that the name field is not empty.
     body('name', 'name required').isLength({ min: 1 }).trim(),
     body('password', 'name required').isLength({ min: 1 }).trim(),
@@ -175,7 +175,7 @@ exports.sign_in = [
     //console.log("escape"),
     // Process request after validation and sanitization.
     (req, res, next) => {
-
+        console.log("form đăng ký = post");
         // Extract the validation errors from a request.
         const errors = validationResult(req);
 

@@ -28,19 +28,19 @@ var AccountSchema = new Schema(
 AccountSchema
     .virtual('url')
     .get(function () {
-        return '/thay_doi_thong_tin_tai_khoan/' + this._id;
+        return '/thay_doi_thong_tin/' + this._id;
     });
 
-AccountSchema
-    .virtual('delete_url')
-    .get(function () {
-        return '/xoa_tai_khoan/' + this._id;
-    });
+// AccountSchema
+//     .virtual('delete_url')
+//     .get(function () {
+//         return '/xoa_tai_khoan/' + this._id;
+//     });
 
 AccountSchema
     .virtual('add_url')
     .get(function () {
-        return '/them_tai_khoan/';
+        return '/them_tai_khoan_admin/';
     });
 
 //Export model
