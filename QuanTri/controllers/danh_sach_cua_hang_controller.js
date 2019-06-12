@@ -1,21 +1,9 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_cua_hang');
-
+var user = "temp";
 
 exports.index = function(req, res, next) {
-    // data.find()
-    //     .exec(function (err, list_items) {
-    //         if (err) {
-    //             console.log("falseeee");
-    //             return next(err);
-    //         }
-    //         //Successful, so render
-    //         console.log("Successful, so render");
-    //         console.log(list_items);
-    //         res.render('danh_sach_loai_san_pham', {title: '', list_items: list_items});
-    //     });
-
     if (req.isAuthenticated()) {
         data.find()
             .exec(function (err, list_items) {
@@ -120,17 +108,6 @@ exports.update_post = [
 ];
 
 exports.delete_post = function(req, res, next) {
-
-    // async.parallel({
-    //
-    // }, function(err, results) {
-    //     if (err) {
-    //         console.log("connect false");
-    //         return next(err); }
-    //     // Success
-    //
-    //     else {
-    //         // Author has no books. Delete object and redirect to the list of authors.
     data.findByIdAndRemove(req.params.id, function deleteAuthor(err) {
         if (err) {
             console.log("Delete false");

@@ -27,13 +27,11 @@ function doTheCompare(passInput, passReal) {
 
 
 exports.index = function (req, res) {
-
-
     if (req.isAuthenticated()) {
         data.find()
             .exec(function (err, list_items) {
                 if (err) {
-                    console.log("falseeee");
+                    console.log("don't find");
                     return next(err);
                 }
                 //Successful, so render
@@ -52,8 +50,41 @@ exports.index = function (req, res) {
     }
 };
 
-
+exports.infor = async (req, res, next) => {
+    // data.find({_id:req.params.id})
+    //     .exec(function (err, item) {
+    //         if (err) {
+    //             console.log("failseeee");
+    //             return next(err);
+    //         }
+    //         //Successful, so render
+    //         else {
+    //             if (item==null) { // No results.
+    //                 var err = new Error('Item not found');
+    //                 err.status = 404;
+    //                 return next(err);
+    //             }
+    //             console.log("Chi tiết tài khoản");
+    //             console.log(item);
+    //             res.render('thong_tin_chi_tiet_tai_khoan', {title: '', item: item[0], user: req.user})
+    //         };
+    //     });
+    console.log({_id:req.params.id})
+    data.find({_id:req.params.id})
+        .exec(function (err, item) {
+            if (err) {
+                console.log("don't find");
+                return next(err);
+            }
+            //Successful, so render
+            console.log("thong_tin_chi_tiet_tai_khoan");
+            console.log(item);
+            //res.render('danh_sach_tai_khoan', {title: '', list_items: list_items});
+            res.render('thong_tin_chi_tiet_tai_khoan', {title: '', item: item[0], user: req.user});
+        });
+};
 exports.show_list = function(req, res, next) {
+
     data.find()
         .exec(function (err, list_items) {
             if (err) {
@@ -68,10 +99,11 @@ exports.show_list = function(req, res, next) {
 };
 
 exports.show_info = async (req, res, next) => {
+    console.log({_id:req.params.id})
     data.find({_id:req.params.id})
         .exec(function (err, item) {
             if (err) {
-                console.log("falseeee");
+                console.log("failseeee");
                 return next(err);
             }
             //Successful, so render
@@ -81,13 +113,10 @@ exports.show_info = async (req, res, next) => {
                     err.status = 404;
                     return next(err);
                 }
-                console.log("Successful, so render");
+                console.log("Thay đổi thông tin tài khoản");
                 console.log(item);
                 res.render('thay_doi_thong_tin_tai_khoan', {title: 'Áo Khoác', item: item[0], user: req.user})
-            }
-            ;
-
-
+            };
         });
 };
 
@@ -110,11 +139,15 @@ exports.update_post = [
 
         // Create a Book object with escaped/trimmed data and old id.
         var account = new data(
-            { name: req.body.name,
+            {
                 password : req.body.password,
+                email: req.body.email,
+                phone: req.body.phone,
+                address: req.body.address,
+                date: req.body.date,
                 _id:req.params.id //This is required, or a new ID will be assigned!
             });
-
+console.log(account.name)
         if (!errors.isEmpty()) {
             // There are errors. Render form again with sanitized values/error messages.
 
@@ -181,10 +214,7 @@ exports.check_log_in = function(req, res, next) {
                         res.render('main', {title: 'Áo Khoác', user: item[0]})
                     }
                 }
-            }
-            ;
-
-
+            };
         });
 };
 

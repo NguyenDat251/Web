@@ -7,6 +7,9 @@ var AccountSchema = new Schema(
         name: {type: String, required: 'Vui lòng không để trống', max: 100},
         password: {type: String},
         email:{type: String},
+        phone:{type: String},
+        address:{type: String},
+        date: {type: String},
     }
 );
 
@@ -28,5 +31,10 @@ AccountSchema
         return '/danh_sach_tai_khoan/them_tai_khoan/';
     });
 
+AccountSchema
+    .virtual('infor_url')
+    .get(function () {
+        return '/danh_sach_tai_khoan/thong_tin_chi_tiet_tai_khoan/' + this._id;
+    })
 //Export model
 module.exports = mongoose.model('tai_khoans', AccountSchema);
