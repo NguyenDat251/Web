@@ -13,11 +13,11 @@ var Schema = mongoose.Schema;
 
 var SanphamShecma = new Schema(
     {
-        _id:{type: Schema.Types.ObjectId, required: true, max: 100},
+        //_id:{type: Schema.Types.ObjectId, required: true, max: 100},
         id_store: {type: String, required: true, max: 100},
         name: {type: String, required: true, max: 100},
         price: {type: String, required: true, max: 100},
-        price_sale: {type: String, required: true, max: 100},
+        price_sale: {type: Number, required: true, max: 100},
         number: {type: Number, required: true, max: 100},
         type: {type: String, required: true, max: 100},
             brand: {type: String, required: true, max: 100},
@@ -47,6 +47,12 @@ SanphamShecma
     .virtual('url')
     .get(function () {
         return '/productInfo/' + this._id;
+    });
+
+SanphamShecma
+    .virtual('urlCart')
+    .get(function () {
+        return '/Gio_hang/' + this._id;
     });
 
 //Export model

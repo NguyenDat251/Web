@@ -11,8 +11,14 @@
             </div>
             <div class="col-sm-6">
                 <div class="shopping-item">
-                    <a href="bucket">Giỏ hàng - <span class="cart-amunt">$800</span> <i
-                            class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                    <%if(user){ %>
+                    <a href="Gio_hang">Giỏ hàng - <span class="cart-amunt">$800</span> <i
+                            class="fa fa-shopping-cart"></i> <span class="product-count"><%=user.listProducts.length%></span></a>
+                    <%}else{%>
+                    <a href="Gio_hang">Giỏ hàng - <span class="cart-amunt">$0</span> <i
+                                class="fa fa-shopping-cart"></i> <span class="product-count">0</span></a>
+
+                    <%}%>
                 </div>
             </div>
         </div>

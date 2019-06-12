@@ -9,6 +9,7 @@ var AccountSchema = new Schema(
         email:{type: String},
         date:{type: String},
         phone:{type: String},
+            listProducts:{type: Array},
     }
 );
 

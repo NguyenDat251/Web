@@ -48,22 +48,28 @@
                                             <th class="product-subtotal">Tổng tiền</th>
                                         </tr>
                                     </thead>
+                                    <%for(var i = 0; i < list_items.length;i++){%>
                                     <tbody>
+
                                         <tr class="cart_item">
+
                                             <td class="product-remove">
                                                 <a title="Remove this item" class="remove" href="#">×</a> 
                                             </td>
 
                                             <td class="product-thumbnail">
-                                                <a href="/productInfo"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/product-2.jpg"></a>
+<!--                                                <a href="/productInfo"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/product-2.jpg"></a>-->
+                                                <a href="/productInfo"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="<%=list_items[i].img%>>"></a>
                                             </td>
 
                                             <td class="product-name">
-                                                <a href="/productInfo">Iphone</a> 
+<!--                                                <a href="/productInfo">Iphone</a> -->
+                                                <a href="/productInfo"><%=list_items[i].name%></a>
                                             </td>
 
                                             <td class="product-price">
-                                                <span class="amount">£15.00</span> 
+<!--                                                <span class="amount">£15.00</span> -->
+                                                <span class="amount"><%=list_items[i].price%></span>
                                             </td>
 
                                             <td class="product-quantity">
@@ -77,9 +83,11 @@
                                             <td class="product-subtotal">
                                                 <span class="amount">£15.00</span> 
                                             </td>
+
                                         </tr>
-                                        
+
                                     </tbody>
+                                    <%}%>
                                 </table>
                             </form>
 

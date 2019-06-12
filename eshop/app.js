@@ -17,6 +17,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');
 var Cua_hang_Router = require('./routes/Cua_hang');
+var Gio_hang_Router = require('./routes/Gio_hang');
+//var San_pham_Router = require('./routes/San_pham');
 
 var Cua_hang_Controller = require('./controllers/Cua_hang_controller');
 
@@ -75,6 +77,8 @@ app.use('/', indexRouter);
 app.use('/Cua_hang', Cua_hang_Router);
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
+app.use('/Gio_hang', Gio_hang_Router);
+//app.use('/productInfo', San_pham_Router);
 
 
 

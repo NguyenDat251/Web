@@ -4,6 +4,10 @@ var async = require('async');
 var list = null;
 var list_type = null;
 var list_brand = null;
+var numPage = 0;
+
+var tempRes = null;
+var tempReq = null;
 
 function findListItem()
 {
@@ -20,18 +24,8 @@ function findListItem()
 
 };
 
-function renderCuaHang(user, list_items)
-{
-    if (req.isAuthenticated()) {
-        console.log("Show Cua_hang page");
 
-        res.render('Cua_hang', {title: 'Áo Khoác', user: user, list_items: list_items});
-    }
-    else{
 
-        res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: list_items});
-    }
-};
 
 exports.index =  function (req, res) {
 
@@ -78,14 +72,19 @@ exports.index =  function (req, res) {
             return next(err);
         }
         // Successful, so render
+        list = results.list;
         list_type = results.list_type;
         list_brand = results.list_brand;
-        if (req.isAuthenticated()) {
-            res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: results.list, list_type: results.list_type, list_brand: results.list_brand});
-        }
-        else {
-            res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: results.list, list_type: results.list_type, list_brand: results.list_brand});
-        }
+        tempRes = res;
+        tempReq = req;
+        numPage = 0;
+        renderPage(req, res, results.list);
+        // if (req.isAuthenticated()) {
+        //     res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: results.list, list_type: results.list_type, list_brand: results.list_brand, num_page: numPage});
+        // }
+        // else {
+        //     res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: results.list, list_type: results.list_type, list_brand: results.list_brand, num_page: numPage});
+        // }
     });
 
 
@@ -206,13 +205,13 @@ exports.search= function (req, res, next) {
                     listTrueItem.push(list_items[i]);
                 }
             }
-
-            if (req.isAuthenticated()) {
-                res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: listTrueItem, list_type: list_type, list_brand: list_brand});
-            }
-            else {
-                res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: listTrueItem, list_type: list_type, list_brand: list_brand});
-            }
+            renderPage(req, res, listTrueItem);
+            // if (req.isAuthenticated()) {
+            //     res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: listTrueItem, list_type: list_type, list_brand: list_brand, num_page: numPage});
+            // }
+            // else {
+            //     res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: listTrueItem, list_type: list_type, list_brand: list_brand, num_page: numPage});
+            // }
         });
 
 
@@ -244,3 +243,44 @@ exports.search= function (req, res, next) {
     //     }
     // });
 }
+
+exports.moveNextPage = function(req, res, next){
+    numPage = req.params.idPage;
+    //res.redirect('/');
+    //renderPage(req, res, list);
+    if (req.isAuthenticated()) {
+        res.render('Cua_hang_2', {title: 'Genre Detail', user: req.user, list_items: list, list_type: list_type, list_brand: list_brand, numPage: numPage});
+    }
+    else {
+        res.render('Cua_hang_2', {title: 'Áo Khoác', user: null, list_items: list, list_type: list_type, list_brand: list_brand, numPage: numPage});
+    }
+}
+
+exports.SortUp = function() {
+    var listForSort = list;
+    console.log("begin sorting");
+    for(var i = 0; i < listForSort.length; i++)
+    {
+        for(var j = listForSort.length - 1 - i; j >= 0; j--)
+        {
+            if(listForSort[j].price_sale > listForSort[i].price_sale){
+                var temp = listForSort[j].price_sale;
+                listForSort[j].price_sale = listForSort[i].price_sale;
+                listForSort[i].price_sale = temp;
+            }
+        }
+    }
+
+    renderPage(tempReq, tempRes, listForSort);
+}
+
+function renderPage(req, res, i_list){
+    if (req.isAuthenticated()) {
+        res.render('Cua_hang', {title: 'Cửa hàng', user: req.user, list_items: i_list, list_type: list_type, list_brand: list_brand, numPage: numPage});
+    }
+    else {
+        res.render('Cua_hang', {title: 'Cửa hàng', user: null, list_items: i_list, list_type: list_type, list_brand: list_brand, numPage: numPage});
+    }
+}
+
+

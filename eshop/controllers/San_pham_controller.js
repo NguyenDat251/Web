@@ -72,10 +72,20 @@ exports.info = async (req, res, next) => {
                 }
                 console.log("Successful, so render");
                 console.log(item);
-                res.render('San_pham', {title: 'Áo Khoác', item: item[0]})
+                //res.render('San_pham', {title: 'Áo Khoác', item: item[0]})
+                renderPage(req, res, item[0]);
             }
             ;
 
 
         });
 };
+
+function renderPage(req, res, item){
+    if (req.isAuthenticated()) {
+        res.render('San_pham', {title: 'Cửa hàng', user: req.user, item: item});
+    }
+    else {
+        res.render('San_pham', {title: 'Cửa hàng', user: null, item: item});
+    }
+}
