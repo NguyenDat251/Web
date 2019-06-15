@@ -10,6 +10,7 @@ var AccountSchema = new Schema(
         phone:{type: String},
         address:{type: String},
         date: {type: String},
+        isVerified: { type: Boolean, default: false },
     }
 );
 
