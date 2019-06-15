@@ -152,7 +152,7 @@ async function createNewList(list, newList, stringID){
     return newList;
 }
 
-exports.removeProduct = async function(req, res) {
+exports.removeProduct = async function(req, res, next) {
     if (req.isAuthenticated()) {
         let newListProducts = new Array();
         console.log("id remove: " + req.params.id);
@@ -182,18 +182,22 @@ exports.removeProduct = async function(req, res) {
             // Successful - redirect to book detail page.
             console.log("success remove product");
             let userTemp = req.user;
-            req.logout();
-            await  req.logIn(userTemp, function (err) {
+            await req.logout();
+             await req.logIn(userTemp,{}, function (err) {
                 if (err) {
                     console.log("err sign up: " + err);
                     return next(err);
                 }
-                console.log("success sing up");
 
-            });
+            }
+
+            );
+            console.log("success sing up");
+            console.log("user.listProducts.length: " + req.user.listProducts.length);
+            res.redirect('../../Gio_hang');
             //console.log(req.user.listProducts);
-            res.redirect('../../');
-        });
+           // res.redirect('../Gio_hang');
+         });
 
         //res.redirect('../../');
     }
