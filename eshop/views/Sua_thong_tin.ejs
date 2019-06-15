@@ -13,19 +13,27 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">Chỉnh sửa thông tin</h2>
-                    <form method="POST">
+                    <form method="POST" action="/Dang_ky">
                         <div class="row row-space">
-							
+                            <p style="color: red"><%=title%></p>
+                        </div>
+                        <div class="row row-space">
+                            <div class="input-group">
+                                <label class="label">Tên đăng nhập</label>
+                                <input class="input--style-4" type="text" id="name" name="name">
+                            </div>
+                        </div>
+                        <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Họ</label>
-                                    <input class="input--style-4" type="text" name="first_name">
+                                    <label class="label">Mật khẩu</label>
+                                    <input class="input--style-4" type="password" id="password" name="password" >
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Tên</label>
-                                    <input class="input--style-4" type="text" name="last_name">
+                                    <label class="label">Nhập lại mật khẩu</label>
+                                    <input class="input--style-4" type="password" id="passwordReEnter" name="passwordReEnter">
                                 </div>
                             </div>
                         </div>
@@ -34,23 +42,8 @@
                                 <div class="input-group">
                                     <label class="label">Ngày sinh</label>
                                     <div class="input-group-icon">
-                                        <input class="input--style-4 js-datepicker" type="text" name="birthday">
+                                        <input class="input--style-4 js-datepicker" type="date" id="date" name="date">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Giới tính</label>
-                                    <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Nam
-                                            <input type="radio" checked="checked" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                        <label class="radio-container">Nữ
-                                            <input type="radio" name="gender">
-                                            <span class="checkmark"></span>
-                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -59,18 +52,18 @@
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
+                                    <input class="input--style-4" type="email" id="email" name="email">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
                                     <label class="label">Số điện thoại</label>
-                                    <input class="input--style-4" type="text" name="phone">
+                                    <input class="input--style-4" type="text" id="phone" name="phone">
                                 </div>
                             </div>
                         </div>
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit"><a href="/"> Đồng ý</a></button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Đồng ý</button>
                         </div>
                     </form>
                 </div>

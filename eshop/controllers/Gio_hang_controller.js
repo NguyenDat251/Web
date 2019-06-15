@@ -99,7 +99,7 @@ exports.index = async function(req, res) {
         res.render('Gio_hang', {title: 'Cửa hàng', user: req.user, list_items: list_items});
     }
     else {
-        res.redirect('login');
+        res.redirect('Dang_nhap');
     }
 };
 
@@ -137,7 +137,7 @@ exports.addProduct = async function(req, res) {
 
 
     else {
-        res.redirect('../login');
+        res.redirect('../Dang_nhap');
     }
 };
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title Page-->
+    <title>Đổi mật khẩu</title>
+    <%include partials/Colorlib/header.ejs%>
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Đổi mật khẩu</h2>
+                    <form method="POST" action="/Doi_mat_khau/<%= token %>">
+						<div class="input-group">
+							<label class="label">Mật khẩu cũ</label>
+							<input class="input--style-4" type="password" name="pass">
+						</div>
+                        <div class="input-group">
+                            <label class="label">Mật khẩu mới</label>
+                            <input class="input--style-4" type="password" name="newPass1">
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Nhập lại mật khẩu mới</label>
+                            <input class="input--style-4" type="password" name="newPass2">
+                        </div>							
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" type="submit" value="Reset Password">Đồng ý</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%include partials/Colorlib/js.ejs%>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
