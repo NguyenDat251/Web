@@ -44,7 +44,7 @@ router.get('/login', function(req, res, next) {
   res.render('Dang_nhap', { errorText: '' });
 });
 
-router.get('/Page/:idPage', Cua_hang_controller.moveNextPage);
+router.get('/Page', Cua_hang_controller.moveNextPage);
 
 
 // router.get('/productInfo', function(req, res, next) {

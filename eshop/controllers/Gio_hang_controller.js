@@ -155,7 +155,7 @@ async function createNewList(list, newList, stringID){
 exports.removeProduct = async function(req, res) {
     if (req.isAuthenticated()) {
         let newListProducts = new Array();
-        console.log(req.params.id);
+        console.log("id remove: " + req.params.id);
         var stringID = req.params.id;
 
         newListProducts = await createNewList(req.user.listProducts, newListProducts, stringID);
@@ -177,23 +177,25 @@ exports.removeProduct = async function(req, res) {
 
 
         // Data from form is valid. Update the record.
-        dataUser.findByIdAndUpdate(req.user._id, newUser, {}, function (err,item) {
+        await dataUser.findByIdAndUpdate(req.user._id, newUser, {}, async function (err,item) {
             if (err) { return next(err); }
             // Successful - redirect to book detail page.
-            console.log("success add product");
+            console.log("success remove product");
             let userTemp = req.user;
             req.logout();
-            req.logIn(userTemp, function (err) {
+            await  req.logIn(userTemp, function (err) {
                 if (err) {
                     console.log("err sign up: " + err);
                     return next(err);
                 }
                 console.log("success sing up");
-                res.redirect('../../');
+
             });
             //console.log(req.user.listProducts);
-            //res.redirect('../../');
+            res.redirect('../../');
         });
+
+        //res.redirect('../../');
     }
 
     else {
