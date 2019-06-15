@@ -12,5 +12,4 @@ router.get('/dang_ky', function(req, res, next) {
     res.render('dang_ky', { title: '' });
 });
 
-
 module.exports = router;

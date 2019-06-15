@@ -67,28 +67,48 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="review-tab-pro-inner">
                             <ul id="myTab3" class="tab-review-design">
-                                <li class="active"><a href="#description"><i class="fa fa-pencil" aria-hidden="true"></i>Thay đổi thông tin > <%= item.name %> </a> </li>
+                                <li class="active"><a href="#description"><i class="fa fa-pencil" aria-hidden="true"></i>Thay đổi thông tin > <%= user.name %> </a> </li>
                                 <!--                                <li><a href="#reviews"><i class="fa fa-file-image-o" aria-hidden="true"></i> Hình ảnh</a></li>-->
                                 <!--                                <li><a href="#INFORMATION"><i class="fa fa-commenting" aria-hidden="true"></i> Đánh giá</a></li>-->
                             </ul>
                             <form method="POST" action="">
                                 <div id="myTabContent" class="tab-content custom-product-edit">
                                     <div class="product-tab-list tab-pane fade active in" id="description">
-
 <!--                                        <div class="row">-->
 <!--                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
 <!--                                                <div class="review-content-section">-->
 <!--                                                    <div class="input-group mg-b-pro-edt">-->
-<!--                                                        <span class="input-group-addon">Email</span>-->
-<!--                                                        <input type="text" id="email" name="email" class="form-control" placeholder=<%= item.email %>/>-->
+<!--                                                        <span class="input-group-addon">Tên</span>-->
+<!--                                                        <input type="text" id="email" name="email" class="form-control" placeholder=<%= user.name %> readonly/>-->
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
+<!--                                        </div>-->
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="review-content-section">
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon">Email</span>
+                                                        <input type="text" id="email" name="email" class="form-control" placeholder=<%= user.email %>/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+<!--                                        <div class="row">-->
 <!--                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
 <!--                                                <div class="review-content-section">-->
 <!--                                                    <div class="input-group mg-b-pro-edt">-->
 <!--                                                        <span class="input-group-addon">Mật khẩu</span>-->
-<!--                                                        <input type="text" id="name" name="name" class="form-control" placeholder=<%= item.password %>/>-->
+<!--                                                        <input type="text" id="email" name="email" class="form-control" placeholder=<%= user.password %> readonly/>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+<!--                                                <div class="review-content-section">-->
+<!--                                                    <div class="input-group mg-b-pro-edt">-->
+<!--                                                        <span class="input-group-addon">Mật khẩu</span>-->
+<!--
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -96,7 +116,7 @@
 <!--                                                <div class="review-content-section">-->
 <!--                                                    <div class="input-group mg-b-pro-edt">-->
 <!--                                                        <span class="input-group-addon">Địa chỉ</span>-->
-<!--                                                        <input type="text" id="email" name="email" class="form-control" placeholder=<%= item.address %>/>-->
+<!--
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -104,7 +124,7 @@
 <!--                                                <div class="review-content-section">-->
 <!--                                                    <div class="input-group mg-b-pro-edt">-->
 <!--                                                        <span class="input-group-addon">Ngày tạo</span>-->
-<!--                                                        <input type="text" id="email" name="email" class="form-control" placeholder=<%= item.date %>/>-->
+<!--
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
@@ -112,7 +132,7 @@
 <!--                                                <div class="review-content-section">-->
 <!--                                                    <div class="input-group mg-b-pro-edt">-->
 <!--                                                        <span class="input-group-addon">Số điện thoại</span>-->
-<!--                                                        <input type="text" id="email" name="email" class="form-control" placeholder=<%= item.phone %>/>-->
+<!--
 <!--                                                    </div>-->
 <!--                                                </div>-->
 <!--                                            </div>-->
