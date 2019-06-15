@@ -1,25 +1,10 @@
-const bcrypt = require('bcrypt');
-let saltRounds = 10
-function doTheHash(pass) {
-    bcrypt.hash(pass, saltRounds, (err, hash)=>{
-        if(!err){
-            return hash;
-        }else{
-            console.log('Error', err);
-        }
-    })
-}
-
 var data = require('../models/tai_khoan');
-var San_pham_controller = require('../controllers/San_pham_controller');
-function doTheCompare(passInput, passReal) {
-    bcrypt.compare(passInput, passReal, (err, res)=>{
-        if(!err){
-            return res;
-        }else{
-            console.log('Error', err);
-        }
-    })
+//var San_pham_controller = require('../controllers/San_pham_controller');
+const bcrypt = require('bcrypt');
+
+function validPassword(pass1, pass2)
+{
+    return bcrypt.compareSync(pass1, pass2);
 }
 
 exports.show_list = function(req, res) {
@@ -57,7 +42,9 @@ exports.check_log_in = function(req, res, next) {
                 }
                 else {
                     console.log("Successful");
-                    if (doTheCompare(req.body.password, item[0].password)){
+                    if (validPassword(req.body.password, item[0].password)){
+                        console.log(req.body.password);
+                        console.log(item[0].password);
                         res.render('Dang_nhap', {title: 'Sai thông tin đăng nhập'});
                     } else {
                         console.log("Successful, so render");
@@ -67,9 +54,6 @@ exports.check_log_in = function(req, res, next) {
                     }
                 }
             }
-            ;
-
-
         });
 };
 
