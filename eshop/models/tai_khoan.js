@@ -10,6 +10,7 @@ var AccountSchema = new Schema(
         date:{type: String},
         phone:{type: String},
             listProducts:{type: Array},
+        totalCost:{type: String},
     }
 );
 
