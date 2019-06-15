@@ -140,6 +140,7 @@ exports.update_post = [
         // Create a Book object with escaped/trimmed data and old id.
         var account = new data(
             {
+                name: req.body.name,
                 password : req.body.password,
                 email: req.body.email,
                 phone: req.body.phone,
