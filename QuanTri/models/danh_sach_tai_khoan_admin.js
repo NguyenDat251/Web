@@ -30,20 +30,30 @@ var adminSchema = new Schema(
 adminSchema
     .virtual('url')
     .get(function () {
-        return '/thay_doi_thong_tin/' + this._id;
+        return '/thay_doi_thong_tin_admin/';
     });
-
 // AccountSchema
+
 //     .virtual('delete_url')
 //     .get(function () {
 //         return '/xoa_tai_khoan/' + this._id;
 //     });
 
+
+AccountSchema
+    .virtual('add_url_admin')
+
 adminSchema
     .virtual('add_url')
+
     .get(function () {
         return '/them_tai_khoan_admin/';
     });
 
+AccountSchema
+    .virtual('detail_url')
+    .get(function () {
+        return '/thong_tin_admin/' + this._id;
+    })
 //Export model
 module.exports = mongoose.model('admins', adminSchema);

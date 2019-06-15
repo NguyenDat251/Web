@@ -186,7 +186,6 @@ router.post('/Doi_mat_khau/:token', function(req, res) {
     });
 });
 
-router.get('/Page/:idPage', Cua_hang_controller.moveNextPage);
 
 
 // router.get('/productInfo', function(req, res, next) {

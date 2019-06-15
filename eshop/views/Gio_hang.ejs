@@ -44,22 +44,22 @@
                                             <th class="product-thumbnail">Hình ảnh</th>
                                             <th class="product-name">Sản phẩm</th>
                                             <th class="product-price">Giá</th>
-                                            <th class="product-quantity">Số lượng</th>
-                                            <th class="product-subtotal">Tổng tiền</th>
+<!--                                            <th class="product-quantity">Số lượng</th>-->
+<!--                                            <th class="product-subtotal">Tổng tiền</th>-->
                                         </tr>
                                     </thead>
-                                    <%for(var i = 0; i < list_items.length;i++){%>
+                                    <%for(let i = 0; i < list_items.length;i++){%>
                                     <tbody>
 
                                         <tr class="cart_item">
 
                                             <td class="product-remove">
-                                                <a title="Remove this item" class="remove" href="#">×</a> 
+                                                <a title="Remove this item" class="remove" href="<%=list_items[i].removeInCartUrl%>">×</a>
                                             </td>
 
                                             <td class="product-thumbnail">
 <!--                                                <a href="/productInfo"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="img/product-2.jpg"></a>-->
-                                                <a href="/productInfo"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="<%=list_items[i].img%>>"></a>
+                                                <a href="/productInfo"><img width="145" height="145" alt="poster_1_up" class="shop_thumbnail" src="<%= ('../' + list_items[i].img)%>"></a>
                                             </td>
 
                                             <td class="product-name">
@@ -72,17 +72,17 @@
                                                 <span class="amount"><%=list_items[i].price%></span>
                                             </td>
 
-                                            <td class="product-quantity">
-                                                <div class="quantity buttons_added">
-                                                    <input type="button" class="minus" value="-">
-                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">
-                                                    <input type="button" class="plus" value="+">
-                                                </div>
-                                            </td>
+<!--                                            <td class="product-quantity">-->
+<!--                                                <div class="quantity buttons_added">-->
+<!--                                                    <input type="button" class="minus" value="-">-->
+<!--                                                    <input type="number" size="4" class="input-text qty text" title="Qty" value="1" min="0" step="1">-->
+<!--                                                    <input type="button" class="plus" value="+">-->
+<!--                                                </div>-->
+<!--                                            </td>-->
 
-                                            <td class="product-subtotal">
-                                                <span class="amount">£15.00</span> 
-                                            </td>
+<!--                                            <td class="product-subtotal">-->
+<!--                                                <span class="amount">£15.00</span> -->
+<!--                                            </td>-->
 
                                         </tr>
 
@@ -133,7 +133,7 @@
                                     <tbody>
                                         <tr class="cart-subtotal">
                                             <th>Tiền đồ</th>
-                                            <td><span class="amount">£15.00</span></td>
+                                            <td><span class="amount"><%=user.totalCost + ' VND'%></span></td>
                                         </tr>
 
                                         <tr class="shipping">
@@ -143,7 +143,7 @@
 
                                         <tr class="order-total">
                                             <th>Tổng tiền</th>
-                                            <td><strong><span class="amount">£15.00</span></strong> </td>
+                                            <td><strong><span class="amount"><%=user.totalCost + ' VND'%></span></strong> </td>
                                         </tr>
                                         
                                     </tbody>

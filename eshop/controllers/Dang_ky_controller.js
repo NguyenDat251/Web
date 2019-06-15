@@ -13,7 +13,7 @@ function generateHash(pass)
 exports.sign_up = [
     // Validate that the name field is not empty.
     body('name', 'name required').isLength({ min: 1 }).trim(),
-    body('password', 'name required').isLength({ min: 1 }).trim(),
+    body('password', 'password required').isLength({ min: 1 }).trim(),
     //console.log("check"),
     // Sanitize (escape) the name field.
     sanitizeBody('name').escape(),

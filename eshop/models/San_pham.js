@@ -17,7 +17,7 @@ var SanphamShecma = new Schema(
         id_store: {type: String, required: true, max: 100},
         name: {type: String, required: true, max: 100},
         price: {type: String, required: true, max: 100},
-        price_sale: {type: Number, required: true, max: 100},
+        price_sale: {type: String, required: true, max: 100},
         number: {type: Number, required: true, max: 100},
         type: {type: String, required: true, max: 100},
             brand: {type: String, required: true, max: 100},
@@ -55,6 +55,11 @@ SanphamShecma
         return '/Gio_hang/' + this._id;
     });
 
+SanphamShecma
+    .virtual('removeInCartUrl')
+    .get(function () {
+        return '/Gio_hang/removeInCart/' + this._id;
+    });
 //Export model
 module.exports = mongoose.model('san_phams', SanphamShecma);
 

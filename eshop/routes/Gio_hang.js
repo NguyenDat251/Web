@@ -10,7 +10,7 @@ router.get('/', Gio_hang_Controller.index);
 
 router.get('/:id', Gio_hang_Controller.addProduct);
 
-
+router.get('/removeInCart/:id', Gio_hang_Controller.removeProduct);
 
 
 module.exports = router;

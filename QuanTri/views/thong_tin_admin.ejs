@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
 
 <head>
-    <title>thong-tin-tai-khoan</title>
+    <title>thong-tin-admin</title>
     <%include partial/head2.ejs%>
 </head>
 
@@ -46,7 +46,7 @@
                                     <ul class="breadcome-menu">
                                         <li><a href="#">Trang chủ</a> <span class="bread-slash">/</span>
                                         </li>
-                                        <li><span class="bread-blod">Thông tin chi tiết tài khoản</span>
+                                        <li><span class="bread-blod">Thông tin chi tiết tài khoản admin</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -76,35 +76,21 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <p><strong>Tên: </strong><%= item.name %> </p>
+                                            <p><strong>Tên: </strong><%= user.name %> </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <p><strong>Email: </strong><%= item.email %> </p>
+                                            <p><strong>Email: </strong><%= user.email %> </p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                     <div class="review-content-section">
                                         <div class="input-group mg-b-pro-edt">
-                                            <p><strong>Địa chỉ: </strong><%= item.address %> </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="review-content-section">
-                                        <div class="input-group mg-b-pro-edt">
-                                            <p><strong>Ngày tạo: </strong><%= item.date %> </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                    <div class="review-content-section">
-                                        <div class="input-group mg-b-pro-edt">
-                                            <p><strong>Số điện thoại: </strong><%= item.phone %> </p>
+                                            <p><strong>Mật khẩu: </strong><%= user.password %> </p>
                                         </div>
                                     </div>
                                 </div>
