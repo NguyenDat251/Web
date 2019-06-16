@@ -30,7 +30,7 @@ exports.index = function(req, res, next) {
                 console.log("Successful, so render");
                 console.log(list_items);
 
-                res.render('danh_sach_cua_hang', {title: '', list_items: list_items, user: req.user});
+                res.render('danh_sach_san_pham', {title: '', list_items: list_items, user: req.user});
             });
 
     } else {
@@ -150,6 +150,15 @@ exports.add =  [
 
     // Validate that the name field is not empty.
     body('name', 'name required').isLength({ min: 1 }).trim(),
+    body('price', 'price required').isLength({ min: 1 }).trim(),
+    body('price_sale', 'price required').isLength({ min: 1 }).trim(),
+    body('number', 'number required').isLength({ min: 1 }).trim(),
+
+    body('brand', 'brand required').isLength({ min: 1 }).trim(),
+    body('number', 'number required').isLength({ min: 1 }).trim(),
+
+    body('img', 'img required').isLength({ min: 1 }).trim(),
+    body('info', 'info required').isLength({ min: 1 }).trim(),
     // Sanitize (escape) the name field.
     sanitizeBody('name').escape(),
     // Process request after validation and sanitization.

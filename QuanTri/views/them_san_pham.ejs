@@ -3,30 +3,35 @@
 
 <head>
     <title>them_san_pham</title>
-    <%include partial/head.ejs%>
+    <% include partial/head.ejs %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/css_imgur/style.css" rel="stylesheet" media="screen">
+    <link href="/css/css_imgur/mobile-style.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
 <!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<%include partial/menu.ejs%>
+<% include partial/menu.ejs %>
 <!-- Start Welcome area -->
 <div class="all-content-wrapper">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="logo-pro">
-                    <a href="/"><img class="main-logo" src="/img/logo/logo.png" alt="" /></a>
+                    <a href="/"><img class="main-logo" src="/img/logo/logo.png" alt=""/></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="header-advance-area">
-        <%include partial/header.ejs%>
+        <% include partial/header.ejs %>
         <!-- Mobile Menu start -->
-        <%include partial/mobile.ejs%>
+        <% include partial/mobile.ejs %>
         <!-- Mobile Menu end -->
         <div class="breadcome-area">
             <div class="container-fluid">
@@ -67,7 +72,9 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="review-tab-pro-inner">
                             <ul id="myTab3" class="tab-review-design">
-                                <li class="active"><a href="#description"><i class="fa fa-pencil" aria-hidden="true"></i>Thay đổi thông tin</a></li>
+                                <li class="active"><a href="#description"><i class="fa fa-pencil"
+                                                                             aria-hidden="true"></i>Thay đổi thông
+                                        tin</a></li>
                                 <!--                                <li><a href="#reviews"><i class="fa fa-file-image-o" aria-hidden="true"></i> Hình ảnh</a></li>-->
                                 <!--                                <li><a href="#INFORMATION"><i class="fa fa-commenting" aria-hidden="true"></i> Đánh giá</a></li>-->
                             </ul>
@@ -78,43 +85,118 @@
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="review-content-section">
                                                     <div class="input-group mg-b-pro-edt">
-                                                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i>Tên cửa hàng</span>
+                                                        <select>
+                                                            <option value="Tất cả">Tất cả</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i></span>
                                                         <input type="text" class="form-control" placeholder="Tên">
                                                     </div>
-<!--                                                    <div class="input-group mg-b-pro-edt">-->
-<!--                                                        <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>-->
-<!--                                                        <input type="text" class="form-control" placeholder="Giá">-->
-<!--                                                    </div>-->
-<!--                                                    <div class="input-group mg-b-pro-edt">-->
-<!--                                                        <span class="input-group-addon"><i class="fa fa-calculator" aria-hidden="true"></i></span>-->
-<!--                                                        <input type="text" class="form-control" placeholder="Số lượng">-->
-<!--                                                    </div>-->
-<!--                                                    <div class="input-group mg-b-pro-edt">-->
-<!--                                                        <span class="input-group-addon"><i class="fa fa-tag" aria-hidden="true"></i></span>-->
-<!--                                                        <input type="text" class="form-control" placeholder="Giảm giá (%)">-->
-<!--                                                    </div>-->
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Giá">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Giá khuyến mãi">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Số lượng">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i>Loại dây</span>
+                                                        <select>
+                                                            <option>Dây da</option>
+                                                            <option>Dây kim loại</option>
+                                                            <option>Dây cao su</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control"
+                                                               placeholder="Thương hiệu">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i>Giới tính</span>
+                                                        <select>
+                                                            <option>Nam</option>
+                                                            <option>Nữ</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user"
+                                                                                           aria-hidden="true"></i></span>
+                                                        <input type="text" class="form-control" placeholder="Mô tả">
+                                                    </div>
+
+                                                    <!--                                                    <div class="input-group mg-b-pro-edt">-->
+                                                    <!--                                                        <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>-->
+                                                    <!--                                                        <input type="text" class="form-control" placeholder="Giá">-->
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                    <div class="input-group mg-b-pro-edt">-->
+                                                    <!--                                                        <span class="input-group-addon"><i class="fa fa-calculator" aria-hidden="true"></i></span>-->
+                                                    <!--                                                        <input type="text" class="form-control" placeholder="Số lượng">-->
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                    <div class="input-group mg-b-pro-edt">-->
+                                                    <!--                                                        <span class="input-group-addon"><i class="fa fa-tag" aria-hidden="true"></i></span>-->
+                                                    <!--                                                        <input type="text" class="form-control" placeholder="Giảm giá (%)">-->
+                                                    <!--                                                    </div>-->
                                                 </div>
                                             </div>
-
-<!--                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
-<!--                                                <div class="review-content-section">-->
-<!--                                                    <select name="select" class="form-control pro-edt-select form-control-primary" placeholder="Loại sản phẩm">-->
-<!--                                                        <option value="CASIO">CASIO</option>-->
-<!--                                                        <option value="CITIZEN">CITIZEN</option>-->
-<!--                                                        <option value="G-SHOCK">G-SHOCK</option>-->
-<!--                                                        <option value="CALVIN">CALVIN</option>-->
-<!--                                                        <option value="DOXA">DOXA</option>-->
-<!--                                                        <option value="SEIKO">SEIKO</option>-->
-<!--                                                        <option value="FOUETTÉ">FOUETTÉ</option>-->
-<!--                                                    </select>-->
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div>
+                                                    <div class="dropzone" id="dropzone1">
+                                                        <div class="info" id="info1"></div>
+                                                    </div>
+                                                    <input type="text" id="inputLink" name="" class="form-control"
+                                                           placeholder="Ảnh" readonly>
+                                                </div>
+<!--                                                <div>-->
+<!--                                                    <div class="dropzone1" id="dropzone2">-->
+<!--                                                        <div class="info1" id="info2"></div>-->
+<!--                                                    </div>-->
+<!--                                                    <input type="text" id="inputLink1" name="" class="form-control"-->
+<!--                                                           placeholder="Ảnh 2" readonly>-->
+<!--                                                    <div class="dropzone2" id="dropzone2">-->
+<!--                                                        <div class="info2" id="info3"></div>-->
+<!--                                                    </div>-->
+<!--                                                    <input type="text" id="inputLink2" name="" class="form-control"-->
+<!--                                                           placeholder="Ảnh 3" readonly>-->
 <!--                                                </div>-->
-<!--                                            </div>-->
+                                            </div>
+                                            <!--                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">-->
+                                            <!--                                                <div class="review-content-section">-->
+                                            <!--                                                    <select name="select" class="form-control pro-edt-select form-control-primary" placeholder="Loại sản phẩm">-->
+                                            <!--                                                        <option value="CASIO">CASIO</option>-->
+                                            <!--                                                        <option value="CITIZEN">CITIZEN</option>-->
+                                            <!--                                                        <option value="G-SHOCK">G-SHOCK</option>-->
+                                            <!--                                                        <option value="CALVIN">CALVIN</option>-->
+                                            <!--                                                        <option value="DOXA">DOXA</option>-->
+                                            <!--                                                        <option value="SEIKO">SEIKO</option>-->
+                                            <!--                                                        <option value="FOUETTÉ">FOUETTÉ</option>-->
+                                            <!--                                                    </select>-->
+                                            <!--                                                </div>-->
+                                            <!--                                            </div>-->
                                         </div>
                                         <div class="row">
                                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                                 <div class="text-center mg-b-pro-edt custom-pro-edt-ds">
-                                                    <button type="submit" class="btn btn-primary waves-effect waves-light m-r-10">Lưu
+                                                    <button type="submit"
+                                                            class="btn btn-primary waves-effect waves-light m-r-10">Lưu
                                                     </button>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -127,12 +209,14 @@
             </div>
         </div>
     </div>
-    <%include partial/footer.ejs%>
+    <% include partial/footer.ejs %>
 </div>
 
 <!-- jquery
     ============================================ -->
-<%include partial/script.ejs%>
+<script type="text/javascript" src="/javascripts/js_imgur/imgur.js"></script>
+<script type="text/javascript" src="/javascripts/js_imgur/upload.js"></script>
+<% include partial/script.ejs %>
 </body>
 
 </html>

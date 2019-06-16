@@ -232,5 +232,7 @@ router.get('/Sua_thong_tin', function(req, res, next) {
   res.render('Sua_thong_tin', { title: 'Sửa thông tin' });
 });
 
+router.get('/Page', Cua_hang_controller.moveNextPage);
+
 module.exports = router;
 

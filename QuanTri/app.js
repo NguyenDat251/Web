@@ -123,6 +123,8 @@ passport.use('local', new LocalStrategy({
 
                           } else {
                               console.log('Error: ' + err);
+                              req.authError = "Lỗi, nhập lại!";
+                              return done(null, false);
                           }
                       })
                   }

@@ -40,7 +40,7 @@ adminSchema
 //     });
 
 
-AccountSchema
+adminSchema
     .virtual('add_url_admin')
 
 adminSchema
@@ -50,7 +50,7 @@ adminSchema
         return '/them_tai_khoan_admin/';
     });
 
-AccountSchema
+adminSchema
     .virtual('detail_url')
     .get(function () {
         return '/thong_tin_admin/' + this._id;
