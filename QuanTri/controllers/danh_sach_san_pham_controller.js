@@ -2,23 +2,7 @@ const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_san_pham');
 
-// exports.show_list = function(req, res, next) {
-//     data.find()
-//         .exec(function (err, list_items) {
-//             if (err) {
-//                 console.log("falseeee");
-//                 return next(err);
-//             }
-//             //Successful, so render
-//             console.log("Successful, so render");
-//             console.log(list_items);
-//             res.render('danh_sach_san_pham', {title: '', list_items: list_items});
-//         });
-// };
-
 exports.index = function(req, res, next) {
-
-
     if (req.isAuthenticated()) {
         data.find()
             .exec(function (err, list_items) {

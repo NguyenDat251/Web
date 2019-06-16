@@ -33,7 +33,7 @@ router.get('/', Cua_hang_controller.index
 
 );
 
-router.post('/Dang_ky, Dang_ky_controller.sign_up');
+router.post('/Dang_ky', Dang_ky_controller.sign_up);
 router.get('/Dang_ky', function(req, res, next) {
     res.render('Dang_ky', { title: '' });
 });
@@ -76,115 +76,20 @@ router.get('/Dang_nhap', function(req, res, next) {
   res.render('Dang_nhap', { errorText: '' });
 });
 
-router.post('/Quen_mat_khau', function(req, res, next) {
-    async.waterfall([
-        function(done) {
-            crypto.randomBytes(20, function(err, buf) {
-                var token = buf.toString('hex');
-                done(err, token);
-            });
-        },
-        function(token, done) {
-            data.findOne({ email: req.body.email }, function(err, user) {
-                if (!user) {
-                    return res.redirect('/Dang_nhap');
-                }
+router.post('/Quen_mat_khau', Dang_ky_controller.forget_password);
 
-                user.resetPasswordToken = token;
-                user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
-
-                user.save(function(err) {
-                    done(err, token, user);
-                });
-            });
-        },
-        function(token, user, done) {
-            var smtpTransport = nodemailer.createTransport({
-                service: 'Gmail',
-                auth: {
-                    type:'login',
-                    user: 'tancaominh98@gmail.com',
-                    pass: process.env.GMAILPW
-                }
-            });
-            var mailOptions = {
-                to: user.email,
-                from: 'tancaominh98@gmail.com',
-                subject: 'Node.js Password Reset',
-                text: 'Bạn nhận được tin nhắn này vì bạn (hoặc ai đó) đã yêu cầu thay đổi mật khẩu.\n\n' +
-                    'Hãy truy cập vào đường dẫn bên dưới để thay đổi mật khẩu:\n\n' +
-                    'http://' + req.headers.host + '/Doi_mat_khau/' + token + '\n\n' +
-                    'Nếu bạn không yêu cầu thay đổi mật khẩu, vui lòng bỏ qua tin nhắn này và mật khẩu bạn sẽ không thay đổi.\n'
-            };
-            smtpTransport.sendMail(mailOptions, function(err) {
-                console.log('mail sent');
-                done(err, 'done');
-            });
-        }
-    ], function(err) {
-        if (err) return next(err);
-        res.redirect('/Dang_nhap');
-    });
-});
-
-router.get('/Doi_mat_khau/:token', function(req, res) {
+router.get('/Doi_mat_khau_moi/:token', function(req, res) {
+    console.log(req.params.token);
     data.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
         if (!user) {
             console.log('index.js/133');
             return res.redirect('/Quen_mat_khau');
         }
-        res.render('Doi_mat_khau', {token: req.params.token});
+        res.render('Doi_mat_khau_moi', {token: req.params.token});
     });
 });
 
-router.post('/Doi_mat_khau/:token', function(req, res) {
-    async.waterfall([
-        function(done) {
-            data.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
-                if (!user) {
-                    console.log('index.js/148')
-                    return res.redirect('back');
-                }
-                if(req.body.newPass1 === req.body.newPass2) {
-                    user.setPassword(req.body.newPass1, function(err) {
-                        user.resetPasswordToken = undefined;
-                        user.resetPasswordExpires = undefined;
-
-                        user.save(function(err) {
-                            req.logIn(user, function(err) {
-                                done(err, user);
-                            });
-                        });
-                    })
-                } else {
-                    console.log('index.js/162')
-                    return res.redirect('back');
-                }
-            });
-        },
-        function(user, done) {
-            var smtpTransport = nodemailer.createTransport({
-                service: 'Gmail',
-                auth: {
-                    user: 'tancaominh98@gmail.com',
-                    pass: process.env.GMAILPW
-                }
-            });
-            var mailOptions = {
-                to: user.email,
-                from: 'tancaominh98@gmail.com',
-                subject: 'Mật khẩu của bạn đã được thay đổi!',
-                text: 'Xin chào,\n\n' +
-                    'Đây là thông báo rằng mật khẩu của tài khoản ' + user.name + ' đã được thay đổi.\n'
-            };
-            smtpTransport.sendMail(mailOptions, function(err) {
-                done(err);
-            });
-        }
-    ], function(err) {
-        res.redirect('/Cua_hang');
-    });
-});
+router.post('/Doi_mat_khau_moi/:token', Dang_ky_controller.reset_password);
 
 
 

@@ -2,7 +2,6 @@ const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan_admin');
 var user = "temp";
-//var async = require('async');
 
 const bcrypt = require('bcrypt');
 let saltRounds = 10
@@ -27,6 +26,27 @@ function doTheCompare(passInput, passReal) {
 }
 
 
+exports.show_info = async (req, res, next) => {
+    console.log({_id:req.params.id})
+    data.find({_id:req.params.id})
+        .exec(function (err, item) {
+            if (err) {
+                console.log("failseeee");
+                return next(err);
+            }
+            //Successful, so render
+            else {
+                if (item==null) { // No results.
+                    var err = new Error('Item not found');
+                    err.status = 404;
+                    return next(err);
+                }
+                console.log("Thay đổi thông tin tài khoản");
+                console.log(item);
+                res.render('thay_doi_thong_tin_admin', {title: 'Áo Khoác', item: item[0], user: req.user})
+            };
+        });
+};
 // exports.show_list = function(req, res, next) {
 //     data.find()
 //         .exec(function (err, list_items) {
@@ -41,20 +61,36 @@ function doTheCompare(passInput, passReal) {
 //         });
 // };
 
-exports.show_info = async (req, res, next) => {
-    console.log("SHOW INFOR");
-           res.render('thay_doi_thong_tin_admin', {title: 'Áo Khoác', user: req.user})
+exports.detail = async (req, res, next) => {
+    data.find({_id:req.params.id})
+        .exec(function (err, item) {
+            if (err) {
+                console.log("falseeee");
+                return next(err);
+            }
+            //Successful, so render
+            else {
+                if (item==null) { // No results.
+                    var err = new Error('Item not found');
+                    err.status = 404;
+                    return next(err);
+                }
+                console.log("Successful, so render");
+                console.log(item);
+                res.render('thong_tin_admin', {title: 'Áo Khoác', item: item[0], user: req.user})
+            }
+            ;
+        });
+          // res.render('thay_doi_thong_tin_admin', {title: 'Áo Khoác', user: req.user})
 };
 
-
-// Handle book update on POST.
 exports.update_post = [
     // Validate fields.
      body('email', 'Name must not be empty.').isLength({ min: 1 }).trim(),
     //
     //
     // Sanitize fields.
-    sanitizeBody('email').escape(),
+    sanitizeBody('title').escape(),
     //
     //
     // // Process request after validation and sanitization.
@@ -64,12 +100,12 @@ exports.update_post = [
          const errors = validationResult(req);
     //     console.log(errors.isEmpty());
     //     // Create a Book object with escaped/trimmed data and old id.
-        var account = new data(
-            { name: req.user.name,
-                password : req.user.password,
-                email: req.body.email,
-                _id:req.user._id //This is required, or a new ID will be assigned!
-            });
+    //     var account = new data(
+    //         { name: req.user.name,
+    //             password : req.user.password,
+    //             email: req.body.email,
+    //             _id:req.user._id //This is required, or a new ID will be assigned!
+    //         });
 
         if (!errors.isEmpty()) {
             // There are errors. Render form again with sanitized values/error messages.
@@ -92,7 +128,8 @@ exports.update_post = [
             return;
         }
         else {
-           // Data from form is valid. Update the record.
+
+          // Data from form is valid. Update the record.
             data.findByIdAndUpdate(req.user._id, account, {}, function (err,item) {
                 console.log(req.user._id)
                 if (err) { return next(err); }
@@ -266,10 +303,10 @@ exports.add =  [
 ];
 
 
-exports.detail = async (req, res, next) => {
-    console.log("SHOW detail: " + req.user.email + " id: " + req.user._id);
-    res.render('thong_tin_admin', {title: 'Áo Khoác', user: req.user})
-};
+// exports.detail = async (req, res, next) => {
+//     console.log("SHOW detail: " + req.user.email + " id: " + req.user._id);
+//     res.render('thong_tin_admin', {title: 'Áo Khoác', user: req.user})
+// };
 
 exports.confirmationPost = function (req, res, next) {
     req.assert('email', 'Email is not valid').isEmail();

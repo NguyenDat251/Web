@@ -42,7 +42,7 @@ exports.index = function (req, res, next) {
                 console.log("Successful, so render");
                 console.log(list_items);
                 //res.render('danh_sach_tai_khoan', {title: '', list_items: list_items});
-                res.render('danh_sach_tai_khoan', {title: '', list_items: list_items, user: req.user});
+                res.render('danh_sach_cho_duyet', {title: '', list_items: list_items, user: req.user});
             });
 
     } else {
