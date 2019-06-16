@@ -245,14 +245,14 @@ exports.search= function (req, res, next) {
 }
 
 exports.moveNextPage = function(req, res, next){
-    numPage = req.params.idPage;
+    numPage = req.query.id;
     //res.redirect('/');
     //renderPage(req, res, list);
     if (req.isAuthenticated()) {
-        res.render('Cua_hang_2', {title: 'Genre Detail', user: req.user, list_items: list, list_type: list_type, list_brand: list_brand, numPage: numPage});
+        res.render('Cua_hang', {title: 'Genre Detail', user: req.user, list_items: list, list_type: list_type, list_brand: list_brand, numPage: numPage});
     }
     else {
-        res.render('Cua_hang_2', {title: 'Áo Khoác', user: null, list_items: list, list_type: list_type, list_brand: list_brand, numPage: numPage});
+        res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: list, list_type: list_type, list_brand: list_brand, numPage: numPage});
     }
 }
 

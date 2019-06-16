@@ -164,12 +164,18 @@
             <!--                </div>-->
 
             <%
-            var maxIndex = list_items.length - numPage * 12;
+            // var maxIndex = list_items.length - numPage * 12;
+            //
+            // if (maxIndex >= 12)
+            //     maxIndex = 12;
 
-            if (maxIndex >= 12)
-                maxIndex = 12;
+            var maxIndex = (numPage + 1) * 12;
 
-            for(var i = 0; i < maxIndex; i++) {
+            if(maxIndex > list_items.length)
+                maxIndex = list_items.length;
+
+
+            for(var i = numPage*12; i < maxIndex; i++) {
             %>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-shop-product">
@@ -197,27 +203,25 @@
                 <div class="product-pagination text-center">
                     <nav>
                         <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
+<!--                            <li>-->
+<!--                                <a href="#" aria-label="Previous">-->
+<!--                                    <span aria-hidden="true">&laquo;</span>-->
+<!--                                </a>-->
+<!--                            </li>-->
                             <%
-                            var idPageNext = "/Page/" + (numPage + 1);
-                            var idPagePrevious = "/Page/" + (numPage - 1);
+                                var numOfPage = list_items.length/12;
+                                for(let i = 0; i < numOfPage; i++){
                             %>
-                            <li><a id="btnNext" href="/Page/<%= (numPage + 1) %>" onclick="OnClickNextPage()">Trang
-                                    trước</a></li>
-                            <li><a href=idPagePrevious>Trang sau</a></li>
+                            <li><a href="/Page?id=<%=i%>"><%=i + 1%></a></li>
                             <!--                                <li><a href="#">3</a></li>-->
                             <!--                                <li><a href="#">4</a></li>-->
                             <!--                                <li><a href="#">5</a></li>-->
-
-                            <li>
-                                <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
+                            <%}%>
+<!--                            <li>-->
+<!--                                <a href="#" aria-label="Next">-->
+<!--                                    <span aria-hidden="true">&raquo;</span>-->
+<!--                                </a>-->
+<!--                            </li>-->
                         </ul>
                     </nav>
                 </div>

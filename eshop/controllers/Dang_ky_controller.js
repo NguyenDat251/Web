@@ -1,25 +1,19 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/tai_khoan');
-
-
 const bcrypt = require('bcrypt');
-let saltRounds = 10
-function doTheHash(pass) {
-    bcrypt.hash(pass, saltRounds, (err, hash)=>{
-        if(!err){
-            return hash;
-        }else{
-            console.log('Error', err);
-        }
-    })
+
+function generateHash(pass)
+{
+    return bcrypt.hashSync(pass, bcrypt.genSaltSync(10));
 }
 
-exports.sign_in = [
 
+
+exports.sign_up = [
     // Validate that the name field is not empty.
     body('name', 'name required').isLength({ min: 1 }).trim(),
-    body('password', 'name required').isLength({ min: 1 }).trim(),
+    body('password', 'password required').isLength({ min: 1 }).trim(),
     //console.log("check"),
     // Sanitize (escape) the name field.
     sanitizeBody('name').escape(),
@@ -27,22 +21,18 @@ exports.sign_in = [
     //console.log("escape"),
     // Process request after validation and sanitization.
     (req, res, next) => {
-
         // Extract the validation errors from a request.
         const errors = validationResult(req);
-
         // Create a genre object with escaped and trimmed data.
         var account = new data(
             {
                 name: req.body.name,
-                password: doTheHash(req.body.password),
+                password: generateHash(req.body.password),
                 email: req.body.email,
                 date: req.body.date,
                 phone: req.body.phone,
             }
         );
-
-
         if (!errors.isEmpty()) {
             // There are errors. Render the form again with sanitized values/error messages.
             console.log("error");
@@ -57,7 +47,6 @@ exports.sign_in = [
                     if (err) {
                         console.log("error exec");
                         return next(err); }
-
                     if (found_account) {
                         // Genre exists, redirect to its detail page.
                         res.render('Dang_ky', { title: 'Tên đã tồn tại'});
@@ -78,7 +67,7 @@ exports.sign_in = [
                                         console.log("err sign up: " + err);
                                         return next(err);
                                     }
-                                    console.log("success sing up");
+                                    console.log("success sign up");
                                     res.redirect('/Cua_hang');
                                 });
 
