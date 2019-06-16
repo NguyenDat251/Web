@@ -51,24 +51,6 @@ exports.index = function (req, res) {
 };
 
 exports.infor = async (req, res, next) => {
-    // data.find({_id:req.params.id})
-    //     .exec(function (err, item) {
-    //         if (err) {
-    //             console.log("failseeee");
-    //             return next(err);
-    //         }
-    //         //Successful, so render
-    //         else {
-    //             if (item==null) { // No results.
-    //                 var err = new Error('Item not found');
-    //                 err.status = 404;
-    //                 return next(err);
-    //             }
-    //             console.log("Chi tiết tài khoản");
-    //             console.log(item);
-    //             res.render('thong_tin_chi_tiet_tai_khoan', {title: '', item: item[0], user: req.user})
-    //         };
-    //     });
     console.log({_id:req.params.id})
     data.find({_id:req.params.id})
         .exec(function (err, item) {
@@ -298,7 +280,11 @@ exports.add =  [
         // Create a genre object with escaped and trimmed data.
         var account = new data(
             { name: req.body.name,
-            password: req.body.password,}
+            password: req.body.password,
+            email: req.body.email,
+            phone: req.body.phone,
+            address: req.body.address,
+            _id:req.params.id}
         );
 
 

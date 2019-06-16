@@ -2,13 +2,11 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var adminSchema = new Schema(
+var AccountSchema = new Schema(
     {
         name: {type: String, required: 'Vui lòng không để trống', max: 100},
         password: {type: String},
         email:{type: String},
-        date:{type: Date, default: Date.now},
-        isVerified: { type: Boolean, default: false },
     }
 );
 
@@ -27,7 +25,7 @@ var adminSchema = new Schema(
 //     });
 //
 // Virtual for author's URL
-adminSchema
+AccountSchema
     .virtual('url')
     .get(function () {
         return '/thay_doi_thong_tin_admin/';
@@ -39,13 +37,8 @@ adminSchema
 //         return '/xoa_tai_khoan/' + this._id;
 //     });
 
-
 AccountSchema
     .virtual('add_url_admin')
-
-adminSchema
-    .virtual('add_url')
-
     .get(function () {
         return '/them_tai_khoan_admin/';
     });
@@ -56,4 +49,4 @@ AccountSchema
         return '/thong_tin_admin/' + this._id;
     })
 //Export model
-module.exports = mongoose.model('admins', adminSchema);
+module.exports = mongoose.model('admins', AccountSchema);
