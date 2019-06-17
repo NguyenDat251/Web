@@ -112,6 +112,8 @@ passport.use('local', new LocalStrategy({
               }
               else {
                   try {
+                      console.log(req.body.password);
+                      console.log(item[0].password);
                       bcrypt.compare(req.body.password, item[0].password, (err, res) => {
                           if (!err) {
                               if (res) {
