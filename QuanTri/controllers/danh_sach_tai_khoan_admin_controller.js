@@ -1,6 +1,7 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan_admin');
+var async = require('async');
 var user = "temp";
 
 const bcrypt = require('bcrypt');
@@ -27,25 +28,27 @@ function doTheCompare(passInput, passReal) {
 
 
 exports.show_info = async (req, res, next) => {
-    console.log({_id:req.params.id})
-    data.find({_id:req.params.id})
-        .exec(function (err, item) {
-            if (err) {
-                console.log("failseeee");
-                return next(err);
-            }
-            //Successful, so render
-            else {
-                if (item==null) { // No results.
-                    var err = new Error('Item not found');
-                    err.status = 404;
+    if (req.isAuthenticated()) {
+        data.find()
+            .exec(function (err, item) {
+                if (err) {
+                    console.log("falseeee");
                     return next(err);
                 }
-                console.log("Thay đổi thông tin tài khoản");
+                //Successful, so render
+                console.log("Successful, so render");
                 console.log(item);
-                res.render('thay_doi_thong_tin_admin', {title: 'Áo Khoác', item: item[0], user: req.user})
-            };
+
+                res.render('thay_doi_thong_tin_admin', {title: '', item: item[0], user: req.user});
+            });
+
+    } else {
+        console.log(req.user);
+        console.log(req.isAuthenticated());
+        res.render('dang_nhap', {
+            errorText: ''
         });
+    }
 };
 // exports.show_list = function(req, res, next) {
 //     data.find()
@@ -98,16 +101,16 @@ exports.update_post = [
     //     console.log("form thay_doi_thong_tin_admin = post");
     //     // Extract the validation errors from a request.
          const errors = validationResult(req);
-    //     console.log(errors.isEmpty());
-    //     // Create a Book object with escaped/trimmed data and old id.
-    //     var account = new data(
-    //         { name: req.user.name,
-    //             password : req.user.password,
-    //             email: req.body.email,
-    //             _id:req.user._id //This is required, or a new ID will be assigned!
-    //         });
+         console.log(errors.isEmpty());
+        // Create a Book object with escaped/trimmed data and old id.
+        var account = new data(
+            {
+                email: req.body.email,
+                _id:req.user._id //This is required, or a new ID will be assigned!
+            });
 
         if (!errors.isEmpty()) {
+            console.log("ERROR")
             // There are errors. Render form again with sanitized values/error messages.
 
             // Get all authors and genres for form.
@@ -128,10 +131,10 @@ exports.update_post = [
             return;
         }
         else {
-
+            console.log(req.params.id);
           // Data from form is valid. Update the record.
-            data.findByIdAndUpdate(req.user._id, account, {}, function (err,item) {
-                console.log(req.user._id)
+            data.findByIdAndUpdate(req.params.id, account, {}, function (err,item) {
+                console.log(account.email);
                 if (err) { return next(err); }
                 // Successful - redirect to book detail page.
                 res.redirect('/main');
@@ -141,15 +144,6 @@ exports.update_post = [
   }
 ];
 
-// exports.delete_post = function(req, res, next) {
-//     data.findByIdAndRemove(req.params.id, function deleteAuthor(err) {
-//         if (err) {
-//             console.log("Delete false");
-//             return next(err); }
-//         // Success - go to author list
-//         res.redirect('/danh_sach_tai_khoan')
-//     });
-// };
 exports.check_log_in = function(req, res, next) {
 
 
@@ -261,7 +255,8 @@ exports.add =  [
         // Create a genre object with escaped and trimmed data.
         var account = new data(
             { name: req.body.name,
-            password: req.body.password,}
+            password: req.body.password,
+            email: req.body.email,}
         );
 
 
@@ -301,12 +296,6 @@ exports.add =  [
         }
     }
 ];
-
-
-// exports.detail = async (req, res, next) => {
-//     console.log("SHOW detail: " + req.user.email + " id: " + req.user._id);
-//     res.render('thong_tin_admin', {title: 'Áo Khoác', user: req.user})
-// };
 
 exports.confirmationPost = function (req, res, next) {
     req.assert('email', 'Email is not valid').isEmail();

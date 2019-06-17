@@ -71,14 +71,18 @@
                             <tr>
 
                                 <th>Tên</th>
-                                <th>Mật khẩu</th>
+                                <th>email</th>
+                                <th>SĐT</th>
+                                <th>Địa chỉ</th>
                                 <th>Thay đổi thông tin</th>
                                 <th>Xóa tài khoản</th>
                             </tr>
                             <% for(var i = 0; i < list_items.length; i++) { %>
                             <tr>
                                 <td><a href="<%= list_items[i].infor_url %>"><%= list_items[i].name %></a></td>
-                                <td><%= list_items[i].password %></td>
+                                <td><%= list_items[i].email %></td>
+                                <td><%= list_items[i].phone %></td>
+                                <td><%= list_items[i].address %></td>
                                 <td><a href="<%= list_items[i].url %>">Thay đổi thông tin</a></td>
                                 <td><a href= <%= list_items[i].delete_url%>>Xóa</a></td>
                             </tr>

@@ -69,19 +69,13 @@
                             </div>
                             <table>
                                 <tr>
-                                    <th>Hình ảnh</th>
                                     <th>Tên</th>
-                                    <th>Số lượng</th>
-
-                                    <th></th>
-                                    <th></th>
+                                    <th>Thay đổi thông tin</th>
+                                    <th>Xóa</th>
                                 </tr>
                                 <% for(var i = 0; i < list_items.length; i++) { %>
                                 <tr>
-                                    <td><img src="" alt="" /></td>
                                     <td><%= list_items[i].name %></td>
-                                    <td>1</td>
-
                                     <td><a href="<%= list_items[i].url %>">Thay đổi thông tin</a></td>
                                     <td><a href= <%= list_items[i].delete_url%>>Xóa</a></td>
                                 </tr>

@@ -68,18 +68,19 @@
                             <a href="danh_sach_cua_hang/them_cua_hang">Thêm cửa hàng</a>
                         </div>
                         <table>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Thay đổi thông tin</th>
+                                <th>Xóa</th>
+                            </tr>
                             <% for(var i = 0; i < list_items.length; i++) { %>
                             <tr>
-                                <th>Hình ảnh</th>
                                 <th><%= list_items[i].name %></th>
-                                <th>Mã số</th>
-                                <th>Email</th>
-                                <th>Tổng giao dịch</th>
                                 <th>
                                     <a href="<%= list_items[i].url %>">Thay đổi thông tin</a>
 
                                 </th>
-                                <th><a href= <%= list_items[i].delete_url%>>Xoa</a></th>
+                                <th><a href= <%= list_items[i].delete_url%>>Xóa</a></th>
                             </tr>
                                 <% }; %>
 
