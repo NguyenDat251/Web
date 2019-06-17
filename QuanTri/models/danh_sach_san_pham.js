@@ -4,15 +4,18 @@ var Schema = mongoose.Schema;
 
 var ProductSchema = new Schema(
     {
-
+        StoreName: {type: String, required: true},
         name: {type: String, required: true, max: 100},
         price: {type: String, required: true, max: 100},
-        price_sale: {type: String, required: true, max: 100},
+        price_sale: {type: String, max: 100},
         number: {type: String, required: true, max: 100},
         type: {type: String, required: true, max: 100},
+        brand: {type: String, required: true, max: 100},
+        gender: {type: String, required: true, max: 100},
         img: {type: String, required: true, max: 100},
         info: {type: String, required: true, max: 100},
-        sale: {type: String, required: true, max: 100},
+        sale: {type: String, max: 100},
+        TimesWatched: {type: Number, required: true, max: 100},
     }
 );
 

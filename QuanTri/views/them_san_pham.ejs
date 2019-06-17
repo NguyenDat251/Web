@@ -87,35 +87,37 @@
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i>Tên cửa hàng</span>
-                                                        <select>
-                                                            <option value="Tất cả">Tất cả</option>
+                                                        <select name="StoreName">
+                                                            <%for(var i = 0; i < list_shops.length; i++){%>
+                                                            <option value="Tất cả"><%=list_shops[i].name%></option>
+                                                            <%}%>
                                                         </select>
                                                     </div>
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                        <input type="text" class="form-control" placeholder="Tên">
+                                                        <input type="text" name="name" class="form-control" placeholder="Tên">
                                                     </div>
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                        <input type="text" class="form-control" placeholder="Giá">
+                                                        <input type="text" name="price" class="form-control" placeholder="Giá">
                                                     </div>
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                        <input type="text" class="form-control"
+                                                        <input type="text" class="form-control" name="price_sale"
                                                                placeholder="Giá khuyến mãi">
                                                     </div>
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                        <input type="text" class="form-control" placeholder="Số lượng">
+                                                        <input type="text" name="number" class="form-control" placeholder="Số lượng">
                                                     </div>
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i>Loại dây</span>
-                                                        <select>
+                                                        <select name="type">
                                                             <option>Dây da</option>
                                                             <option>Dây kim loại</option>
                                                             <option>Dây cao su</option>
@@ -124,13 +126,13 @@
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                        <input type="text" class="form-control"
+                                                        <input type="text" name="brand" class="form-control"
                                                                placeholder="Thương hiệu">
                                                     </div>
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i>Giới tính</span>
-                                                        <select>
+                                                        <select name="gender">
                                                             <option>Nam</option>
                                                             <option>Nữ</option>
                                                         </select>
@@ -138,7 +140,7 @@
                                                     <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                        <input type="text" class="form-control" placeholder="Mô tả">
+                                                        <input type="text" name="info" class="form-control" placeholder="Mô tả">
                                                     </div>
 
                                                     <!--                                                    <div class="input-group mg-b-pro-edt">-->
@@ -160,7 +162,7 @@
                                                     <div class="dropzone" id="dropzone1">
                                                         <div class="info" id="info1"></div>
                                                     </div>
-                                                    <input type="text" id="inputLink" name="" class="form-control"
+                                                    <input type="text" id="inputLink" name="img" class="form-control"
                                                            placeholder="Ảnh" readonly>
                                                 </div>
 <!--                                                <div>-->

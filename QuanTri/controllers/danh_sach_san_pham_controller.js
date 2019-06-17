@@ -145,6 +145,12 @@ exports.add =  [
     body('info', 'info required').isLength({ min: 1 }).trim(),
     // Sanitize (escape) the name field.
     sanitizeBody('name').escape(),
+    sanitizeBody('price').escape(),
+    sanitizeBody('price_sale').escape(),
+    sanitizeBody('number').escape(),
+    sanitizeBody('brand').escape(),
+    sanitizeBody('number').escape(),
+    sanitizeBody('info').escape(),
     // Process request after validation and sanitization.
     (req, res, next) => {
 
@@ -153,35 +159,47 @@ exports.add =  [
 
         // Create a genre object with escaped and trimmed data.
         var goods = new data(
-            { name: req.body.name }
+            {
+                StoreName: req.body.StoreName,
+                name: req.body.name,
+                price: req.body.price,
+                price_sale: req.body.price_sale,
+                number: req.body.number,
+                type: req.body.type,
+                brand: req.body.brand,
+                gender: req.body.gender,
+                img: req.body.img,
+                info: req.body.info,
+                sale: req.body.sale,
+                TimesWatched: 1,}
         );
 
 
         if (!errors.isEmpty()) {
             // There are errors. Render the form again with sanitized values/error messages.
-            console.log("error");
-            res.render('them_san_pham');
+            console.log(errors);
+            res.redirect('them_san_pham');
             return;
         }
         else {
             // Data from form is valid.
             // Check if Genre with same name already exists.
             data.findOne({ 'name': req.body.name })
-                .exec( function(err, found_genre) {
+                .exec( function(err, found_name) {
                     if (err) {
                         console.log("error exec");
-                        return next(err); }
+                        res.redirect('them_san_pham'); }
 
-                    if (found_genre) {
+                    if (found_name) {
                         // Genre exists, redirect to its detail page.
-                        res.redirect(found_genre.url);
+                        res.redirect('them_san_pham');
                     }
                     else {
 
                         goods.save(function (err) {
                             if (err) {
                                 console.log("error save");
-                                return next(err); }
+                                res.redirect('them_san_pham');}
                             // Genre saved. Redirect to genre detail page.
                             console.log("success");
                             res.redirect('/danh_sach_san_pham');
