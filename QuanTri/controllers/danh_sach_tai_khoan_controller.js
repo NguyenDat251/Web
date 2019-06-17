@@ -1,6 +1,9 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan');
+var listProducts = require('../models/danh_sach_san_pham');
+var async = require('async');
+
 var user = "temp";
 var g_listUsers = new Array();
 var numPage = 0;
@@ -114,12 +117,20 @@ exports.show_info = async (req, res, next) => {
 // Handle book update on POST.
 exports.update_post = [
     // Validate fields.
-    body('name', 'Name must not be empty.').isLength({ min: 1 }).trim(),
-
+    body('name', 'name required').isLength({ min: 1 }).trim(),
+    body('password', 'password required').isLength({ min: 1 }).trim(),
+    body('email', 'email required').isLength({ min: 1 }).trim(),
+    body('phone', 'phone required').isLength({ min: 1 }).trim(),
+    body('date', 'date required').isLength({ min: 1 }).trim(),
+    body('address', 'address required').isLength({ min: 1 }).trim(),
 
     // Sanitize fields.
-    sanitizeBody('title').escape(),
-
+    sanitizeBody('name').escape(),
+    sanitizeBody('password').escape(),
+    sanitizeBody('email').escape(),
+    sanitizeBody('phone').escape(),
+    sanitizeBody('date').escape(),
+    sanitizeBody('address').escape(),
 
     // Process request after validation and sanitization.
     (req, res, next) => {
@@ -285,6 +296,8 @@ exports.add =  [
         // Extract the validation errors from a request.
         const errors = validationResult(req);
 
+        //  var newListProducts = new Array()
+        // var totalcost = null;
         // Create a genre object with escaped and trimmed data.
         var account = new data(
             { name: req.body.name,
@@ -292,7 +305,10 @@ exports.add =  [
             email: req.body.email,
             phone: req.body.phone,
             address: req.body.address,
-            _id:req.params.id}
+                date: req.body.date,
+                // listProducts:newListProducts,
+                // totalCost: totalcost,
+                _id:req.params.id}
         );
 
 
