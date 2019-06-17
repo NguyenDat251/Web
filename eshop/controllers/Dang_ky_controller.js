@@ -94,7 +94,7 @@ exports.forget_password=function (req, res, next) {
         function(token, done) {
             data.findOne({ email: req.body.email }, function(err, user) {
                 if (!user) {
-                    return res.redirect('/Dang_nhap');
+                    return res.redirect('Dang_nhap');
                 }
 
                 user.resetPasswordToken = token;
@@ -136,7 +136,7 @@ exports.forget_password=function (req, res, next) {
 
 exports.reset_password=function (req, res) {
     async.waterfall([
-        function() {
+        function(done) {
             console.log(req.body);
             data.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
                 if (!user) {
@@ -149,7 +149,7 @@ exports.reset_password=function (req, res) {
                         user.resetPasswordExpires = undefined;
                         user.password = generateHash(req.body.newPass1);
                         console.log(user.name);
-                            user.save(function (err) {
+                        user.save(function (err) {
                             if (err) {
                                 console.log("error save");
                                 return next(err); }
@@ -164,6 +164,8 @@ exports.reset_password=function (req, res) {
                                 console.log("success sign up");
                                 res.redirect('/Cua_hang');
                             });
+
+                            // }catch(er) {console.log(er);}
                         });
                     })
                 } else {
@@ -195,3 +197,58 @@ exports.reset_password=function (req, res) {
         res.redirect('/Cua_hang');
     })
 };
+
+exports.edit_info = [
+    // Validate fields.
+    body('name', 'Name must not be empty.').isLength({ min: 1 }).trim(),
+    // Sanitize fields.
+    sanitizeBody('title').escape(),
+
+
+    // Process request after validation and sanitization.
+    (req, res, next) => {
+
+        // Extract the validation errors from a request.
+        const errors = validationResult(req);
+
+        // Create a Book object with escaped/trimmed data and old id.
+        var account = new data(
+            {
+                name: req.body.name,
+                password : req.body.password,
+                email: req.body.email,
+                phone: req.body.phone,
+                address: req.body.address,
+                date: req.body.date,
+                _id:req.params.id //This is required, or a new ID will be assigned!
+            });
+        if (!errors.isEmpty()) {
+            // There are errors. Render form again with sanitized values/error messages.
+
+            // Get all authors and genres for form.
+            async.parallel({
+
+                },
+                function(err, results) {
+                    if (err) { return next(err); }
+
+
+                    for (let i = 0; i < results.name.length; i++) {
+                        if (account.name.indexOf(results.genres[i]._id) > -1) {
+                            results.name[i].checked='true';
+                        }
+                    }
+                    res.render('/thay_doi_thong_tin_tai_khoan', { title: 'Update Book', item : results.name, errors: errors.array(), user:req.user });
+                });
+            return;
+        }
+        else {
+            // Data from form is valid. Update the record.
+            data.findByIdAndUpdate(req.params.id, account, {}, function (err,item) {
+                if (err) { return next(err); }
+                // Successful - redirect to book detail page.
+                res.redirect('/danh_sach_tai_khoan');
+            });
+        }
+    }
+];
