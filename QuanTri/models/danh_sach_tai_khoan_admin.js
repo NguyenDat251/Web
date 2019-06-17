@@ -4,7 +4,6 @@ var Schema = mongoose.Schema;
 
 var AccountSchema = new Schema(
     {
-        
         email:{type: String},
     }
 );
