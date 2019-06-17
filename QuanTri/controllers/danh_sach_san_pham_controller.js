@@ -1,6 +1,7 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_san_pham');
+var dataCuaHang = require('../models/danh_sach_cua_hang');
 
 exports.index = function(req, res, next) {
     if (req.isAuthenticated()) {
@@ -26,6 +27,28 @@ exports.index = function(req, res, next) {
     }
 };
 
+exports.show_info_add_product = function(req, res, next) {
+    if (req.isAuthenticated()) {
+        dataCuaHang.find()
+            .exec(function (err, list_shops) {
+                if (err) {
+                    console.log("falseeee");
+                    return next(err);
+                }
+                //Successful, so render
+                console.log("Successful, so render");
+                console.log(list_shops);
+                res.render('them_san_pham', { title: 'Express', user: req.user, list_shops: list_shops });
+            });
+
+    } else {
+        console.log(req.user);
+        console.log(req.isAuthenticated());
+        res.render('dang_nhap', {
+            errorText: ''
+        });
+    }
+}
 
 exports.show_info = async (req, res, next) => {
     data.find({_id:req.params.id})
@@ -55,11 +78,26 @@ exports.show_info = async (req, res, next) => {
 // Handle book update on POST.
 exports.update_post = [
     // Validate fields.
-    body('name', 'Name must not be empty.').isLength({ min: 1 }).trim(),
+    body('name', 'name required').isLength({ min: 1 }).trim(),
+    body('price', 'price required').isLength({ min: 1 }).trim(),
+    body('price_sale', 'price required').isLength({ min: 1 }).trim(),
+    body('number', 'number required').isLength({ min: 1 }).trim(),
+
+    body('brand', 'brand required').isLength({ min: 1 }).trim(),
+    body('number', 'number required').isLength({ min: 1 }).trim(),
+
+    body('img', 'img required').isLength({ min: 1 }).trim(),
+    body('info', 'info required').isLength({ min: 1 }).trim(),
 
 
     // Sanitize fields.
-    sanitizeBody('title').escape(),
+    sanitizeBody('name').escape(),
+    sanitizeBody('price').escape(),
+    sanitizeBody('price_sale').escape(),
+    sanitizeBody('number').escape(),
+    sanitizeBody('brand').escape(),
+    sanitizeBody('number').escape(),
+    sanitizeBody('info').escape(),
 
 
     // Process request after validation and sanitization.
@@ -70,8 +108,18 @@ exports.update_post = [
 
         // Create a Book object with escaped/trimmed data and old id.
         var goods = new data(
-            { name: req.body.name,
-
+            { StoreName: req.body.StoreName,
+                name: req.body.name,
+                price: req.body.price,
+                price_sale: req.body.price_sale,
+                number: req.body.number,
+                type: req.body.type,
+                brand: req.body.brand,
+                gender: req.body.gender,
+                img: req.body.img,
+                info: req.body.info,
+                sale: req.body.sale,
+                TimesWatched: req.body.timesWatched,
                 _id:req.params.id //This is required, or a new ID will be assigned!
             });
 
