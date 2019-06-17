@@ -4,39 +4,16 @@ var Schema = mongoose.Schema;
 
 var AccountSchema = new Schema(
     {
-        name: {type: String, required: 'Vui lòng không để trống', max: 100},
-        password: {type: String},
         email:{type: String},
     }
 );
 
-// Virtual for author's full name
-// SanphamShecma
-//     .virtual('name')
-//     .get(function () {
-//         return this.family_name + ', ' + this.first_name;
-//     });
-//
-// // Virtual for author's lifespan
-// SanphamShecma
-//     .virtual('lifespan')
-//     .get(function () {
-//         return (this.date_of_death.getYear() - this.date_of_birth.getYear()).toString();
-//     });
-//
 // Virtual for author's URL
 AccountSchema
     .virtual('url')
     .get(function () {
         return '/thay_doi_thong_tin_admin/';
     });
-// AccountSchema
-
-//     .virtual('delete_url')
-//     .get(function () {
-//         return '/xoa_tai_khoan/' + this._id;
-//     });
-
 
 AccountSchema
 
@@ -48,7 +25,7 @@ AccountSchema
 AccountSchema
     .virtual('detail_url')
     .get(function () {
-        return '/thong_tin_admin/' + this._id;
+        return '/thong_tin_admin/';
     })
 //Export model
 module.exports = mongoose.model('admins', AccountSchema);

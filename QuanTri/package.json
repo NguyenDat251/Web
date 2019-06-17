@@ -9,6 +9,7 @@
     "async": "^2.6.2",
     "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
+    "brcypt": "^1.0.1",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^2.0.3",
     "cookie-parser": "~1.4.3",
