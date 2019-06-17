@@ -100,6 +100,7 @@ passport.use('local', new LocalStrategy({
                                 if (!err) {
                                     if (res) {
                                         const user = item[0];
+                                        console.log("user.url:" + user.url);
                                         return done(null, user);
 
                                     } else {

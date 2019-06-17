@@ -84,14 +84,14 @@
                                                     <th>Giá</th>
                                                     <th>Tên người nhận</th>
                                                 </tr>
-                                                <% for(var i = 0; i < list_items.length; i++) { %>
+                                                <% for(var i = 0; i < list_item.length; i++) { %>
                                                 <tr>
 
-                                                    <td><%=nameStores[i].name%></td>
-                                                    <td><%=nameProducts[i].name%>></td>
-                                                    <td><%=list_items[i].number%></td>
-                                                    <td><%=list_items[i].total_price%></td>
-                                                    <td><%=nameReceivers[i].name_receiver%></td>
+                                                    <td><%=list_item[i].id_store%></td>
+                                                    <td><%=list_item[i].id_product%>></td>
+                                                    <td><%=list_item[i].number%></td>
+                                                    <td><%=list_item[i].total_price%></td>
+                                                    <td><%=list_item[i].id_receiver%></td>
 
                                                 </tr>
                                                 <% }; %>
@@ -121,14 +121,14 @@
                                                     <th>Giá</th>
                                                     <th>Tên người nhận</th>
                                                 </tr>
-                                                <% for(var i = 0; i < list_items.length; i++) { %>
+                                                <% for(var i = 0; i < list_item.length; i++) { %>
                                                 <tr>
 
-                                                    <td><%=nameStores[i].name%></td>
-                                                    <td><%=nameProducts[i].name%>></td>
-                                                    <td><%=list_items1[i].number%></td>
-                                                    <td><%=list_items1[i].total_price%></td>
-                                                    <td><%=nameReceivers[i].name_receiver%></td>
+                                                    <td><%=list_item[i].id_store%></td>
+                                                    <td><%=list_item[i].id_product%>></td>
+                                                    <td><%=list_item[i].number%></td>
+                                                    <td><%=list_item[i].total_price%></td>
+                                                    <td><%=list_item[i].id_receiver%></td>
 
                                                 </tr>
                                                 <% }; %>
@@ -147,157 +147,28 @@
                                         </div>
                                     </div>
                                 </div>
-<!--                                <div class="product-tab-list tab-pane fade" id="thanhtoan">-->
-<!--                                    <div class="row">-->
-<!--                                        <div class="product-status-wrap border-pdt-ct col-lg-12 col-md-12 col-sm-12 col-xs-12">-->
-<!--                                            <table>-->
-<!--                                                <tr>-->
-<!--                                                    <th>Hình ảnh</th>-->
-<!--                                                    <th>Tên sản phẩm</th>-->
-<!--                                                    <th>Mã sản phẩm</th>-->
-<!--                                                    <th>Số lượng</th>-->
-<!--                                                    <th>Giá</th>-->
-<!--                                                    <th>Người mua</th>-->
-<!--                                                    <th>Cửa hàng</th>-->
-<!--                                                </tr>-->
-<!--                                                <tr>-->
-<!--                                                    <td><img src="/img/product/1.jpg" alt="" /></td>-->
-<!--                                                    <td>Dây chuyền  kim cương</td>-->
-<!--                                                    <td>SP01</td>-->
-<!--                                                    <td>-->
-<!--                                                        <input type="text" class="form-control" value="2">-->
-<!--                                                    </td>-->
-<!--                                                    <td>$500</td>-->
-<!--                                                    <td>tranthilang@gmail.com</td>-->
-<!--                                                    <td>Tiệm vàng ABC</td>-->
-<!--                                                </tr>-->
-<!--                                                <tr>-->
-<!--                                                    <td><img src="/img/product/1.jpg" alt="" /></td>-->
-<!--                                                    <td>Dây chuyền  kim cương</td>-->
-<!--                                                    <td>SP01</td>-->
-<!--                                                    <td>-->
-<!--                                                        <input type="text" class="form-control" value="2">-->
-<!--                                                    </td>-->
-<!--                                                    <td>$500</td>-->
-<!--                                                    <td>tranthilang@gmail.com</td>-->
-<!--                                                    <td>Tiệm vàng ABC</td>-->
-<!--                                                </tr>-->
-<!--                                                <tr>-->
-<!--                                                    <td><img src="/img/product/1.jpg" alt="" /></td>-->
-<!--                                                    <td>Dây chuyền  kim cương</td>-->
-<!--                                                    <td>SP01</td>-->
-<!--                                                    <td>-->
-<!--                                                        <input type="text" class="form-control" value="2">-->
-<!--                                                    </td>-->
-<!--                                                    <td>$500</td>-->
-<!--                                                    <td>tranthilang@gmail.com</td>-->
-<!--                                                    <td>Tiệm vàng ABC</td>-->
-<!--                                                </tr>-->
-<!--                                                <tr>-->
-<!--                                                    <td><img src="/img/product/1.jpg" alt="" /></td>-->
-<!--                                                    <td>Dây chuyền  kim cương</td>-->
-<!--                                                    <td>SP01</td>-->
-<!--                                                    <td>-->
-<!--                                                        <input type="text" class="form-control" value="2">-->
-<!--                                                    </td>-->
-<!--                                                    <td>$500</td>-->
-<!--                                                    <td>tranthilang@gmail.com</td>-->
-<!--                                                    <td>Tiệm vàng ABC</td>-->
-<!--                                                </tr>-->
-<!--                                                <tr>-->
-<!--                                                    <td><img src="/img/product/1.jpg" alt="" /></td>-->
-<!--                                                    <td>Dây chuyền  kim cương</td>-->
-<!--                                                    <td>SP01</td>-->
-<!--                                                    <td>-->
-<!--                                                        <input type="text" class="form-control" value="2">-->
-<!--                                                    </td>-->
-<!--                                                    <td>$500</td>-->
-<!--                                                    <td>tranthilang@gmail.com</td>-->
-<!--                                                    <td>Tiệm vàng ABC</td>-->
-<!--                                                </tr>-->
-<!--                                            </table>-->
-<!--                                            <div class="custom-pagination">-->
-<!--                                                <nav aria-label="Page navigation example">-->
-<!--                                                    <ul class="pagination">-->
-<!--                                                        <li class="page-item"><a class="page-link" href="#">Trước</a></li>-->
-<!--                                                        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
-<!--                                                        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
-<!--                                                        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
-<!--                                                        <li class="page-item"><a class="page-link" href="#">Sau</a></li>-->
-<!--                                                    </ul>-->
-<!--                                                </nav>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
                                 <div class="product-tab-list tab-pane fade" id="hoantatgiaodich">
                                     <div class="row">
                                         <div class="product-status-wrap border-pdt-ct col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <table>
                                                 <tr>
-                                                    <th>Hình ảnh</th>
+                                                    <th>Tên cửa hàng</th>
                                                     <th>Tên sản phẩm</th>
-                                                    <th>Mã sản phẩm</th>
                                                     <th>Số lượng</th>
                                                     <th>Giá</th>
-                                                    <th>Người mua</th>
-                                                    <th>Cửa hàng</th>
+                                                    <th>Tên người nhận</th>
                                                 </tr>
+                                                <% for(var i = 0; i < list_item.length; i++) { %>
                                                 <tr>
-                                                    <td><img src="/img/product/1.jpg" alt="" /></td>
-                                                    <td>Dây chuyền  kim cương</td>
-                                                    <td>SP01</td>
-                                                    <td>
-                                                        <input type="text" class="form-control" value="2">
-                                                    </td>
-                                                    <td>$500</td>
-                                                    <td>tranthilang@gmail.com</td>
-                                                    <td>Tiệm vàng ABC</td>
+
+                                                    <td><%=list_item[i].name%></td>
+                                                    <td><%=list_item[i].id_product%>></td>
+                                                    <td><%=list_item[i].number%></td>
+                                                    <td><%=list_item[i].total_price%></td>
+                                                    <td><%=list_item[i].id_receiver%></td>
+
                                                 </tr>
-                                                <tr>
-                                                    <td><img src="/img/product/1.jpg" alt="" /></td>
-                                                    <td>Dây chuyền  kim cương</td>
-                                                    <td>SP01</td>
-                                                    <td>
-                                                        <input type="text" class="form-control" value="2">
-                                                    </td>
-                                                    <td>$500</td>
-                                                    <td>tranthilang@gmail.com</td>
-                                                    <td>Tiệm vàng ABC</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="/img/product/1.jpg" alt="" /></td>
-                                                    <td>Dây chuyền  kim cương</td>
-                                                    <td>SP01</td>
-                                                    <td>
-                                                        <input type="text" class="form-control" value="2">
-                                                    </td>
-                                                    <td>$500</td>
-                                                    <td>tranthilang@gmail.com</td>
-                                                    <td>Tiệm vàng ABC</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="/img/product/1.jpg" alt="" /></td>
-                                                    <td>Dây chuyền  kim cương</td>
-                                                    <td>SP01</td>
-                                                    <td>
-                                                        <input type="text" class="form-control" value="2">
-                                                    </td>
-                                                    <td>$500</td>
-                                                    <td>tranthilang@gmail.com</td>
-                                                    <td>Tiệm vàng ABC</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><img src="/img/product/1.jpg" alt="" /></td>
-                                                    <td>Dây chuyền  kim cương</td>
-                                                    <td>SP01</td>
-                                                    <td>
-                                                        <input type="text" class="form-control" value="2">
-                                                    </td>
-                                                    <td>$500</td>
-                                                    <td>tranthilang@gmail.com</td>
-                                                    <td>Tiệm vàng ABC</td>
-                                                </tr>
+                                                <% }; %>
                                             </table>
                                             <div class="custom-pagination">
                                                 <nav aria-label="Page navigation example">

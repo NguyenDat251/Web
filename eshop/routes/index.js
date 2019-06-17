@@ -85,7 +85,7 @@ router.get('/Doi_mat_khau_moi/:token', function(req, res) {
     data.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
         if (!user) {
             console.log('index.js/133');
-            return res.redirect('/Quen_mat_khau');
+            return res.redirect('Quen_mat_khau');
         }
         res.render('Doi_mat_khau_moi', {token: req.params.token});
     });
@@ -136,10 +136,14 @@ router.get('/Dang_xuat', function(req, res, next) {
 });
 
 router.get('/Sua_thong_tin', function(req, res, next) {
-  res.render('Sua_thong_tin', { title: 'Sửa thông tin' });
+  res.render('Sua_thong_tin', {title: 'Sửa thông tin'});
 });
 
+
 router.post('/Sua_thong_tin', Sua_thong_tin_controller.update_post);
+
+router.put('/Sua_thong_tin', Dang_ky_controller.edit_info);
+
 
 router.get('/Page', Cua_hang_controller.moveNextPage);
 

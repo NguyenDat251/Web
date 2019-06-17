@@ -78,10 +78,11 @@ exports.detail = async (req, res, next) => {
 
 exports.update_post = [
     // Validate fields.
-     body('email', 'Name must not be empty.').isLength({ min: 1 }).trim(),
-
+     body('name', 'Name must not be empty.').isLength({ min: 1 }).trim(),
+    body('email', 'email must not be empty.').isLength({ min: 1 }).trim(),
     // Sanitize fields.
     sanitizeBody('email').escape(),
+    sanitizeBody('name').escape(),
 
     // Process request after validation and sanitization.
      (req, res, next) => {
@@ -92,11 +93,11 @@ exports.update_post = [
         // Create a Book object with escaped/trimmed data and old id.
         var account = new data(
             {
-                name:req.user.name,
+                name:req.body.name,
                 email: req.body.email,
-                _id:req.user.id //This is required, or a new ID will be assigned!
+                _id:req.params.id //This is required, or a new ID will be assigned!
             });
-
+console.log("account id: " + account._id + "" );
         if (!errors.isEmpty()) {
             console.log("ERROR")
             // There are errors. Render form again with sanitized values/error messages.
@@ -120,7 +121,8 @@ exports.update_post = [
         }
         else {
           //Data from form is valid. Update the record.
-            data.findByIdAndUpdate(req.params.id, account, {}, function (err,item) {
+            data.findByIdAndUpdate(req.user.id, account, {}, function (err,item) {
+                console.log("id admin: " + req.user.id + "");
                 if (err) { return next(err); }
                 // Successful - redirect to book detail page.
                 res.redirect('/main');
