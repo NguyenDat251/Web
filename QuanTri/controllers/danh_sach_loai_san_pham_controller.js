@@ -22,6 +22,8 @@ exports.show_info = async (req, res, next) => {
             if (err) {
                 console.log("falseeee");
                 return next(err);
+
+
             }
             //Successful, so render
             else {
