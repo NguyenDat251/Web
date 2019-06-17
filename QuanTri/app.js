@@ -79,6 +79,7 @@ app.use('/danh_sach_nguoi_nhan', danh_sach_nguoi_nhan_Router);
 app.use('/don_hang', don_hang_Router);
 app.use('/dang_giao', giao_hang_Router);
 app.use('/da_giao', da_giao_Router);
+app.use('/da_giao', da_giao_Router);
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
 
