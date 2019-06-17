@@ -28,6 +28,7 @@ function doTheCompare(passInput, passReal) {
 
 
 exports.show_info = async (req, res, next) => {
+    console.log("SHOW_INFOR");
     if (req.isAuthenticated()) {
         data.find()
             .exec(function (err, item) {
@@ -37,7 +38,7 @@ exports.show_info = async (req, res, next) => {
                 }
                 //Successful, so render
                 console.log("Successful, so render");
-                console.log(item);
+                console.log(item[0]);
 
                 res.render('thay_doi_thong_tin_admin', {title: '', item: item[0], user: req.user});
             });
@@ -50,21 +51,9 @@ exports.show_info = async (req, res, next) => {
         });
     }
 };
-// exports.show_list = function(req, res, next) {
-//     data.find()
-//         .exec(function (err, list_items) {
-//             if (err) {
-//                 console.log("falseeee");
-//                 return next(err);
-//             }
-//             //Successful, so render
-//             console.log("Successful, so render");
-//             console.log(list_items);
-//             res.render('danh_sach_tai_khoan', {title: '', list_items: list_items});
-//         });
-// };
 
 exports.detail = async (req, res, next) => {
+    console.log("DETAIL");
     data.find({_id:req.params.id})
         .exec(function (err, item) {
             if (err) {
@@ -79,7 +68,7 @@ exports.detail = async (req, res, next) => {
                     return next(err);
                 }
                 console.log("Successful, so render");
-                console.log(item);
+                console.log(item[0]);
                 res.render('thong_tin_admin', {title: 'Áo Khoác', item: item[0], user: req.user})
             }
             ;
@@ -90,23 +79,22 @@ exports.detail = async (req, res, next) => {
 exports.update_post = [
     // Validate fields.
      body('email', 'Name must not be empty.').isLength({ min: 1 }).trim(),
-    //
-    //
+
     // Sanitize fields.
-    sanitizeBody('title').escape(),
-    //
-    //
-    // // Process request after validation and sanitization.
+    sanitizeBody('email').escape(),
+
+    // Process request after validation and sanitization.
      (req, res, next) => {
-    //     console.log("form thay_doi_thong_tin_admin = post");
-    //     // Extract the validation errors from a request.
+         console.log("UPDATE");
+         // Extract the validation errors from a request.
          const errors = validationResult(req);
-         console.log(errors.isEmpty());
+
         // Create a Book object with escaped/trimmed data and old id.
         var account = new data(
             {
+                name:req.user.name,
                 email: req.body.email,
-                _id:req.user._id //This is required, or a new ID will be assigned!
+                _id:req.user.id //This is required, or a new ID will be assigned!
             });
 
         if (!errors.isEmpty()) {
@@ -121,20 +109,18 @@ exports.update_post = [
                     if (err) { return next(err); }
 
 
-                    // for (let i = 0; i < results.name.length; i++) {
-                    //     if (account.email.indexOf(results.genres[i]._id) > -1) {
-                    //         results.e[i].checked='true';
-                    //     }
-                    // }
+                    for (let i = 0; i < results.name.length; i++) {
+                        if (account.name.indexOf(results.genres[i]._id) > -1) {
+                            results.e[i].checked='true';
+                        }
+                    }
                     res.render('/thay_doi_thong_tin_admin', { title: 'Update Book', item : results.name, errors: errors.array() });
                 });
             return;
         }
         else {
-            console.log(req.params.id);
-          // Data from form is valid. Update the record.
+          //Data from form is valid. Update the record.
             data.findByIdAndUpdate(req.params.id, account, {}, function (err,item) {
-                console.log(account.email);
                 if (err) { return next(err); }
                 // Successful - redirect to book detail page.
                 res.redirect('/main');
