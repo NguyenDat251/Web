@@ -11,7 +11,7 @@ var AccountSchema = new Schema(
         resetPasswordToken: {type: String, default:''},
         resetPasswordExpires: {type: Date, default: Date.now},
 
-            listProducts:{type: Array},
+        listProducts:{type: Array},
         totalCost:{type: String},
     }
 );
