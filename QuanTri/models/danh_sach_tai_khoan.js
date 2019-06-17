@@ -10,7 +10,7 @@ var AccountSchema = new Schema(
         email:{type: String},
         phone:{type: String},
         address:{type: String},
-        //date: {type: String},
+        date: {type: String},
 
     }
 );
