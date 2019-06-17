@@ -3,6 +3,7 @@ const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/don_hang');
 var store = require('../models/danh_sach_cua_hang');
 var list_product = require('../models/danh_sach_san_pham');
+var receiver = require('../models/danh_sach_nguoi_nhan');
 var user = "temp";
 
 const bcrypt = require('bcrypt');
@@ -26,17 +27,11 @@ function doTheCompare(passInput, passReal) {
         }
     })
 }
-// function resolveAfter2Seconds() {
-//     return new Promise(resolve => {
-//         setTimeout(() => {
-//             resolve('resolved');
-//         }, 2000);
-//     });
-// }
+
 exports.index =  function(req, res) {
     if (req.isAuthenticated()) {
         data.find()
-            .exec( async function (err, list_items) {
+            .exec(async function (err, list_items) {
                 if (err) {
                     console.log("don't find");
                     return next(err);
@@ -45,43 +40,73 @@ exports.index =  function(req, res) {
                 console.log("Successful list_items");
                 console.log(list_items);
 
-            let theNameStore = new Array();
-            let theNameReceiver = new Array();
-               // var result = await resolveAfter2Seconds();
-            var n = list_items.length;
-            //console.log(n);
-            var i =0;
-            while (i < n){
-               // console.log(list_items[i].id_store);
-                await store.findById(list_items[i].id_store, function (err, nameStore ) {
-                    //console.log("name store" + nameStore.name + "");
-                    theNameStore.push(nameStore);
+                //don_hang.id_store = cua_hangs.id => return nameStores : cua_hangs.name
+                let theNameStore = new Array();
 
-                });
-                console.log(i);
-                i++;
-            }
-                var j =0;
-                while (j < n){
-                    console.log(list_items[j].id_receiver);
-                    await store.findById(list_items[j].id_receiver, function (err, nameReceiver ) {
-                        console.log("name store" + nameReceiver.name + "");
-                        theNameReceiver.push(nameReceiver);
+                var n = list_items.length;
+                var i = 0;
+                while (i < n) {
+                    await store.findById(list_items[i].id_store, function (err, nameStore) {
+                        theNameStore.push(nameStore);
 
                     });
-                    console.log(i);
+                    //console.log(i);
                     i++;
                 }
 
-                //res.render('danh_sach_tai_khoan', {title: '', list_items: list_items});
-                res.render('don_hang', {title: '', list_items: list_items, nameStores : theNameStore, nameReceivers: theNameReceiver, user: req.user});
-            });
+                //don_hang.id_receiver = nguoi_nhans.id => return nameReceiver : nguoi_nhans.name_receiver
+               let theNameReceiver = new Array();
+               var m = list_items.length;
+               console.log(m);
+                var j = 0;
+                while (j < m) {
+                    console.log(list_items[j].id_receiver);
 
-    } else {
+                    await receiver.findById(list_items[j].id_receiver, function (err, nameReceiver) {
+                            console.log("name receiver" + nameReceiver.name_receiver + "");
+                        theNameReceiver.push(nameReceiver);
+                    });
+                    console.log(j);
+                    j++;
+                }
+
+                let listProducts = new Array();
+                var num = list_items.length;
+                console.log(num);
+                var l = 0;
+                while (l < num) {
+                    console.log("list_product: " + list_items[l].list_prduct + "");
+                    //var k =0;
+                    // console.log(list_items[l].list_prduct.length);
+                    // await receiver.findById(list_items[l].id_receiver, function (err, nameReceiver) {
+                    //     console.log("name receiver" + nameReceiver.name_receiver + "");
+                    //     theNameReceiver.push(nameReceiver);
+                    // });
+                    console.log(l);
+                    l++;
+                }
+                // receiver.find()
+                //     .exec(function (err, lists) {
+                //         if (err) {
+                //             console.log("don't find");
+                //             return next(err);
+                //         }
+                //         //Successful, so render
+                //         console.log("Successful, lists");
+                //         console.log(lists);
+                //         //res.render('danh_sach_tai_khoan', {title: '', list_items: list_items});
+                //         //res.render('danh_sach_tai_khoan', {title: '', list_items: list_items, user: req.user});
+                //     });
+
+                res.render('don_hang', {title: '', list_items: list_items, nameStores: theNameStore, nameReceivers: theNameReceiver, user: req.user});
+            })
+    }
+    else {
         console.log(req.user);
         console.log(req.isAuthenticated());
         res.render('dang_nhap', {
             errorText: ''
         });
     }
+
 };
