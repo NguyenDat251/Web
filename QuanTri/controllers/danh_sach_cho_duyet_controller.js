@@ -1,6 +1,7 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_cho_duyet');
+var account = require('../models/danh_sach_tai_khoan');
 var user = "temp";
 
 const bcrypt = require('bcrypt');
@@ -148,16 +149,16 @@ exports.index = function (req, res, next) {
 //     }
 // ];
 //
-// exports.delete_post = function(req, res, next) {
-//     data.findByIdAndRemove(req.params.id, function deleteAuthor(err) {
-//         if (err) {
-//             console.log("Delete false");
-//             return next(err); }
-//         // Success - go to author list
-//         res.redirect('/danh_sach_tai_khoan')
-//     });
-// };
-//
+exports.delete_post = function(req, res, next) {
+    data.findByIdAndRemove(req.params.id, function deleteAuthor(err) {
+        if (err) {
+            console.log("Delete false");
+            return next(err); }
+        // Success - go to author list
+        res.redirect('/danh_sach_cho_duyet')
+    });
+};
+
 // exports.check_log_in = function(req, res, next) {
 //     data.find({"name":req.body.name})
 //         .exec(function (err, item) {
@@ -253,60 +254,60 @@ exports.index = function (req, res, next) {
 //     }
 // ];
 //
-// exports.add =  [
-//
-//     // Validate that the name field is not empty.
-//     body('name', 'name required').isLength({ min: 1 }).trim(),
-//     //console.log("check"),
-//     // Sanitize (escape) the name field.
-//     sanitizeBody('name').escape(),
-//     //console.log("escape"),
-//     // Process request after validation and sanitization.
-//     (req, res, next) => {
-//
-//         // Extract the validation errors from a request.
-//         const errors = validationResult(req);
-//
-//         // Create a genre object with escaped and trimmed data.
-//         var account = new data(
-//             { name: req.body.name,
-//                 password: req.body.password,}
-//         );
-//
-//
-//         if (!errors.isEmpty()) {
-//             // There are errors. Render the form again with sanitized values/error messages.
-//             console.log("error");
-//             res.render('/them_tai_khoan', { title: 'Create Genre', genre: account, errors: errors.array()});
-//             return;
-//         }
-//         else {
-//             // Data from form is valid.
-//             // Check if Genre with same name already exists.
-//             data.findOne({ 'name': req.body.name })
-//                 .exec( function(err, found_account) {
-//                     if (err) {
-//                         console.log("error exec");
-//                         return next(err); }
-//
-//                     if (found_account) {
-//                         // Genre exists, redirect to its detail page.
-//                         res.redirect(found_account.url);
-//                     }
-//                     else {
-//
-//                         account.save(function (err) {
-//                             if (err) {
-//                                 console.log("error save");
-//                                 return next(err); }
-//                             // Genre saved. Redirect to genre detail page.
-//                             console.log("success");
-//                             res.redirect('/danh_sach_tai_khoan');
-//                         });
-//
-//                     }
-//
-//                 });
-//         }
-//     }
-// ];
+exports.add =  [
+
+    // // Validate that the name field is not empty.
+    // body('name', 'name required').isLength({ min: 1 }).trim(),
+    // //console.log("check"),
+    // // Sanitize (escape) the name field.
+    // sanitizeBody('name').escape(),
+    // //console.log("escape"),
+    // Process request after validation and sanitization.
+    (req, res, next) => {
+
+        // Extract the validation errors from a request.
+        const errors = validationResult(req);
+
+        // Create a genre object with escaped and trimmed data.
+        var Account = new account(
+            { name: req.body.name,
+                password: req.body.password,}
+        );
+
+
+        if (!errors.isEmpty()) {
+            // There are errors. Render the form again with sanitized values/error messages.
+            console.log("error");
+            res.render('/duyet', { title: 'Create Genre', genre: account, errors: errors.array()});
+            return;
+        }
+        else {
+            // Data from form is valid.
+            // Check if Genre with same name already exists.
+            data.findOne({ 'name': req.body.name })
+                .exec( function(err, found_account) {
+                    if (err) {
+                        console.log("error exec");
+                        return next(err); }
+
+                    if (found_account) {
+                        // Genre exists, redirect to its detail page.
+                        res.redirect(found_account.url);
+                    }
+                    else {
+
+                        account.save(function (err) {
+                            if (err) {
+                                console.log("error save");
+                                return next(err); }
+                            // Genre saved. Redirect to genre detail page.
+                            console.log("success");
+                            res.redirect('/danh_sach_tai_khoan');
+                        });
+
+                    }
+
+                });
+        }
+    }
+];
