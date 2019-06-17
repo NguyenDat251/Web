@@ -1,6 +1,5 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
-var data = require('../models/tai_khoan');
 const bcrypt = require('bcrypt');
 var crypto = require("crypto");
 var async = require("async");
