@@ -22,7 +22,7 @@ var danh_sach_san_pham_Router = require('./routes/danh_sach_san_pham_Router');
 var danh_sach_loai_san_pham_Router = require('./routes/danh_sach_loai_san_pham_Router');
 var don_hang_Router = require('./routes/don_hang_Router');
 var danh_sach_nguoi_nhan_Router = require('./routes/danh_sach_nguoi_nhan_Router');
-// var giao_hang_Router = require('./routes/giao_hang_Router');
+var giao_hang_Router = require('./routes/giao_hang_Router');
 
 var app = express();
 app.use(function (req, res, next) {
@@ -76,7 +76,7 @@ app.use('/danh_sach_san_pham', danh_sach_san_pham_Router);
 app.use('/danh_sach_loai_san_pham', danh_sach_loai_san_pham_Router);
 app.use('/danh_sach_nguoi_nhan', danh_sach_nguoi_nhan_Router);
 app.use('/don_hang', don_hang_Router);
-// app.use('/giao_hang', giao_hang_Router);
+app.use('/dang_giao', giao_hang_Router);
 
 app.use('/users', usersRouter);
 app.use('/catalog', catalogRouter);
