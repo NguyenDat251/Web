@@ -69,7 +69,6 @@
                         </div>
                         <table>
                             <tr>
-
                                 <th>Tên</th>
                                 <th>email</th>
                                 <th>SĐT</th>
@@ -77,25 +76,40 @@
                                 <th>Thay đổi thông tin</th>
                                 <th>Xóa tài khoản</th>
                             </tr>
-                            <% for(var i = 0; i < list_items.length; i++) { %>
+                            <%
+                            // var maxIndex = list_items.length - numPage * 12;
+                            //
+                            // if (maxIndex >= 12)
+                            //     maxIndex = 12;
+
+                            var maxIndex = (numPage + 1) * 6;
+
+                            if(maxIndex > list_users.length)
+                                maxIndex = list_users.length;
+
+
+                            for(var i = numPage*6; i < maxIndex; i++) {
+
+                            %>
                             <tr>
-                                <td><a href="<%= list_items[i].infor_url %>"><%= list_items[i].name %></a></td>
-                                <td><%= list_items[i].email %></td>
-                                <td><%= list_items[i].phone %></td>
-                                <td><%= list_items[i].address %></td>
-                                <td><a href="<%= list_items[i].url %>">Thay đổi thông tin</a></td>
-                                <td><a href= <%= list_items[i].delete_url%>>Xóa</a></td>
+                                <td><a href="<%= list_users[i].infor_url %>"><%= list_users[i].name %></a></td>
+                                <td><%= list_users[i].email %></td>
+                                <td><%= list_users[i].phone %></td>
+                                <td><%= list_users[i].address %></td>
+                                <td><a href="<%= list_users[i].url %>">Thay đổi thông tin</a></td>
+                                <td><a href= <%= list_users[i].delete_url%>>Xóa</a></td>
                             </tr>
                             <% }; %>
                         </table>
                         <div class="custom-pagination">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+                                <%
+                                var numOfPage = list_users.length/6;
+                                for(let i = 0; i < numOfPage; i++){
+                                %>
+                                <li><a href="/danh_sach_tai_khoan/Page?id=<%=i%>"><%=i + 1%></a></li>
+                                <%}%>
                                 </ul>
                             </nav>
                         </div>

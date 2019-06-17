@@ -2,20 +2,52 @@ const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_san_pham');
 var dataCuaHang = require('../models/danh_sach_cua_hang');
+var async = require('async');
+var g_listShops = new Array();
+var numPage = 0;
+var g_listItems = new Array();
+var g_listTypes = new Array();
+var g_listBrands = new Array();
 
 exports.index = function(req, res, next) {
     if (req.isAuthenticated()) {
-        data.find()
-            .exec(function (err, list_items) {
-                if (err) {
-                    console.log("falseeee");
-                    return next(err);
-                }
+        async.parallel({
+            listItems: function(callback) {
+                data.find()
+                    .exec(callback);
+            },
+
+            listTypes: function(callback) {
+                data.distinct("type")
+                    .exec(callback);
+            },
+
+            listBrands: function(callback) {
+                data.distinct("brand")
+                    .exec(callback);
+            },
+
+        }, function(err, results) {
+            if (err) { res.direct('/danh_sach_san_pham'); }
+            if (results.listItems==null) { // No results.
+                var err = new Error('list not found');
+                err.status = 404;
+                res.direct('/danh_sach_san_pham');
+            }
                 //Successful, so render
                 console.log("Successful, so render");
-                console.log(list_items);
-
-                res.render('danh_sach_san_pham', {title: '', list_items: list_items, user: req.user});
+                //console.log(list_items);
+                g_listItems = results.listItems;
+                g_listTypes = results.listTypes;
+                g_listBrands = results.listBrands;
+                res.render('danh_sach_san_pham', {
+                    title: '',
+                    list_items: g_listItems,
+                    list_types: g_listTypes,
+                    list_brands: g_listBrands,
+                    user: req.user,
+                    numPage: numPage
+                });
             });
 
     } else {
@@ -37,8 +69,9 @@ exports.show_info_add_product = function(req, res, next) {
                 }
                 //Successful, so render
                 console.log("Successful, so render");
+                g_listShops = list_shops;
                 console.log(list_shops);
-                res.render('them_san_pham', { title: 'Express', user: req.user, list_shops: list_shops });
+                res.render('them_san_pham', { title: 'Express', user: req.user, list_shops: g_listShops });
             });
 
     } else {
@@ -48,7 +81,46 @@ exports.show_info_add_product = function(req, res, next) {
             errorText: ''
         });
     }
+};
+
+exports.moveNextPage = function(req, res, next) {
+    console.log("vào phân page");
+    numPage = req.query.id;
+    //res.redirect('/');
+    //renderPage(req, res, list);
+    if (req.isAuthenticated()) {
+        res.redirect('danh_sach_san_pham');
+    }
+    else {
+        res.redirect('/');
+    }
+};
+exports.search = function(req, res, next) {
+    var strType = req.body.selectedType;
+    var strBrand = req.body.selectedBrand;
+    var strGender = req.body.selectedGender;
+
+    var tempList = new Array();
+    console.log(g_listItems);
+    for (let item of g_listItems) {
+        if ((item.type == strType || strType == "Tất cả")
+            && (item.brand == strBrand || strBrand == "Tất cả")
+            && (item.gender == strGender || strGender == "Tất cả")) {
+            tempList.push(item);
+        }
+
+
+    }
+    res.render('danh_sach_san_pham', {
+        title: '',
+        list_items: tempList,
+        list_types: g_listTypes,
+        list_brands: g_listBrands,
+        user: req.user,
+        numPage: numPage
+    });
 }
+
 
 exports.show_info = async (req, res, next) => {
     data.find({_id:req.params.id})
@@ -66,7 +138,12 @@ exports.show_info = async (req, res, next) => {
                 }
                 console.log("Successful, so render");
                 console.log(item);
-                res.render('thay_doi_thong_tin_san_pham', {title: 'Áo Khoác', item: item[0], user: req.user})
+                res.render('thay_doi_thong_tin_san_pham', {
+                    title: 'Áo Khoác',
+                    item: item[0],
+                    user: req.user,
+                    list_shops: g_listShops
+                })
             }
             ;
 

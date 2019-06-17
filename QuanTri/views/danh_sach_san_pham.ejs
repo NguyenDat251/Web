@@ -69,6 +69,40 @@
                             <div class="add-product">
                                 <a href="danh_sach_san_pham/them_san_pham">Thêm sản phẩm</a>
                             </div>
+                            <form method="POST" action="danh_sach_san_pham/search">
+                                <div class="row justify-content-center">
+                                    <div class="col col-md-3">
+                                        <label>Loại sản phẩm</label>
+                                        <select class="srchTxt" name="selectedType">
+                                            <option value="Tất cả">Tất cả</option>
+                                            <% for(var i = 0; i < list_types.length; i++) { %>
+                                                <option><%= list_types[i] %> </option>
+                                            <% } %>
+                                        </select>
+                                    </div>
+                                    <div class="col col-md-3">
+                                        <label>Nhà sản xuất</label>
+                                        <select class="srchTxt" name="selectedBrand">
+                                            <option value="Tất cả">Tất cả</option>
+                                            <% for(var i = 0; i < list_brands.length; i++) { %>
+                                                <option><%= list_brands[i] %> </option>
+                                            <% } %>
+                                        </select>
+                                    </div>
+                                    <div class="col col-md-3">
+                                        <label>Phân loại</label>
+                                        <select class="srchTxt" name="selectedGender">
+                                            <option>Tất cả</option>
+                                            <option>nam</option>
+                                            <option>nữ</option>
+                                        </select>
+                                    </div>
+
+                                    <input type="submit" value="Lọc">
+                                </div>
+
+
+                            </form>
                             <table>
                                 <tr>
                                     <th>Hình ảnh</th>
@@ -80,7 +114,13 @@
                                     <th></th>
                                     <th></th>
                                 </tr>
-                                <% for(var i = 0; i < list_items.length; i++) { %>
+
+                                <%
+                                var maxIndex = (numPage + 1) * 12;
+
+                                if(maxIndex > list_items.length)
+                                    maxIndex = list_items.length;
+                                for(var i = numPage*12; i < maxIndex; i++) {%>
                                 <tr>
                                     <td><img src="<%= list_items[i].img %>" alt="" /></td>
                                     <td><%= list_items[i].name %></td>
@@ -97,11 +137,15 @@
                             <div class="custom-pagination">
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination">
-                                        <li class="page-item"><a class="page-link" href="#">Trước</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+                                        <%
+                                        var numOfPage = list_items.length/12;
+                                        for(let i = 0; i < numOfPage; i++){
+                                        %>
+                                        <li><a href="/danh_sach_san_pham/Page?id=<%=i%>"><%=i + 1%></a></li>
+                                        <!--                                <li><a href="#">3</a></li>-->
+                                        <!--                                <li><a href="#">4</a></li>-->
+                                        <!--                                <li><a href="#">5</a></li>-->
+                                        <%}%>
                                     </ul>
                                 </nav>
                             </div>

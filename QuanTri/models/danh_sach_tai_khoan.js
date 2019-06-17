@@ -4,13 +4,14 @@ var Schema = mongoose.Schema;
 
 var AccountSchema = new Schema(
     {
+        isVerified: { type: Boolean, default: false },
         name: {type: String, required: 'Vui lòng không để trống', max: 100},
         password: {type: String},
         email:{type: String},
         phone:{type: String},
         address:{type: String},
-        date: {type: String},
-        isVerified: { type: Boolean, default: false },
+        //date: {type: String},
+
     }
 );
 

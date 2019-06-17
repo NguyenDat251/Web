@@ -49,4 +49,9 @@ router.get('/top_10_san_pham', function(req, res, next) {
   res.render('top_10_san_pham', { title: 'Express' });
 });
 
+router.get('/dang_xuat', function(req, res){
+    req.logout();
+    res.redirect('/');
+})
+
 module.exports = router;
