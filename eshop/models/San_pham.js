@@ -60,6 +60,12 @@ SanphamShecma
     .get(function () {
         return '/Gio_hang/removeInCart/' + this._id;
     });
+
+SanphamShecma
+    .virtual('commentUrl')
+    .get(function () {
+        return '/productInfo/' + this._id + "/comment";
+    });
 //Export model
 module.exports = mongoose.model('san_phams', SanphamShecma);
 

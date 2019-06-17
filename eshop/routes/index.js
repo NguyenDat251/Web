@@ -121,7 +121,8 @@ router.post('/Doi_mat_khau_moi/:token', Dang_ky_controller.reset_password);
 //
 // });
 
-router.get('/productInfo/:id', San_pham_controller.info);
+router.get('/productInfo/:id', Cua_hang_controller.info);
+router.post('/productInfo/:id/comment', Cua_hang_controller.comment);
 router.get('/type/:type', San_pham_controller.type);
 
 router.get('/Gio_hang', function(req, res, next) {
