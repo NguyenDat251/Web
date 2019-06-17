@@ -11,6 +11,7 @@ var San_pham_controller = require('../controllers/San_pham_controller');
 //var Dang_nhap_controller = require('../controllers/Dang_nhap_controller');
 var Dang_ky_controller = require('../controllers/Dang_ky_controller');
 var Cua_hang_controller = require('../controllers/Cua_hang_controller');
+var Gio_hang_controller = require('../controllers/Gio_hang_controller');
 
  //router.get('/', San_pham_controller.list);
 //
@@ -123,11 +124,10 @@ router.post('/Doi_mat_khau_moi/:token', Dang_ky_controller.reset_password);
 
 router.get('/productInfo/:id', Cua_hang_controller.info);
 router.post('/productInfo/:id/comment', Cua_hang_controller.comment);
+router.get('/productInfo/:id/Page', Cua_hang_controller.moveCommentPage);
 router.get('/type/:type', San_pham_controller.type);
 
-router.get('/Gio_hang', function(req, res, next) {
-  res.render('Gio_hang', { title: 'Giỏ hàng' });
-});
+router.get('/Gio_hang', Gio_hang_controller.index);
 
 router.get('/Dang_xuat', function(req, res, next) {
   req.logout();
