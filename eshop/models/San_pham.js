@@ -25,6 +25,7 @@ var SanphamShecma = new Schema(
         img: {type: String, required: true},
         info: {type: String, required: true, max: 1000},
         sale: {type: Number, required: true, max: 100},
+        TimesWatched: {type: Number, required: true, max: 100},
     }
 );
 
