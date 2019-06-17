@@ -80,8 +80,9 @@
                             <li><a href="">Sony Smart TV - 2015</a></li>
                         </ul>
                     </div>-->
-                
-                
+
+                <div class="col-md-4">
+                </div>
                 <div class="col-md-8">
                     <div class="product-content-right">
                         <div class="product-breadcroumb">
@@ -94,15 +95,15 @@
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
-                                        <img src="../<%= item.img %>" alt="">
+                                        <img src="<%= item.img %>" alt="">
                                     </div>
                                     
-                                    <div class="product-gallery">
-                                        <img src="../<%= item.img %>" alt="">
-                                        <img src="../<%= item.img %>" alt="">
-                                        <img src="../<%= item.img %>" alt="">
-                                        <img src="../<%= item.img %>" alt="">
-                                    </div>
+<!--                                    <div class="product-gallery">-->
+<!--                                        <img src="../<%= item.img %>" alt="">-->
+<!--                                        <img src="../<%= item.img %>" alt="">-->
+<!--                                        <img src="../<%= item.img %>" alt="">-->
+<!--                                        <img src="../<%= item.img %>" alt="">-->
+<!--                                    </div>-->
                                 </div>
                             </div>
                             
@@ -138,27 +139,26 @@
                                                 <p>
                                                     <%=item.info%>
                                                 </p>
-                                                <!-- <p>Laptop Lenovo Ideapad 530S (81EU00P5VN) mang trong mình một thiết kế mỏng nhẹ rất thuận tiện khi di chuyển, cùng với đó là một cấu hình khá mạnh, giúp chạy mượt mà các ứng dụng văn phòng cũng như đáp ứng tốt nhu cầu đồ họa cơ bản. Chiếc laptop Lenovo này sẽ là một sự lựa chọn đáng để cân nhắc dành cho nhân viên văn phòng hoặc học sinh, sinh viên trong phân khúc.</p>
-                                                 <p>Laptop Lenovo Ideapad 530S (81EU00P5VN) mang trong mình một thiết kế mỏng nhẹ rất thuận tiện khi di chuyển, cùng với đó là một cấu hình khá mạnh, giúp chạy mượt mà các ứng dụng văn phòng cũng như đáp ứng tốt nhu cầu đồ họa cơ bản. Chiếc laptop Lenovo này sẽ là một sự lựa chọn đáng để cân nhắc dành cho nhân viên văn phòng hoặc học sinh, sinh viên trong phân khúc.</p>-->
-                                          </div>
+                                           </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
                                                 <h2>Đánh giá</h2>
                                                 <div class="submit-review">
+                                                    <form method="POST" action="<%=item.commentUrl%>">
                                                     <p><label for="name">Tên</label> <input name="name" type="text"></p>
-                                                    <p><label for="email">Email</label> <input name="email" type="email"></p>
-                                                    <div class="rating-chooser">
-                                                        <p>Xếp hạng</p>
+<!--                                                    <div class="rating-chooser">-->
+<!--                                                        <p>Xếp hạng</p>-->
 
-                                                        <div class="rating-wrap-post">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <p><label for="review">Viết đánh giá</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+<!--                                                        <div class="rating-wrap-post">-->
+<!--                                                            <i class="fa fa-star"></i>-->
+<!--                                                            <i class="fa fa-star"></i>-->
+<!--                                                            <i class="fa fa-star"></i>-->
+<!--                                                            <i class="fa fa-star"></i>-->
+<!--                                                            <i class="fa fa-star"></i>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+                                                    <p><label for="review">Viết đánh giá</label> <textarea name="comment" id="" cols="30" rows="10"></textarea></p>
                                                     <p><input type="submit" value="Gửi"></p>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -167,111 +167,132 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        
-                        <!-- <div class="related-products-wrapper">
-                            <h2 class="related-products-title">Related Products</h2>
+
+                        <div class="related-products-wrapper">
+                            <h2 class="related-products-title">Sản phẩm hay được mua kèm</h2>
                             <div class="related-products-carousel">
+                                <%for(let i = 0; i < 6; i++){%>
                                 <div class="single-product">
                                     <div class="product-f-image">
-                                        <img src="img/product-1.jpg" alt="">
+                                        <img src="<%=list_items[i].img%>" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                            <a href="<%=list_items[i]._id%>" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                                             <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Sony Smart TV - 2015</a></h2>
+                                    <h2><a href="list_items[i]._id"><%=list_items[i].name%></a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>$700.00</ins> <del>$800.00</del>
-                                    </div> 
+                                        <ins><%=list_items[i].price%></ins> <del><%=list_items[i].price_sale%></del>
+                                    </div>
                                 </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="img/product-2.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                        </div>
-                                    </div>
+                                <%}%>
 
-                                    <h2><a href="">Apple new mac book 2015 March :P</a></h2>
-                                    <div class="product-carousel-price">
-                                        <ins>$899.00</ins> <del>$999.00</del>
-                                    </div> 
-                                </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="img/product-3.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                        </div>
-                                    </div>
-
-                                    <h2><a href="">Apple new i phone 6</a></h2>
-
-                                    <div class="product-carousel-price">
-                                        <ins>$400.00</ins> <del>$425.00</del>
-                                    </div>                                 
-                                </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="img/product-4.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                        </div>
-                                    </div>
-
-                                    <h2><a href="">Sony playstation microsoft</a></h2>
-
-                                    <div class="product-carousel-price">
-                                        <ins>$200.00</ins> <del>$225.00</del>
-                                    </div>                            
-                                </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="img/product-5.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                        </div>
-                                    </div>
-
-                                    <h2><a href="">Sony Smart Air Condtion</a></h2>
-
-                                    <div class="product-carousel-price">
-                                        <ins>$1200.00</ins> <del>$1355.00</del>
-                                    </div>                                 
-                                </div>
-                                <div class="single-product">
-                                    <div class="product-f-image">
-                                        <img src="img/product-6.jpg" alt="">
-                                        <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
-                                        </div>
-                                    </div>
-
-                                    <h2><a href="">Samsung gallaxy note 4</a></h2>
-
-                                    <div class="product-carousel-price">
-                                        <ins>$400.00</ins>
-                                    </div>                            
-                                </div>                                    
                             </div>
-                        </div> -->
+                        </div>
+                                <!-- <div class="related-products-wrapper">
+                                    <h2 class="related-products-title">Related Products</h2>
+                                    <div class="related-products-carousel">
+                                        <div class="single-product">
+                                            <div class="product-f-image">
+                                                <img src="img/product-1.jpg" alt="">
+                                                <div class="product-hover">
+                                                    <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                    <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                                </div>
+                                            </div>
+
+                                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+
+                                            <div class="product-carousel-price">
+                                                <ins>$700.00</ins> <del>$800.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-f-image">
+                                                <img src="img/product-2.jpg" alt="">
+                                                <div class="product-hover">
+                                                    <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                    <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                                </div>
+                                            </div>
+
+                                            <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                                            <div class="product-carousel-price">
+                                                <ins>$899.00</ins> <del>$999.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-f-image">
+                                                <img src="img/product-3.jpg" alt="">
+                                                <div class="product-hover">
+                                                    <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                    <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                                </div>
+                                            </div>
+
+                                            <h2><a href="">Apple new i phone 6</a></h2>
+
+                                            <div class="product-carousel-price">
+                                                <ins>$400.00</ins> <del>$425.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-f-image">
+                                                <img src="img/product-4.jpg" alt="">
+                                                <div class="product-hover">
+                                                    <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                    <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                                </div>
+                                            </div>
+
+                                            <h2><a href="">Sony playstation microsoft</a></h2>
+
+                                            <div class="product-carousel-price">
+                                                <ins>$200.00</ins> <del>$225.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-f-image">
+                                                <img src="img/product-5.jpg" alt="">
+                                                <div class="product-hover">
+                                                    <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                    <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                                </div>
+                                            </div>
+
+                                            <h2><a href="">Sony Smart Air Condtion</a></h2>
+
+                                            <div class="product-carousel-price">
+                                                <ins>$1200.00</ins> <del>$1355.00</del>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-f-image">
+                                                <img src="img/product-6.jpg" alt="">
+                                                <div class="product-hover">
+                                                    <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
+                                                    <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                                </div>
+                                            </div>
+
+                                            <h2><a href="">Samsung gallaxy note 4</a></h2>
+
+                                            <div class="product-carousel-price">
+                                                <ins>$400.00</ins>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
                     </div>                    
                 </div>
 
-                <div class="col-md-4">
-                    </div>
+
             </div>
         </div>
     </div>
-    <%include partials/footer.ejs%>
-    <script src="javascripts/MyJS.js"></script>
+    <%include partials/footer2.ejs%>
+    <script src="../javascripts/MyJS.js"></script>
   </body>
 </html>

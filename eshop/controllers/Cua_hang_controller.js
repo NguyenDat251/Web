@@ -1,5 +1,6 @@
 var goods = require('../models/Cua_hang');
 var data = require('../models/San_pham');
+var dataComment = require('../models/Binh_luan');
 var async = require('async');
 var list = null;
 var list_type = null;
@@ -121,6 +122,7 @@ exports.type = function (req, res, next) {
 };
 
 exports.info = async (req, res, next) => {
+    console.log("begin info");
     // const data = {
 
     //     name: 'iPhone XS Max 64 GB',
@@ -160,9 +162,9 @@ exports.info = async (req, res, next) => {
                     err.status = 404;
                     return next(err);
                 }
-                console.log("Successful, so render");
-                console.log(item);
-                res.render('San_pham', {title: 'Áo Khoác', item: item[0]})
+                console.log("Successful, so render info");
+                console.log(list);
+                res.render('San_pham', {title: 'Áo Khoác', item: item[0], user:req.user, list_items: list})
             }
             ;
 
@@ -272,6 +274,35 @@ exports.SortUp = function() {
     }
 
     renderPage(tempReq, tempRes, listForSort);
+}
+
+exports.comment =  function (req, res) {
+    var nameUser = null;
+    if(req.isAuthenticated()){
+        nameUser = req.user.name;
+    }
+    else{
+        nameUser = req.body.name;
+    }
+
+    var newComment = new dataComment({
+        id_product: req.params.id,
+        name: nameUser,
+        comment: req.body.comment,
+
+    });
+
+    console.log("req.params.id: " + req.params.id);
+
+    newComment.save(function (err) {
+        if (err) {
+            console.log("error save");
+            res.redirect('them_san_pham');}
+        // Genre saved. Redirect to genre detail page.
+        console.log("success");
+        res.redirect('/ProductInfo/' + req.params.id);
+    })
+
 }
 
 function renderPage(req, res, i_list){
