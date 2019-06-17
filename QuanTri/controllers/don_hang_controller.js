@@ -6,7 +6,7 @@ var product = require('../models/danh_sach_san_pham');
 var receiver = require('../models/danh_sach_nguoi_nhan');
 var shipping = require('../models/dang_giao');
 var user = "temp";
-
+var async = require('async');
 const bcrypt = require('bcrypt');
 let saltRounds = 10
 function doTheHash(pass) {
@@ -55,50 +55,50 @@ exports.index =  async function(req, res) {
                 console.log("Successful list_items");
                 console.log(list_items);
 
-                //don_hang.id_store = cua_hangs.id => return nameStores : cua_hangs.name
-                let theNameStore = new Array();
-
-                var n = list_items.length;
-                var i = 0;
-                while (i < n) {
-                    await store.findById(list_items[i].id_store, function (err, nameStore) {
-                        theNameStore.push(nameStore);
-                    });
-                    resolveAfter2Seconds();
-                    i++;
-                }
-
-                //don_hang.id_receiver = nguoi_nhans.id => return nameReceiver : nguoi_nhans.name_receiver
-               let theNameReceiver = new Array();
-                var j = 0;
-                while (j < n) {
-                    console.log(list_items[j].id_receiver);
-
-                    await receiver.findById(list_items[j].id_receiver, function (err, nameReceiver) {
-                            console.log("name receiver" + nameReceiver.name_receiver + "");
-                        theNameReceiver.push(nameReceiver);
-                    });
-                    resolveAfter2Seconds();
-                    console.log(j);
-                    j++;
-                }
+               // don_hang.id_store = cua_hangs.id => return nameStores : cua_hangs.name
+               //  let theNameStore = new Array();
+               //
+               //  var n = list_items.length;
+               //  var i = 0;
+               //  while (i < n) {
+               //      await store.findById(list_items[i].id_store, function (err, nameStore) {
+               //          theNameStore.push(nameStore);
+               //      });
+               //     // resolveAfter2Seconds();
+               //      i++;
+               //  }
 
                 //don_hang.id_receiver = nguoi_nhans.id => return nameReceiver : nguoi_nhans.name_receiver
-                 let theNameProduct = new Array();
-                 var k = 0;
-                 while (k < n) {
-                     console.log("list products: " + list_items[k].id_product + "");
-                //
-                     await product.findById(list_items[k].id_product, function (err, nameProduct) {
-                         console.log("name product" + nameProduct.name + "");
-                         theNameProduct.push(nameProduct);
-                     });
-                     resolveAfter2Seconds();
-                     console.log(k);
-                     k++;
-                 }
+               // let theNameReceiver = new Array();
+               //  var j = 0;
+               //  while (j < n) {
+               //      console.log(list_items[j].id_receiver);
+               //
+               //      await receiver.findById(list_items[j].id_receiver, function (err, nameReceiver) {
+               //              console.log("name receiver" + nameReceiver.name_receiver + "");
+               //          theNameReceiver.push(nameReceiver);
+               //      });
+               //     // resolveAfter2Seconds();
+               //      console.log(j);
+               //      j++;
+               //  }
 
-                res.render('don_hang', {title: '', list_items: list_items, nameStores: theNameStore, nameReceivers: theNameReceiver, nameProducts: theNameProduct,  user: req.user});
+                // //don_hang.id_receiver = nguoi_nhans.id => return nameReceiver : nguoi_nhans.name_receiver
+                //  let theNameProduct = new Array();
+                //  var k = 0;
+                //  while (k < n) {
+                //      console.log("list products: " + list_items[k].id_product + "");
+                // //
+                //      await product.findById(list_items[k].id_product, function (err, nameProduct) {
+                //          console.log("name product" + nameProduct.name + "");
+                //          theNameProduct.push(nameProduct);
+                //      });
+                //      //resolveAfter2Seconds();
+                //      console.log(k);
+                //      k++;
+                //  }
+
+                res.render('don_hang', {title: '', list_item: list_items, user: req.user});
             })
     }
     else {
