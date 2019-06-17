@@ -12,11 +12,16 @@ var AccountSchema = new Schema(
         resetPasswordExpires: {type: Date, default: Date.now},
 
             listProducts:{type: Array},
-        totalCost:{type: String},
+        totalCost:{type: String, default: '0'},
     }
 );
 
 
+// AccountSchema
+//     .virtual('url')
+//     .get(function () {
+//         return '/Sua_thong_tin/' + this._id;
+//     });
 AccountSchema.plugin(passportLocalMongoose);
 //Export model
 module.exports = mongoose.model('tai_khoans', AccountSchema);

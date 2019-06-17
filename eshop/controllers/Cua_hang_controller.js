@@ -149,6 +149,29 @@ exports.info = async (req, res, next) => {
                     res.redirect('../');
                 }
                 console.log("Successful, so render info");
+                //results.item[0].TimesWatched = results.item[0].TimesWatched + 1;
+
+                var newOne = new data({
+                    id_store: results.item[0].id_store,
+                    name: results.item[0].name,
+                    price: results.item[0].price,
+                    price_sale: results.item[0].price_sale,
+                    number: results.item[0].number,
+                    type: results.item[0].type,
+                    brand: results.item[0].brand,
+                    gender: results.item[0].gender,
+                    img: results.item[0].img,
+                    info: results.item[0].info,
+                    sale: results.item[0].sale,
+                    TimesWatched: results.item[0].TimesWatched + 1,
+                    _id:req.params.id //This is required, or a new ID will be assigned!
+                });
+                console.log("time: " + results.item[0].TimesWatched);
+                data.findByIdAndUpdate(req.params.id, newOne, {}, function (err,item) {
+                    if (err) {
+                        console.log("false time");
+                        return next(err);}
+                });
 
                 res.render('San_pham', {
                     title: 'Áo Khoác',
