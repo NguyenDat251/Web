@@ -1,6 +1,8 @@
 const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan');
+var listProducts = require('../models/danh_sach_san_pham');
+
 var user = "temp";
 var g_listUsers = new Array();
 var numPage = 0;
@@ -285,6 +287,8 @@ exports.add =  [
         // Extract the validation errors from a request.
         const errors = validationResult(req);
 
+         var newListProducts = new Array()
+        var totalcost = null;
         // Create a genre object with escaped and trimmed data.
         var account = new data(
             { name: req.body.name,
@@ -292,7 +296,9 @@ exports.add =  [
             email: req.body.email,
             phone: req.body.phone,
             address: req.body.address,
-            _id:req.params.id}
+                listProducts:newListProducts,
+                totalCost: totalcost,
+                _id:req.params.id}
         );
 
 

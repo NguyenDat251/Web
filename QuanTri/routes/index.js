@@ -28,7 +28,15 @@ router.get('/dang_ky', function(req, res, next) {
     console.log("form đăng ký = get");
     res.render('dang_ky', { title: '' });
 });
-
+router.get('/log_out', function (req, res) {
+    req.logOut();
+    res.status(200).clearCookie('connect.sid', {
+        path: '/'
+    });
+    req.session.destroy(function (err) {
+        res.redirect('/');
+    });
+});
 router.post('/thay_doi_thong_tin_admin/', danh_sach_tai_khoan_admin_controller.update_post);
 router.get('/thay_doi_thong_tin_admin/', danh_sach_tai_khoan_admin_controller.show_info);
 router.get('/thong_tin_admin/', danh_sach_tai_khoan_admin_controller.detail);
@@ -41,13 +49,6 @@ router.get('/thong_ke_doanh_so', function(req, res, next) {
   res.render('thong_ke_doanh_so', { title: 'Express' });
 });
 
-router.get('/top_10_cua_hang', function(req, res, next) {
-  res.render('top_10_cua_hang', { title: 'Express' });
-});
-
-router.get('/top_10_san_pham', function(req, res, next) {
-  res.render('top_10_san_pham', { title: 'Express' });
-});
 
 router.get('/dang_xuat', function(req, res){
     req.logout();
