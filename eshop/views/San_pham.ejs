@@ -82,6 +82,51 @@
                     </div>-->
 
                 <div class="col-md-4">
+<!--                    <div class="single-sidebar">-->
+<!--                        <h2 class="sidebar-title">Search Products</h2>-->
+<!--                        <form action="">-->
+<!--                            <input type="text" placeholder="Search products...">-->
+<!--                            <input type="submit" value="Search">-->
+<!--                        </form>-->
+<!--                    </div>-->
+
+                    <div class="single-sidebar">
+                        <h2 class="sidebar-title">Bình luận</h2>
+                        <%
+                        var maxIndex = (numPageCmt + 1) * 4;
+
+                        if(maxIndex > list_comments.length)
+                            maxIndex = list_comments.length;
+
+
+                        for(var i = numPageCmt*4; i < maxIndex; i++)
+                        {%>
+                        <div class="thubmnail-recent">
+
+                            <img src="../images/avatar.png" class="recent-thumb" alt="">
+                            <h2><%=list_comments[i].name%></h2>
+                            <div class="product-sidebar-price">
+                                <p><%=list_comments[i].comment%></p>
+                            </div>
+                        </div>
+                        <%}%>
+                        <div class="product-pagination text-center">
+                            <nav>
+                                <ul class="pagination">
+
+                                    <%
+                                    var numOfPage = list_comments.length/4;
+                                    for(let i = 0; i < numOfPage; i++){
+                                    %>
+                                    <li><a href="<%=item._id%>/Page?id=<%=i%>"><%=i + 1%></a></li>
+                                    <%}%>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="col-md-8">
                     <div class="product-content-right">
@@ -112,14 +157,14 @@
                                     <h2 class="product-name"><%=item.name%></h2>
                                     <div class="product-inner-price">
                                         <ins><%= item.price_sale %></ins> <del><%= item.price %></del>
-                                    </div>    
-                                    
-                                    <form action="" class="cart">
+                                    </div>
+
+                                    <form action="../Gio_hang" class="cart">
                                         <div class="quantity">
                                             <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                                         </div>
-                                        <a href="/bucket"><button class="add_to_cart_button" type="submit">Thêm vào giỏ hàng</button></a>
-                                    </form>   
+                                        <a href="../Gio_hang"><button class="add_to_cart_button" type="submit">Thêm vào giỏ hàng</button></a>
+                                    </form>
                                     
                                     <!-- <div class="product-inner-category">
                                         <p>Category: <a href="">Summer</a>. Tags: <a href="">awesome</a>, <a href="">best</a>, <a href="">sale</a>, <a href="">shoes</a>. </p>

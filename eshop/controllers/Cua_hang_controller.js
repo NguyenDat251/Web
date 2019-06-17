@@ -6,6 +6,7 @@ var list = null;
 var list_type = null;
 var list_brand = null;
 var numPage = 0;
+var numPageCmt = 0;
 
 var tempRes = null;
 var tempReq = null;
@@ -123,48 +124,40 @@ exports.type = function (req, res, next) {
 
 exports.info = async (req, res, next) => {
     console.log("begin info");
-    // const data = {
+    async.parallel({
+            item: function(callback) {
+                data.find({_id: req.params.id})
+                    .exec(callback);
+            },
 
-    //     name: 'iPhone XS Max 64 GB',
-
-    //     tensp: 'iPhone XS Max 64 GB',
-
-    //     brand: 'Apple',
-    //     price: '28,790,000',
-    //     color: ['Bạc', 'Vàng', 'Xám'],
-    //     shortInfo: ['Hệ điều hành: iOS 12', 'RAM: 4 GB', 'ROM: 64 GB', 'Chip xử lý: A12 Bionic 64-bit 7nm'],
-    //     info: {
-    //         screen: '6.5 inches',
-    //         ram: '4 GB',
-    //         rom: '64 GB',
-    //         frontCamera: '7 MP, f / 2.2, 32mm',
-    //         backCamera: '12 MP',
-    //         os: 'iOS 12',
-    //         sim: '1',
-    //         pin: '3174 mAh'
-    //     }
-    // };
-
-    // res.render('San_pham', {title: 'Sản phẩm', data});
-    //const data = await product.detail('5cd7df888d899652d46769c0');
+            listComments: function(callback) {
+                dataComment.find({id_product: req.params.id})
+                    .exec(callback);
+            },
 
 
-    data.find({_id:req.params.id})
-        .exec(function (err, item) {
+        }, function (err, results) {
             if (err) {
                 console.log("falseeee");
                 return next(err);
             }
             //Successful, so render
             else {
-                if (item==null) { // No results.
+                if (results.item==null) { // No results.
                     var err = new Error('Item not found');
                     err.status = 404;
-                    return next(err);
+                    res.redirect('../');
                 }
                 console.log("Successful, so render info");
-                console.log(list);
-                res.render('San_pham', {title: 'Áo Khoác', item: item[0], user:req.user, list_items: list})
+
+                res.render('San_pham', {
+                    title: 'Áo Khoác',
+                    item: results.item[0],
+                    user:req.user,
+                    list_items: list,
+                    list_comments: results.listComments,
+                    numPageCmt: numPageCmt
+                })
             }
             ;
 
@@ -257,6 +250,16 @@ exports.moveNextPage = function(req, res, next){
         res.render('Cua_hang', {title: 'Áo Khoác', user: null, list_items: list, list_type: list_type, list_brand: list_brand, numPage: numPage});
     }
 }
+
+exports.moveCommentPage = function(req, res, next){
+    numPageCmt = req.query.id;
+    //res.redirect('/');
+    //renderPage(req, res, list);
+    console.log("move cmt page");
+         res.redirect('/productInfo/' + req.params.id);
+
+}
+
 
 exports.SortUp = function() {
     var listForSort = list;
