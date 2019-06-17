@@ -65,11 +65,11 @@ exports.index =  function (req, res) {
         },
 
     }, function(err, results) {
-        if (err) { return next(err); }
+        if (err) { res.direct('/'); }
         if (results.list_type==null) { // No results.
             var err = new Error('list not found');
             err.status = 404;
-            return next(err);
+            res.direct('/');
         }
         // Successful, so render
         list = results.list;

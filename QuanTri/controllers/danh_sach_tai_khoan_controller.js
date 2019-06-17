@@ -2,6 +2,8 @@ const { body,validationResult } = require('express-validator/check');
 const { sanitizeBody } = require('express-validator/filter');
 var data = require('../models/danh_sach_tai_khoan');
 var user = "temp";
+var g_listUsers = new Array();
+var numPage = 0;
 
 const bcrypt = require('bcrypt');
 let saltRounds = 10
@@ -29,16 +31,22 @@ function doTheCompare(passInput, passReal) {
 exports.index = function (req, res) {
     if (req.isAuthenticated()) {
         data.find()
-            .exec(function (err, list_items) {
+            .exec(function (err, list_users) {
                 if (err) {
                     console.log("don't find");
                     return next(err);
                 }
                 //Successful, so render
                 console.log("Successful, so render");
-                console.log(list_items);
+                g_listUsers = list_users;
+                //console.log(list_users);
                 //res.render('danh_sach_tai_khoan', {title: '', list_items: list_items});
-                res.render('danh_sach_tai_khoan', {title: '', list_items: list_items, user: req.user});
+                res.render('danh_sach_tai_khoan', {
+                    title: '',
+                    list_users: list_users,
+                    user: req.user,
+                    numPage: numPage
+                });
             });
 
     } else {
@@ -324,3 +332,19 @@ exports.add =  [
         }
     }
 ];
+
+exports.moveNextPage = function(req, res, next){
+    numPage = req.query.id;
+    //res.redirect('/');
+    //renderPage(req, res, list);
+    if (req.isAuthenticated()) {
+        res.render('danh_sach_tai_khoan', {
+            title: '',
+            list_users: g_listUsers,
+            user: req.user,
+            numPage: numPage
+        }); }
+    else {
+       res.redirect('/');
+        }
+}

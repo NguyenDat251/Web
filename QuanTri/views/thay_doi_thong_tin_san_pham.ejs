@@ -4,6 +4,9 @@
 <head>
     <title>thay-doi-thong-tin</title>
     <%include partial/head2.ejs%>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/css_imgur/style.css" rel="stylesheet" media="screen">
+    <link href="/css/css_imgur/mobile-style.css" rel="stylesheet" media="screen">
 </head>
 
 <body>
@@ -83,12 +86,8 @@
 <!--                                                </div>-->
                                                 <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
-                                                                                           aria-hidden="true"></i>Tên cửa hàng</span>
-                                                    <select name="StoreName" value="<%=item.StoreName%>">
-                                                        <%for(var i = 0; i < list_shops.length; i++){%>
-                                                        <option value="Tất cả"><%=list_shops[i].name%></option>
-                                                        <%}%>
-                                                    </select>
+                                                                                           aria-hidden="true"></i></span>
+                                                    <input type="text" name="StoreName" class="form-control" value="<%=item.StoreName%>">
                                                 </div>
                                                 <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
@@ -98,7 +97,7 @@
                                                 <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                    <input type="text" name="price" class="form-control" value="<%=item.prices%>">
+                                                    <input type="text" name="price" class="form-control" value="<%=item.price%>">
                                                 </div>
                                                 <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
@@ -137,7 +136,7 @@
                                                 <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
                                                                                            aria-hidden="true"></i></span>
-                                                    <input type="text" name="info" class="form-control" placeholder="Mô tả">
+                                                    <input type="text" name="info" class="form-control" value="<%=item.info%>">
                                                 </div>
                                                 <div class="input-group mg-b-pro-edt">
                                                         <span class="input-group-addon"><i class="fa fa-user"
@@ -152,7 +151,7 @@
                                                     <div class="info" id="info1"></div>
                                                 </div>
                                                 <input type="text" id="inputLink" name="img" class="form-control"
-                                                       placeholder="Ảnh" readonly>
+                                                       value="<%=item.img%>" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -181,6 +180,8 @@
 
 <!-- jquery
     ============================================ -->
+<script type="text/javascript" src="/javascripts/js_imgur/imgur.js"></script>
+<script type="text/javascript" src="/javascripts/js_imgur/upload.js"></script>
 <%include partial/script.ejs%>
 </body>
 
