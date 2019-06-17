@@ -12,6 +12,7 @@ var AccountSchema = new Schema(
         resetPasswordExpires: {type: Date, default: Date.now},
             listProducts:{type: Array},
         totalCost:{type: String, default: '0'},
+
     }
 );
 

@@ -12,6 +12,7 @@ var San_pham_controller = require('../controllers/San_pham_controller');
 var Dang_ky_controller = require('../controllers/Dang_ky_controller');
 var Cua_hang_controller = require('../controllers/Cua_hang_controller');
 var Gio_hang_controller = require('../controllers/Gio_hang_controller');
+var Sua_thong_tin_controller = require('../controllers/Sua_thong_tin_controller');
 
  //router.get('/', San_pham_controller.list);
 //
@@ -138,7 +139,11 @@ router.get('/Sua_thong_tin', function(req, res, next) {
   res.render('Sua_thong_tin', {title: 'Sửa thông tin'});
 });
 
+
+router.post('/Sua_thong_tin', Sua_thong_tin_controller.update_post);
+
 router.put('/Sua_thong_tin', Dang_ky_controller.edit_info);
+
 
 router.get('/Page', Cua_hang_controller.moveNextPage);
 
