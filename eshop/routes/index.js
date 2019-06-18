@@ -85,7 +85,7 @@ router.get('/Doi_mat_khau_moi/:token', function(req, res) {
     data.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
         if (!user) {
             console.log('index.js/133');
-            return res.redirect('Quen_mat_khau');
+            return res.redirect('/Quen_mat_khau');
         }
         res.render('Doi_mat_khau_moi', {token: req.params.token});
     });
