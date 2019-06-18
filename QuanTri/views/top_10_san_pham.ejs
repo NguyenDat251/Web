@@ -66,125 +66,18 @@
                         <h4>Danh sách sản phẩm</h4>
                         <table>
                             <tr>
-                                <th>stt</th>
-                                <th>Hình ảnh</th>
-                                <th>Tên</th>
-                                <th>Mã sản phẩm</th>
-                                <th>Loại sản phẩm</th>
+                                <th>Tên sản phẩm</th>
                                 <th>Số lượng</th>
-                                <th>Giá bán</th>
-                                <th>Giá nhập kho</th>
-                                <th>Đã bán</th>
+
                             </tr>
+                            <% for(var i = 0; i < list_item.length; i++) { %>
                             <tr>
-                                <td>1</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0001</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
+
+                                <td><%=list_item[i].id_product%>></td>
+                                <td><%=list_item[i].number%></td>
+
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0002</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0003</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0004</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0005</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0006</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0006</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0006</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            <tr>
-                                <td>9</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0006</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td><img src="/img/new-product/5-small.jpg" alt="" /></td>
-                                <td>Nhẫn kim cương</td>
-                                <td>SP0006</td>
-                                <td>Trang sức</td>
-                                <td>50</td>
-                                <td>$750</td>
-                                <td>$110</td>
-                                <td>11</td>
-                            </tr>
+                            <% }; %>
                         </table>
                     </div>
                 </div>

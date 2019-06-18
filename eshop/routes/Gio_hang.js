@@ -12,5 +12,5 @@ router.get('/:id', Gio_hang_Controller.addProduct);
 
 router.get('/removeInCart/:id', Gio_hang_Controller.removeProduct);
 
-
+router.post('/add_infor_shipping', Gio_hang_Controller.shipping);
 module.exports = router;

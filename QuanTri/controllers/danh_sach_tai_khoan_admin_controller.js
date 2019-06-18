@@ -121,8 +121,8 @@ console.log("account id: " + account._id + "" );
         }
         else {
           //Data from form is valid. Update the record.
-            data.findByIdAndUpdate(req.user.id, account, {}, function (err,item) {
-                console.log("id admin: " + req.user.id + "");
+            data.findByIdAndUpdate(req.params.id, account, {}, function (err,item) {
+                console.log("id admin: " + req.params.id + "");
                 if (err) { return next(err); }
                 // Successful - redirect to book detail page.
                 res.redirect('/main');

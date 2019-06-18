@@ -19,18 +19,6 @@ var Gio_hang_controller = require('../controllers/Gio_hang_controller');
 // );
 
 router.get('/', Cua_hang_controller.index
-  // if (req.user) {
-  //   console.log("Da dang nhap !");
-  //   console.log(req.user);
-  //   res.redirect('/Cua_hang');
-  // } else {
-  //   console.log("Chua dang nhap !");
-  //   console.log(req.user);
-  //   console.log(req.isAuthenticated());
-  //   res.render('Dang_nhap', {
-  //     errorText: ''
-  //   });
-  // }
 
 );
 
@@ -40,33 +28,6 @@ router.get('/Dang_ky', function(req, res, next) {
 });
 
 router.post('/search', Cua_hang_controller.search);
-
-// router.post("/login", passport.authenticate("local",
-//     {
-//         successRedirect: "/Cua_hang",
-//         failureRedirect: "/Dang_nhap",
-//         failureFlash: true,
-//         successFlash: 'Welcome to'
-//     }), function(req, res){
-// });
-
-// router.post('/login',
-//     passport.authenticate('local', {
-//         failWithError: true
-//     }),
-//     function (req, res) {
-//         console.log("Da dang nhap")
-//         res.redirect('/Cua_hang');
-//     },
-//     function (err, req, res, next) {
-//         if (req.authError) {
-//             console.log("login false!");
-//             res.render('Dang_nhap', {
-//                 errorText: req.authError
-//             });
-//         }
-//     }
-// );
 
 router.get('/Quen_mat_khau', function(req, res, next) {
   res.render('Quen_mat_khau', { title: 'Quên mật khẩu' });
@@ -92,35 +53,6 @@ router.get('/Doi_mat_khau_moi/:token', function(req, res) {
 
 router.post('/Doi_mat_khau_moi/:token', Dang_ky_controller.reset_password);
 
-
-
-// router.get('/productInfo', function(req, res, next) {
-//   // const data = {
-//   //   name: 'iPhone XS Max 64 GB',
-//   //   brand: 'Apple',
-//   //   price: '28,790,000',
-//   //   color: ['Bạc', 'Vàng', 'Xám'],
-//   //   shortInfo: ['Hệ điều hành: iOS 12', 'RAM: 4 GB', 'ROM: 64 GB', 'Chip xử lý: A12 Bionic 64-bit 7nm'],
-//   //   info: {
-//   //     screen: '6.5 inches',
-//   //     ram: '4 GB',
-//   //     rom: '64 GB',
-//   //     frontCamera: '7 MP, f / 2.2, 32mm',
-//   //     backCamera: '12 MP',
-//   //     os: 'iOS 12',
-//   //     sim: '1',
-//   //     pin: '3174 mAh'
-//   //   }
-//   // };
-//   //
-//   // // var Object={
-//   // //   title: 'Sản phẩm',
-//   // //       data: 'haha'
-//   // // }
-//   //
-//   // res.render('San_pham', {title: 'Sản phẩm', data});
-//
-// });
 
 router.get('/productInfo/:id', Cua_hang_controller.info);
 router.post('/productInfo/:id/comment', Cua_hang_controller.comment);

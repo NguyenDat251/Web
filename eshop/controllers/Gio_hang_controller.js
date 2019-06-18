@@ -1,6 +1,6 @@
 var dataProduct = require('../models/San_pham');
 var dataUser = require('../models/tai_khoan');
-
+var dataReceiver = require('../models/nguoi_nhan');
 function delay() {
     return new Promise(resolve => setTimeout(resolve, 1));
 }
@@ -226,3 +226,72 @@ exports.removeProduct = async function(req, res, next) {
 //     };
 // }
 
+exports.shipping = [
+    // Validate that the name field is not empty.
+    body('name', 'name required').isLength({ min: 1 }).trim(),
+    body('phone', 'phone required').isLength({ min: 1 }).trim(),
+    body('address', 'address required').isLength({ min: 1 }).trim(),
+    body('payments', 'payments required').isLength({ min: 1 }).trim(),
+    //console.log("check"),
+    // Sanitize (escape) the name field.
+    sanitizeBody('name').escape(),
+    sanitizeBody('phone').escape(),
+    sanitizeBody('address').escape(),
+    sanitizeBody('payments').escape(),
+    //console.log("escape"),
+    // Process request after validation and sanitization.
+    (req, res, next) => {
+
+        // Extract the validation errors from a request.
+        const errors = validationResult(req);
+
+        //  var newListProducts = new Array()
+        // var totalcost = null;
+        // Create a genre object with escaped and trimmed data.
+        var account = new dataReceiver(
+            {
+                name_receiver: req.body.name_receiver,
+                phone_receiver: req.body.phone_receiver,
+                address_receiver: req.body.address_receiver,
+                payments: req.body.payments,
+                _id:req.params.id
+            }
+        );
+
+
+        if (!errors.isEmpty()) {
+            // There are errors. Render the form again with sanitized values/error messages.
+            console.log("error");
+            res.render('/Gio_hang', { title: 'Create Genre', genre: account, errors: errors.array()});
+            return;
+        }
+        else {
+            // Data from form is valid.
+            // Check if Genre with same name already exists.
+            data.findOne({ 'name': req.body.name })
+                .exec( function(err, found_account) {
+                    if (err) {
+                        console.log("error exec");
+                        return next(err); }
+
+                    if (found_account) {
+                        // Genre exists, redirect to its detail page.
+                        res.redirect(found_account.url);
+                    }
+                    else {
+
+                        account.save(function (err) {
+                            if (err) {
+                                console.log("error save");
+                                return next(err); }
+                            // Genre saved. Redirect to genre detail page.
+                            console.log("success");
+                            res.redirect('/Cua_hang');
+                        });
+
+                    }
+
+                });
+        }
+    }
+];
