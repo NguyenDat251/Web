@@ -10,9 +10,9 @@ var AccountSchema = new Schema(
         phone:{type: String},
         resetPasswordToken: {type: String, default:''},
         resetPasswordExpires: {type: Date, default: Date.now},
-
             listProducts:{type: Array},
         totalCost:{type: String, default: '0'},
+
     }
 );
 
