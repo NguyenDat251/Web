@@ -34,6 +34,12 @@ exports.sign_up = [
                 email: req.body.email,
                 date: req.body.date,
                 phone: req.body.phone,
+
+
+                // resetPasswordToken: '',
+                // resetPasswordExpires: Date.now,
+                // listProducts: new Array(),
+                // totalCost:0,
             }
         );
         if (!errors.isEmpty()) {
